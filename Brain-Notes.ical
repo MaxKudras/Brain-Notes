@@ -1,0 +1,2299 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Andrew Brereton//obsidian-ical-plugin v1.19.0//EN
+X-WR-CALNAME:Obsidian Calendar
+NAME:Obsidian Calendar
+CALSCALE:GREGORIAN
+BEGIN:VTODO
+UID:7cb580eb-a443-4a6e-9356-c20e3a5bd160
+SUMMARY:🔲 **5-10-20 Jahre Ziele**: Ziele für die nächsten Jahrzehnte (beruflich\, persönlich\, finanziell\, gesundheitlich usw.)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:12c09855-ca87-41f6-9aaf-134727a85e12
+SUMMARY:🔲 **Jahresziele**: Ziele für das aktuelle Jahr
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:459b380a-9f50-4225-9286-86bafafff2ff
+SUMMARY:🔲 Monatsziele
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:24dd68ce-9e57-48a6-9d32-58a04ebc23e2
+SUMMARY:🔲 Lebenslange Lernziele: Was möchte ich bis zum Lebensende beherrschen?
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:16e11264-daf3-4a40-b436-71a20a17cf74
+SUMMARY:🔲 Leben nach einer klaren Mission
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1c9d3c64-4772-4ae3-b976-f4811560e0e4
+SUMMARY:🔲 wochenplanung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8af7e267-3012-4b17-a5f5-d59ca96953c0
+SUMMARY:🔲 Dinge die ich unbedingt erleben oder erreichen möchte
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:48afcdb2-7bf5-4639-82aa-6118cfab65a4
+SUMMARY:🔲 **Übergeordnete Lebenesvision**: langfristige Vision
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:ee2509dc-eafa-4946-8aad-e78d28a55999
+SUMMARY:🔲 Mein ideales Leben
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:cb838052-add9-41c0-af60-0acb22e57439
+SUMMARY:🔲 Die Vision für meinen „idealen Tag“ im Leben
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:597f6461-4952-479d-a221-28ad1bb8145e
+SUMMARY:🔲 Langfristige Mission & Ziele
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8a9a68e9-184a-442c-be2d-f14dfa15a1b1
+SUMMARY:🔲 Meine Definition von Erfolg
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:bbd3dee6-3f2e-4a1c-9114-4d2151499b96
+SUMMARY:🔲 Tagesziele und Prioritäten setzen (z. B. "Top 3 Dinge\, die heute erledigt werden müssen")
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9db4ed7f-acda-42bd-9ac1-1d9b748e4d17
+SUMMARY:🔲 Gewohnheiten zur Förderung von Produktivität und Fokus (z. B. 5-Minuten-Aufräumen\,To-do-Listen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1b04fd5c-aebf-4fb8-b7c4-30bf7c026573
+SUMMARY:🔲 Gewohnheiten für körperliche Gesundheit (z. B. tägliche Bewegung\, Ernährung)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f2fe793c-343d-420c-981a-4a0ec3bf1877
+SUMMARY:🔲 Gewohnheiten zur Förderung von Kreativität und geistiger Klarheit
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5936aef4-db97-4f95-b711-67a012f801be
+SUMMARY:🔲 Gute Gewohnheiten für persönliche Entwicklung (z. B. Journaling)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:12acbcf6-cc98-4394-88c4-6b1095094133
+SUMMARY:🔲 Langfristige Ziele für jede Kategorie
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:25118963-e5ba-47c5-bcc3-3ac9c6e0bcea
+SUMMARY:🔲 Ziele in kleinere\, mittelfristige Meilensteine unterteilt\, um Zwischenziele zu definieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e2788e4b-35ba-4937-a436-3c44261a7f6c
+SUMMARY:🔲 Definierte konkrete\, kurzfristige Aufgaben
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:143d262c-88eb-49cb-a509-2d63374f00d8
+SUMMARY:🔲 Kompetenzen\, die du in deinem Berufsfeld verbessern möchtest
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a4a54f10-b5f9-4add-873a-95dc4d5eab2f
+SUMMARY:🔲 Geplante Lerninhalte für jedes Fachgebiet (z. B. Fachinformatik\, Business-Management)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f4aea1b5-6997-44bf-a454-0e404054b62b
+SUMMARY:🔲 Erstellung deines perfekten Lebenslaufs und deiner LinkedIn-Seite
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a90cd606-a34e-41ba-9524-2f44ffcd76c1
+SUMMARY:🔲 Vorbereitung auf Gehaltsverhandlungen und berufliche Verhandlungen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:177a23ae-744a-4c3c-a974-747a61d21113
+SUMMARY:🔲 Liste von Kursen und Programmen\, die du für deine berufliche oder persönliche Weiterbildung machen möchtest
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d626d3df-bcb5-45e4-a96f-44259e790d6c
+SUMMARY:🔲 Erfolgsgeschichten und -strategien aus deiner Branche analysieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:654d9b37-1845-487e-ad9e-b07ad99a65ae
+SUMMARY:🔲 Automatisierungen und Effizienzsteigerungen für berufliche Prozesse
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:be215428-946f-4f4f-9fda-090b8df41bdf
+SUMMARY:🔲 Wichtige technische Tools\, Apps und Software\, die du in deinem Beruf verwendest oder lernen möchtest
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d65c95ee-8dce-4bf4-b291-e8bd102db468
+SUMMARY:🔲 Bewerbungstipps und Strategien für Jobwechsel oder Aufstieg
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:22c5a5c1-838f-4408-8004-bd59bc8b9572
+SUMMARY:🔲 Projekt Tracker
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e4a9dd79-0d66-43ac-a32d-13f08378bf39
+SUMMARY:🔲 Berufliche Meilensteine (z. B. Beförderung\, Projekte)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2eb78917-d738-4ef4-a70c-31d67bc13d5e
+SUMMARY:🔲 Mein ideales Arbeitsumfeld
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:762d92cb-55d2-40f2-ad7c-61bb8b36ef40
+SUMMARY:🔲 Tools für bessere Arbeitsorganisation (z. B. Notion\, Obsidian\, Trello)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:dc5cc1cc-bac3-494f-bdd0-a5bfc5f76968
+SUMMARY:🔲 Wöchentliche und monatliche Arbeitsziele definieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:0a536c93-64ee-48c2-a2bb-4001c76dcad9
+SUMMARY:🔲 Produktivitätsmethoden ausprobieren (z. B. Pomodoro\, Getting Things Done)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f55c8ee9-4fa3-4e8e-ba9f-c6b7d1152235
+SUMMARY:🔲 Optimierung des Arbeitsplatzes für höchste Produktivität
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:dc6c01d0-d8be-40fb-b019-f9bb0282faeb
+SUMMARY:🔲 Bewerbungsvorbereitung (Lebenslauf\, Anschreiben\, Portfolio)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:51206786-b737-4b0e-acba-b32a15e9e4cc
+SUMMARY:🔲 Vorbereitung auf Vorstellungsgespräche und Bewerbungsgespräche
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:27b4cacd-890e-456a-8498-71804c1c64e4
+SUMMARY:🔲 Büromaterialien und Ausstattungen planen (z. B. bequemer Stuhl\, Monitorständer)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:59b122d1-e1fb-49eb-a499-2ad00bb7678f
+SUMMARY:🔲 Entspannungsbereich für kurze Auszeiten schaffen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:41d0f33c-5d4f-4de3-a8db-b53ca8b81b3d
+SUMMARY:🔲 **Kurs & Vortrag Unterlagen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:94ea0aa5-1146-4543-9313-6af62f569f34
+SUMMARY:🔲 Lernziele
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b01e805c-0dcd-4605-a8f6-16d9d575b9fc
+SUMMARY:🔲 Lernplan
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:dd47a397-60a3-4744-9b37-f0b57a6c16b0
+SUMMARY:🔲 Lernstrategien
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:15d781cc-af31-46fd-9d6b-9707f7d1c645
+SUMMARY:🔲 Liste von Kursen und Seminaren\, die du besuchen möchtest (online und offline)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3d93dba9-40a2-4fee-b6bb-a465fa4e2284
+SUMMARY:🔲 Trainingsmöglichkeiten\, die deine Fähigkeiten erweitern und dein Berufsprofil schärfen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:70d5fa50-0d88-4934-bf43-fe8feb031a6c
+SUMMARY:🔲 Spaced Repetition zum merken der infos
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:38cbbec2-97c0-47d8-b2d5-65d3bd4f641e
+SUMMARY:🔲 Lernfortschritt übersicht (Automatisiert durch Dataview)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:32d9b58b-aa82-4d98-a737-148a5c33a43e
+SUMMARY:🔲 Monatsziele für neue Kenntnisse und Fähigkeiten (z. B. Programmieren\, Fremdsprachen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:26b5d6b7-4adc-4908-85e0-1351a82b8eac
+SUMMARY:🔲 Monatliche und jährliche Reflexion über dein Lernfortschritt
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2da6c0fa-573b-4723-9aea-11ecb45f971d
+SUMMARY:🔲 Skills\, die du erlernen möchtest (z. B. Programmiersprachen\, Soft Skills)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:fe7b760e-6ed3-4e29-90cf-8965605c0ad8
+SUMMARY:🔲 Weiterbildungsmöglichkeiten in verschiedenen Bereichen (z. B. Programmieren\, Sprachen lernen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:da470571-67ba-47ee-a743-bfc567783e48
+SUMMARY:🔲 Lernziele und -methoden (z. B. Lerntechniken\, Online-Kurse)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d6a5346c-96a7-4690-9834-5148859c2750
+SUMMARY:🔲 **Einnahmen & Ausgaben**: Monatliche Übersicht
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1d83909d-5475-4283-a523-cf92fa9e21e1
+SUMMARY:🔲 **Ersparnisse**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:46c48c9f-7fdb-41ba-a500-4a2fea362c0b
+SUMMARY:🔲 **Finanzstrategie**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9a7283c6-0352-4c8e-8fc2-032a5374fd4e
+SUMMARY:🔲 **Sparziele**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e2a73187-187f-46d0-a0fd-dfa76988f67d
+SUMMARY:🔲 **Investitionen**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e68ea798-5edd-4621-b0a6-7bebdc8f0838
+SUMMARY:🔲 **Aktien**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:67dd8ffa-1b2f-44c3-b8a4-07bd2d4eff3c
+SUMMARY:🔲 **Immobilien**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:fc30675b-913d-42c2-a9c3-d4620c15c0c1
+SUMMARY:🔲 **Finanzideen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2c1b1b99-29ee-4945-9ad8-28b63bc0949e
+SUMMARY:🔲 **Zinsrechner**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9b220893-e9c0-4542-80d3-1f0abcc33a42
+SUMMARY:🔲 **Altersvorsorge & Rücklage**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:86ec8280-bf82-4455-8d48-83a6b8b135da
+SUMMARY:🔲 **Ruhestandsplanung**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f1a37568-f595-4724-bd4b-2bcb52dce535
+SUMMARY:🔲 **Notfallfonds**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a50f3a35-5cb0-4443-bd38-3cd7b28d44cd
+SUMMARY:🔲 **Schuldenmanagment**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b418d48e-4b98-4fd3-9e05-fbed65bb9910
+SUMMARY:🔲 **Rechungen & Finanzdokumente**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:efc936ac-d095-42d1-8f20-18707e8096dc
+SUMMARY:🔲 **Zusätzliche Einkommensmöglichkeiten**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:88801cb6-99b1-4730-8e7d-2e14657967d8
+SUMMARY:🔲 **passive Einkommensmöglichkeiten**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9b66d84c-581e-4cf2-a277-99599bd30aad
+SUMMARY:🔲 **Monatliches Budget**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b7a950d0-88d5-45cb-8515-00caf5d45e9f
+SUMMARY:🔲 **Jährliches Budget**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:bc99e55d-533f-4e12-a163-3cfb7734de31
+SUMMARY:🔲 **Budget Lebenskategorien**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3f7b4dd6-103a-487c-99ed-7e9cfe6ccfbb
+SUMMARY:🔲 **Geld Tracker**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:32f4e7c7-4cfd-49b0-9649-e87968419013
+SUMMARY:🔲 **Automatisierte Investisionen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:60334269-28c4-4686-9b53-07d5dd48e132
+SUMMARY:🔲 **Automatisierte Sparroutinen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:18da17e9-dd39-48bf-8baf-ba76091eba38
+SUMMARY:🔲 **Finanzziele**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:db28a620-fa53-4df6-95aa-66f73a655968
+SUMMARY:🔲 **Investmentziele**: Diversifikation-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:07d7616f-e8d5-47f4-b8b3-b5dfa776b09e
+SUMMARY:🔲 **Finanzziele für große Anschaffungen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:54190c28-6cb6-4a97-8649-7c64f7e6c949
+SUMMARY:🔲 **Finanzplan**: die nächsten 10\, 20\, 30 Jahre
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3f98a19a-4d9b-41a6-966e-3aedce52c966
+SUMMARY:🔲 **Verischerungen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f2a5fa59-de64-4ab3-b411-0d3ed7148965
+SUMMARY:🔲 **Steuern**: Steueroptimierung und Steuererklärung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7f4e1ab4-796e-4d5e-b9bd-dbd5ae042ef8
+SUMMARY:🔲 **Zukunftsausgaben**: Dinge die ich inder Zukunft haben will/brauche-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:24bac124-32d0-4378-997b-0f413142bb38
+SUMMARY:🔲 **Wunschliste**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2baf3d79-7058-473e-b766-201c1c1de7d8
+SUMMARY:🔲 **Lebensqualitätsausgaben**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:08bf8547-2a85-4374-8f68-2806bf9ddbaf
+SUMMARY:🔲 **Schuldenplan**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c219c685-dacd-4b41-98c4-460be646f390
+SUMMARY:🔲 **Konsum und Shopping Managment**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b4e6ad91-349a-4a56-8e1d-6b25f3f39833
+SUMMARY:🔲 **Produktrecherche und Bewertung**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:98ad631f-7289-4efb-9141-6673d7cef981
+SUMMARY:🔲 **Einkaufsliste**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:18df7df2-940f-4f78-bcb8-5a0f8a4b9e2b
+SUMMARY:🔲 **Gesundheitsziele**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:db1dc806-f809-4479-96a0-85fce4f87f29
+SUMMARY:🔲 **Gewichts-&Kraftziele**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8222d226-e771-42fa-84d4-97a79664cccc
+SUMMARY:🔲 **Mentale Wellness-Ziele**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3ebf546e-1f2e-450e-a096-77dae50a76c1
+SUMMARY:🔲 **Regelmäßige Gesundheitschecks**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:60e8a705-ae28-421e-a4b5-edf025cdea40
+SUMMARY:🔲 **Arztbesuch Tracking**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e738b057-e122-42e2-810c-b69772c0a41e
+SUMMARY:🔲 **Impfungen**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:bc541be2-b409-482e-990c-b095dbee59f3
+SUMMARY:🔲 **Entspannende Aktivitäten für Auszeiten**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2b326ae9-a35a-48bb-8fe1-86d6fbb43699
+SUMMARY:🔲 **Planung und Organisation von Arztterminen**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d00b0c0f-af67-4b61-940c-c83bb0a4ca56
+SUMMARY:🔲 **gesunden Lebensgewohnheiten**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:68a3b9f3-4eb7-489c-affe-3fe40c94bede
+SUMMARY:🔲 **Vorbeugung von stressbedingten Erkrankungen**:chronische Müdigkeit\, Rückenschmerzen-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e3ac64ba-54ca-48da-822a-8b80f81a74f1
+SUMMARY:🔲 **Gesungheitsroutinen**:Körperhaltung\, Ernährung-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d0a0a6ba-6fd4-4020-a2d3-2ff264ae59e4
+SUMMARY:🔲 **Biohacking**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5587386d-f4d4-4f5b-aee4-2c958f059e12
+SUMMARY:🔲 **Maßnahmen für Wohlbefinden**:körperlich und geistig wohlbefinden
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:0161c352-b619-401c-9d25-bebe84058375
+SUMMARY:🔲 **Persönliche Zufriedenheit steigern**:positives Mindset
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:41fe8306-013e-416d-a970-a91cc7bd1ab7
+SUMMARY:🔲 Experimente zu Ernährung\, Schlaf\, Fitness und mentaler Leistungsfähigkeit
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:ab896347-c4f6-4287-b616-1021d63b5eaf
+SUMMARY:🔲 Dokumentation von Vitaldaten und Fortschritten
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d8c7fa05-532d-4917-9f77-365009b8c21f
+SUMMARY:🔲 Reviews von Wearables\, Apps und Gesundheitstrends
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4e86fedd-63a6-4f7a-b110-a0601280aebe
+SUMMARY:🔲 Ziele für körperliche & mentale Stärke
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:cce69d07-386b-48ce-bd4c-8f7b8db9f2cf
+SUMMARY:🔲 Experimente zur Optimierung deines Alltags (z. B. Schlaf\, Ernährung\, Zeitmanagement)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1d12b574-4ede-4a7f-acb0-5481ccc75ec7
+SUMMARY:🔲 Recherchen zu Naturtherapien\, Heilpflanzen und Kräuteranwendungen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4bc92b6c-43d4-45d9-9c3a-e29e2465883b
+SUMMARY:🔲 **Ernährungsplan**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:936b4a4e-32aa-40bc-a2c5-b6f0aed91b23
+SUMMARY:🔲 Wöchentliche oder monatliche Essenspläne
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e993bb2b-7164-48af-8472-dee32522eaa8
+SUMMARY:🔲 Lebensmittelbestellungen und -vorräte
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d4613e2f-b7bf-4510-9376-d4c88884ca8d
+SUMMARY:🔲 Kulinarische Erlebnisse: Lebensmittelmärkte\, Weinfeste\, Streetfood
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5fb3c2ef-6e28-478e-89d9-5ea420c6d82d
+SUMMARY:🔲 Rezepte für besondere Anlässe
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:53313f7f-15ea-4674-8998-02790034ee09
+SUMMARY:🔲 Einkaufslisten für gesunde Lebensmittel (z. B. Superfoods\, Nahrungsmittelergänzungen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2e9655e5-e424-4ed9-b69e-a56c1c5b0e7b
+SUMMARY:🔲 Vorratshaltung & Notfall-Lebensmittelplanung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8405383a-e0c5-4368-8195-05b00aef45e3
+SUMMARY:🔲 Vermeidung von Junk Food und ungesunden Snacks
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5843dcdf-df88-482f-8a73-039243060959
+SUMMARY:🔲 Mahlzeiten vorbereiten und Meal-Prep-Tipps
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:538dc143-0c9f-4627-bb8b-d8602c86102e
+SUMMARY:🔲 Rezepte für Frühstück\, Mittagessen und Abendessen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d7f9bfb2-113c-4d1b-961d-925c1955713f
+SUMMARY:🔲 Internationale Küche entdecken (z. B. spanische Paella\, indisches Curry)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:314ee3ef-ee48-4f97-b060-b035d97845d7
+SUMMARY:🔲 Rezeptbuch erstellen mit meinen liebsten Gerichten und Eigenkreationen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:0655d4ff-5b17-4419-9772-e1e88a890a7e
+SUMMARY:🔲 Themenabende (z. B. Italienisch\, Indisch\, Tapas\, japanisch\, afrikaisch)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:84b5475e-8231-4844-813b-ab5a25f426e8
+SUMMARY:🔲 Planung für Dinnerpartys und Festessen (z. B. Menü\, Zutaten\, Timing)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:99250dc9-6653-4ad4-ab07-0e2225a9d0e4
+SUMMARY:🔲 Suche nach Top-Restaurants und kulinarischen Hotspots weltweit
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e6f995de-ae4c-4b8a-91cd-13f0343aaa08
+SUMMARY:🔲 Rezepte für edle Mahlzeiten und festliche Menüs (z. B. Weihnachten\, Silvester)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a64863c3-7b52-415b-bae8-68c30d8354af
+SUMMARY:🔲 **Pläne für Gewichtsverlust & Muskelaufbau**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e6507d0a-1d36-4249-b776-7a8eb73c27c7
+SUMMARY:🔲 Einkaufslisten für pflanzliche Zutaten und superfood-reiche Ernährung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:461ce614-9276-4ce2-952d-dbe44d275245
+SUMMARY:🔲 **Ernährungsstrategie**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:69372d8a-175a-4479-82fc-1d6c006ac63d
+SUMMARY:🔲 **Wasser Tracking**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:674f85f0-6d05-430c-885e-b5018787444a
+SUMMARY:🔲 **Mahlzeitplanung**:wöchentlich-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5d03d4d5-5005-48c9-966f-c84e837ce8a7
+SUMMARY:🔲 **Benötigt Chalistenics Ausstattung**:Hanteln\, Springseil
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5c0edb20-2f89-4fda-a169-e4762b563767
+SUMMARY:🔲 **Sportziele diesen Monat**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:66e5c397-ec4a-4dfd-82db-a83834d61a38
+SUMMARY:🔲 **Langfristige Fitnessziele**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3f910a70-6682-478e-b5de-663993eee148
+SUMMARY:🔲 **Stressbewältigungstrategien**:-Meditation\, Atmung\, musik
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4a933860-4587-4b51-9529-d37dd8a91992
+SUMMARY:🔲 Selbstfürsorge-Checkliste für stressige Zeiten
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c6fdc35b-365e-4f5a-999c-6ca78c66c494
+SUMMARY:🔲 Selbstfürsorge-Tipps für stressige Tage (z. B. ein gutes Buch\, ein heißes Bad)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:74ed6a45-0dde-4ca5-8201-c80e19c86bb0
+SUMMARY:🔲 Burnout-Präventionstrategien
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f42ec9f9-7f51-4dfc-86ae-f89bb801b9a1
+SUMMARY:🔲 Liste von Orten für spirituelle Retreats oder Meditationsreisen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8c6aa07c-4349-407b-add8-a72a7efe2805
+SUMMARY:🔲 Methoden zur Verbesserung deiner mentalen und emotionalen Gesundheit
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5091c136-ba2e-43cf-beb0-270bbdb445f2
+SUMMARY:🔲 Wellness-Rituale für die Wochenenden (z. B. Spa-Tag\, Massage\, Aromatherapie)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1faec3b7-3e00-4787-9f4a-32e4e0d046b1
+SUMMARY:🔲 Wöchentliche Auszeiten für Entspannung (z. B. Spa-Besuche\, Massagen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1b1e7332-1e9c-41a2-a9e2-0ead1fcc9304
+SUMMARY:🔲 **Entspannungstechniken**:wie warmes bad\,Massage\, Spa\, Sauna Yoga\, Meditation\, Tai Chi  Freizeitaktivitäten (z. B. Naturspaziergänge\,)Progressive Muskelentspannung\, wellnessrituale
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8ed41347-b4cd-4a92-9637-3a3bdec2df1f
+SUMMARY:🔲 Jahreszeitliche Aktivitäten für Erholung (z. B. Herbstspaziergänge\, Sommerferien)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:99ba4c57-9b43-40b5-b88e-6915ce4f7899
+SUMMARY:🔲 Verabredungen für Me-Time (z. B. Kinoabende\, kreativ sein)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2888342c-d178-425d-8c55-93c1354829af
+SUMMARY:🔲 **Meditation**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:79928a39-31bb-4e14-bb58-e244ce84d965
+SUMMARY:🔲 Verschiedene Meditations- und Atemtechniken dokumentieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:87644445-28e5-401e-9b48-429743866dad
+SUMMARY:🔲 Meditationstechniken für Stressbewältigung und Achtsamkeit
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:6406bb75-8146-4f0d-8774-ff68fef54f71
+SUMMARY:🔲 Aufbau eines Entspannungs und Meditationsbereichs zu Hause
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3184c7d0-fcbf-48e3-90f9-1aeb62f2a992
+SUMMARY:🔲 Meditation in der Natur und achtsame Spaziergänge
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e7797d45-925a-4d03-ac3e-750460e2e477
+SUMMARY:🔲 **Schlafoptimierung & -gewohnheiten**:feste Schlafzeiten\, Schlafumgebung verbessern\, Einschlaftechniken-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:def4dfc0-9c4b-427b-8cdb-70365c8c7d95
+SUMMARY:🔲 **Mentale Morgen Routine**:geistige ruhe schaffen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:261a82a2-0c9f-4698-b4af-ad44a60fa700
+SUMMARY:🔲 **Mentale Abend Routine**:geistige ruhe schaffen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f9606c73-14e1-47e2-a1e9-6661789a76fe
+SUMMARY:🔲 **Schlaftracking**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e07491e8-5fb1-42bb-b545-6006e4de5542
+SUMMARY:🔲 Dokumentation von Selbstversuchen (z. B. veränderte Schlafrhythmen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1ca76c6f-0751-469c-926c-eff650591c45
+SUMMARY:🔲 Überwachung von Vitaldaten im Schlaf (mit Wearables)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:07297ff7-dc6e-456c-9653-1d4097a91cdb
+SUMMARY:🔲 Dokumentation der Schlafqualität\, Träume und Erholungsphasen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7504f025-9e54-469f-9c7a-ebb3812ee662
+SUMMARY:🔲 Analyse von Schlafmustern und Erholungsroutinen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:915ddc26-f1d0-4101-b31a-bf4fbd1464b1
+SUMMARY:🔲 Analyse der Schlafqualität\, -dauer und -zyklen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:80545ee8-59cf-401a-af94-2596d8f1e82c
+SUMMARY:🔲 Tipps und Techniken zur Verbesserung der Schlafhygiene
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:280efd2c-8278-448b-b26b-02a497f8530a
+SUMMARY:🔲 Strategien zur Optimierung von Erholungsphasen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e36d80dc-cca2-408b-89a5-f69d708dd4e1
+SUMMARY:🔲 Naturphilosophie und Spiritualität als Lebensweg (z. B. taoistische oder buddhistische Praktiken)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:47d12250-2e62-4d1b-a36b-b7ae214fa6fb
+SUMMARY:🔲 Schlafoptimierung: Wie du besser und erholsamer schläfst
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:640be9be-a6b9-498c-a8ac-f4633b981399
+SUMMARY:🔲 **Mentales Tagebuch**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:0aab87e3-b88d-45e7-aa32-2d14f86a4fd7
+SUMMARY:🔲 Zeit für dich selbst einplanen (z. B. Digital Detox\, Self-Care-Sonntage)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3c8b4d58-70be-49f5-ae21-08901df3237b
+SUMMARY:🔲 **Achtsamkeitsübungen**:Atemübungen\, Körperwahrnehmung-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b9d56b55-b5ae-418d-81cc-00299cf460a3
+SUMMARY:🔲 **Entspannende Musik**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2970fdbc-1cf5-42a9-8bac-5423f0ba8be5
+SUMMARY:🔲 **Rückzugsort**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8820cd84-dad1-46b5-bc4e-9730a9e507ad
+SUMMARY:🔲 Entwicklung von Routinen\, die mentale Stärke fördern
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9843cbac-c8a5-4e06-9c25-d0ac88262034
+SUMMARY:🔲 Plan für regelmäßige digitale Detox-Tage
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:facf4076-8396-473c-8e9c-15e6f603b43a
+SUMMARY:🔲 **Erholung**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4f0292b7-f906-4c31-b80e-728f5c4a7140
+SUMMARY:🔲 **Mentaltraining**:Übungen zur kognitiven Fitness (z. B. Gedächtnistraining\, Problemlösungsaufgaben)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9b939e3a-5dfe-4a22-90dc-c559839d5b70
+SUMMARY:🔲 Mindset-Training
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a4454cbe-6aec-40cb-b7e4-4b7956116341
+SUMMARY:🔲 positive Routinen entwickeln
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:131bfbf5-7b0a-4bd1-b5b5-c83e9ccb24d6
+SUMMARY:🔲 Strategien gegen negative Denkmuster (z. B. kognitive Umstrukturierung)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c2edc6be-469a-4971-87d8-a48932891f8d
+SUMMARY:🔲 Techniken zur Stärkung der Resilienz und des Selbstvertrauens
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:849f8129-8470-45b6-af06-e53f6b1107a3
+SUMMARY:🔲 Planung von Ruhe-Zeiten
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7987bb79-7029-4d1b-9d77-dc94de4d7f10
+SUMMARY:🔲 Regelmäßige Pausen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:6ee5a697-4961-4ab7-a5d7-c7ffe5f87c1c
+SUMMARY:🔲 Konzentrationsübungen und Techniken für mehr Fokus
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2ced5d4f-a518-4522-be42-3e8eec2f7cb1
+SUMMARY:🔲 Rückzugsorte für stressfreie Momente
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a9488c69-429a-4924-b329-538491d2d2d9
+SUMMARY:🔲 Minimierung von Ablenkungen und Umgang mit Prokrastination
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:044604ec-0df3-4810-8b40-1572a65ba1c4
+SUMMARY:🔲 Aktivitäten für regenerative Pausen (z. B. Spaziergänge\, Lesen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:32de1149-ea6c-4b51-b458-d69da3dae6a9
+SUMMARY:🔲 Yoga\, Tai Chi\, Meditationstechniken abseits des Mainstreams
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:73b52037-7870-4954-a3cc-f41cc1d1a018
+SUMMARY:🔲 **Traningspläne**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d8e7b339-2690-4571-8b30-9f73df0e8a1e
+SUMMARY:🔲 **Kraftpläne**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4f24d4c0-270b-4c1e-be47-ceee60515788
+SUMMARY:🔲 Persönlicher Fitnessplan für Krafttraining (z. B. Push\, Pull\, Legs und Abs)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:96c86aa8-8b53-457c-bd55-cf1762356528
+SUMMARY:🔲 **Flexibilitätspläne**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:925120cb-a3f6-477e-9dbf-fce2b48ec495
+SUMMARY:🔲 Persönlicher Fitnessplan für Krafttraining (z. B. Oberkörper\, Unterkörper)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:24f74a32-a609-45cb-939e-ddf67facd6f6
+SUMMARY:🔲 **Sportarten Tracking**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7bb41544-8db5-4036-a86f-9f0784717c23
+SUMMARY:🔲 **Fitness Tracking**:Analyse von Leistungen und Fortschritten
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:358815c5-8613-461b-ba7d-c646efd2e2e8
+SUMMARY:🔲 **Fitnessroutine**:-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a297c0ef-ca8b-4545-8f3b-c5b97260f1c1
+SUMMARY:🔲 Yogastile und -techniken\, die du ausprobieren möchtest (z. B. Hatha\, Vinyasa\, Kundalini)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d08ee4ef-fe4c-4170-a994-6d052e3a3114
+SUMMARY:🔲 Training für spezifische Ziele (z. B. Handstand\, Humanflag)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:23b4edc1-e8a7-46be-9256-75bbeb2f35cf
+SUMMARY:🔲 - 📝 Dehn- und Beweglichkeitsübungen für den Körper
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:fa4badaa-d58d-4873-b94e-bcb2d38a721b
+SUMMARY:🔲 - 📝 Dehn- und Beweglichkeitsübungen für den Körper
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:eb65f71d-cf3d-4957-a8de-72d0a795bfd5
+SUMMARY:🔲 **Sportarten probierliste**:(z. B. Klettern\, Surfen\, Bouldern)-
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a244f2b0-f9e6-4da6-9d06-257b8275bd73
+SUMMARY:🔲 **Outdoor Aktivitäten**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e1285432-18b3-406a-a406-83d5bbe64887
+SUMMARY:🔲 Ausrüstung und Vorbereitung für Wanderungen\, Trekking oder Camping
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3061fbc5-e9b1-48fa-b9f4-60f7cf7b3c22
+SUMMARY:🔲 Planung von Wandertouren und Bergbesteigungen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:ba650513-f35f-4c98-9791-bbbebfdc8fd4
+SUMMARY:🔲 Naturreservate\, Nationalparks und außergewöhnliche Naturerlebnisse
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:aca79d01-7511-40f2-9562-62aa348b3e93
+SUMMARY:🔲 Planung für Abenteuerreisen (z. B. Tauchen\, Safari\, Surfen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:40096abe-eec6-414e-ad9d-fa300150b142
+SUMMARY:🔲 Planung für extreme Outdoor-Abenteuer (z. B. Fallschirmspringen\, Rafting\, Ski\, Klettern\,)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:6563b708-899f-41cd-8636-35fa01d37004
+SUMMARY:🔲 **Wetter- und saisonabhängige Aktivitäten planen**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:38f28ded-2ea6-4f75-b0fa-d55d9369a031
+SUMMARY:🔲 Wellness-Retreats und Spa-Aufenthalte
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:15d31adb-c5d4-4da4-8c3c-dff5af3a6b0a
+SUMMARY:🔲 Aktivitäten und Sehenswürdigkeiten vor Ort (z. B. lokale Events\, Sehenswürdigkeiten)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c731762b-70c1-42ec-8c01-328802d56f19
+SUMMARY:🔲 Unterkünfte und Erlebnisplätze in der Natur (z. B. Baumhäuser\, Zeltlager)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:852c49a4-96f1-4eba-b861-7b6e9e84ad42
+SUMMARY:🔲 Reisetagebuch
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:989e3f66-85c0-4a22-a493-f58bae9c0cff
+SUMMARY:🔲 Sprachen beim Reisenn lernen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9e58749e-2dbb-4fa8-8340-ffeb1391b5aa
+SUMMARY:🔲 Geheimtipps für spontane Ausflüge in meiner Region
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3ff8eac1-18c5-4172-98bb-b8a9707da236
+SUMMARY:🔲 Welche Arten von Reisezielen interessieren dich? (Exotisch\, Abenteuer\, Kultur\, Natur\, spontane Ausflüge in der Nähe)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:cff9fe34-255e-4921-ad32-b4ccb94e5e83
+SUMMARY:🔲 Checkliste für Reisen (z. B. Visa\, Impfungen\, Reiseversicherungen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a7b84f94-266b-40bb-8353-bc24704e6061
+SUMMARY:🔲 Planung von Roadtrips und langen Autofahrten (z. B. Länder\, Sehenswürdigkeiten)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:00172ef2-47c9-489b-a0cf-cdf1dd34b9b3
+SUMMARY:🔲 Reise Dokumentationen erstellen (z. B.  Fotoalben)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:0f8cd94b-425c-493e-8488-9fdbd98a7f93
+SUMMARY:🔲 Routenplaner und Reisedokumentation (z. B. Google My Maps)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d00a80d4-de37-4247-8407-a8683140edd1
+SUMMARY:🔲 Budgetplanung für Reisen und besondere Abenteuer
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:867ba913-b439-4877-b676-9e1bd6a21fff
+SUMMARY:🔲 Budgetplanung für Kurzreisen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:0cc087c8-3f24-4e1e-b021-298f3f959d5c
+SUMMARY:🔲 Budgetplanung für Langzeitreisen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:642db65c-1a47-413a-85fb-bb9dfbd38466
+SUMMARY:🔲 Reiseziele
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:57787964-32cb-40df-b5ac-f5af4cecb927
+SUMMARY:🔲 Reiseziel liste (Länder\, Städte\, Unesco\, sehenswürdigkeiten)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e8968d59-bf5f-4b7e-bc4f-453d866e110d
+SUMMARY:🔲 Reiseziele mit speziellen Interessen (z. B. historische Städte\, Naturwunder)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:07cb0710-4e32-4930-a148-d2bb930443e8
+SUMMARY:🔲 Top-Urlaubsdestinationen für Abenteuer und Naturerlebnisse
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d481e694-f70c-4bef-ad3f-cbae792b2eca
+SUMMARY:🔲 Spontane Wochenendpläne und Ausflüge für Erholung und Entspannung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:54aaf985-850d-4429-82aa-add08daf110f
+SUMMARY:🔲 Packlisten für Wochenendausflüge
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:77be8cb2-b202-47d5-9fa6-02708f0d0b04
+SUMMARY:🔲 Kurzfristige Reiseziele für Wochenendausflüge (z. B. Städtereisen\, Naturerlebnisse)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:19edbd5c-9221-4a87-855b-55413497421f
+SUMMARY:🔲 Hidden Gems entdecken (z. B. weniger bekannte Reiseziele\, Geheimtipps)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:697a5b93-a6bb-4a7c-942e-e748c9f2b3d7
+SUMMARY:🔲 Planung von Roadtrips
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5c59fe95-7a55-41fc-ae39-48cae11327d2
+SUMMARY:🔲 Wochenendausflüge zu nahegelegenen Orten oder Naturparks
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:94e26356-e41d-4f52-a893-8d86a9e6b651
+SUMMARY:🔲 kulinarische Reisen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:516ad371-12b6-463a-a3b9-c2ac59b34c9e
+SUMMARY:🔲 Spartipps für günstige Flüge und Unterkünfte
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:54029cb4-d7b3-4f29-a032-96e18854f937
+SUMMARY:🔲 Orte für spirituelle und meditative Reisen (z. B. Zen-Retreats\, Yoga-Retreats)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2e2935f0-b576-46fc-8bae-ffd3d8dab1fe
+SUMMARY:🔲 Planung von „Bucket List“-Reisen (Reiseziele\, die du unbedingt sehen möchtest)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:602ddd02-931c-46c7-bc42-43c8ffbbf7f1
+SUMMARY:🔲 Reisen zu exotischen und abenteuerlichen Zielen (z. B. Wüsten\, Polarregionen\, Dschungel\, Machu Picchu\, Sahara\, Polarlichter)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8611d854-d121-4c33-80e6-0fffe9d519e4
+SUMMARY:🔲 Reisen in exotische Länder und neue Kontinente
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e9aed3ba-b202-4f7c-93ff-ecd9dbbfba51
+SUMMARY:🔲 Reisen mit bestimmten Zielen (z. B. Abenteuerreisen\, Kulturreisen\, Wellnessreisen)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8a8b8865-5e54-4fb5-815e-7c43eb7097d4
+SUMMARY:🔲 Langzeitreisen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:504c09bf-d8bf-4275-9632-a637062f150e
+SUMMARY:🔲 Planung von Rundreisen (z. B. durch Asien\, Südamerika\, Europa)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2cdb5d14-24dc-4bb8-901b-69646d7d2429
+SUMMARY:🔲 Langfristige Reiseziele nach Lebensphasen planen (z. B. große Abenteuer mit 30\, kleine Reisen nach der Familiengründung)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md":obsidian://open?vault=Brain-Notes&file=Lebensplan/Alleszusdammen/Plan%20f%C3%BCrs%20Leben.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4003e937-7de7-4cfc-b470-1fa28e9c046e
+SUMMARY:🔲 Geldverlauf (kriegen noch dashboards)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%93%93Bulletjournal/Plan.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%93%93Bulletjournal/Plan.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f7d7370a-451e-4aaf-a571-1a52e0c8087c
+SUMMARY:🔲 Ausgaben
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%93%93Bulletjournal/Plan.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%93%93Bulletjournal/Plan.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f3ed422b-9093-4f40-878a-f1843365f9e3
+SUMMARY:🔲 Einnahmen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%93%93Bulletjournal/Plan.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%93%93Bulletjournal/Plan.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:afc39fc8-2b4f-4553-84a1-c8de09231259
+SUMMARY:🔲 Aufgabe 1
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/Ticketkategorien/Genereller%20Ticket%20TPL%20DSN.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/Ticketkategorien/Genereller%20Ticket%20TPL%20DSN.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d88712f3-0b58-4bf0-acff-1aa8ce0a0f4d
+SUMMARY:🔲 Aufgabe 2
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/Ticketkategorien/Genereller%20Ticket%20TPL%20DSN.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/Ticketkategorien/Genereller%20Ticket%20TPL%20DSN.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d6588392-6faf-4ad6-854f-3a0c3b512685
+SUMMARY:🔲 Aufgabe 3
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/Ticketkategorien/Genereller%20Ticket%20TPL%20DSN.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/Ticketkategorien/Genereller%20Ticket%20TPL%20DSN.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b5f87aa9-8daa-4242-9951-d467e70d9321
+SUMMARY:🔲 Projekt 1
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a79af276-4ba7-4aef-ad5c-38097a5929ca
+SUMMARY:🔲 Projekt 2
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d73ac89f-a568-4422-a8ee-6a6e1f62fe5b
+SUMMARY:🔲 Aufgabe 1
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a3a473f7-171b-4ea1-abf4-9ce8a6d55d72
+SUMMARY:🔲 Aufgabe 2
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%92%A1Projekte/Obsidian/T.S/T.S%20TPL/T.S%20Plugins/T.S%20Folder%20Note.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3998aba4-f796-411d-ab71-357c7b19ac9f
+SUMMARY:🔲 Aufgabe 1
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:dcd90f5f-3afe-45ad-9851-5b832a582808
+SUMMARY:🔲 0-25%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:cf9788ab-1db0-4bf5-bb0a-75725f6cf833
+SUMMARY:🔲 26-50%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:14a6a936-8969-470f-a024-488a9ed0e518
+SUMMARY:🔲 51-75%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:baf320ec-8c34-43bb-8b90-608f43b7d326
+SUMMARY:🔲 76-100%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f92cfda6-f3d2-4edc-bab0-844e419f68cb
+SUMMARY:🔲 **Subticket 1**: Teile bestellen\,  due:: {{date:YYYY-MM-DD:+3d}}
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:855ad1e7-b7ea-468f-86cb-7ad4c8f5fce0
+SUMMARY:🔲 **Subticket 2**: Komponenten zusammenbauen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:fc449a0d-aeaf-4516-81e6-f2a43f7496b4
+SUMMARY:🔲 **Subticket 3**: Lackieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4a648373-0aaa-4629-ab36-7f010b5f33cc
+SUMMARY:🔲 Aufgabe 1
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a7b3b72b-a2f0-4d3b-a9ea-48777e95689c
+SUMMARY:🔲 Aufgabe 2
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:df552d55-2073-49aa-9643-e1b49a62b6e1
+SUMMARY:🔲 Aufgabe 3
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1de38e24-b0fa-42d9-9d52-f67d1d1d68d7
+SUMMARY:🔲 0-25%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:216a9471-a6a4-4dc9-a267-ec026ff02263
+SUMMARY:🔲 26-50%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:53cc3c5b-5201-4037-89d1-f375a6f6e7fa
+SUMMARY:🔲 51-75%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:20aac7b1-5986-4716-baa3-f4400bcb5b1d
+SUMMARY:🔲 76-100%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BTemplates/Ticket-Template%20Guide.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:accdcb72-1090-4109-9d15-2f9920118d60
+SUMMARY:🔲 First Task
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:fb212fa8-9cb1-4d3e-a0fa-441241acf419
+SUMMARY:🔲 Second Task
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4c06b2a6-8c44-4ae0-be71-6ab1a0fbda36
+SUMMARY:🔲 Third Task
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b3c31df1-8c04-4581-8547-3ab494f31feb
+SUMMARY:🔲 Indented Task
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f7b69fec-b05e-4e66-b463-ae7729bcef6b
+SUMMARY:🔲 Another Indented Task
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md":obsidian://open?vault=Brain-Notes&file=%F0%9F%8E%9B-Obsidian-/%F0%9F%8E%9BFunktionen/Notiz%20Funktionen/Markdown%20Syntax.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c062d562-2ad7-4678-858c-1b9eb0f64396
+SUMMARY:🔲 Neue Buisness-Email erstellen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/To-Do%2018.12.22.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/To-Do%2018.12.22.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1bd9fd0b-f365-42ac-8c7a-5bf0a4a80631
+SUMMARY:🔲 Kudrasov.max@gmail.com Aufräumen und sortieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/To-Do%2018.12.22.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/To-Do%2018.12.22.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:feb1304b-ba82-4c1e-9388-e998dbfdb4c7
+SUMMARY:🔲 3D Drucker
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:acfa620a-1fa2-4eab-abee-b0fe0d3bdf13
+SUMMARY:🔲 Mikroelektronik Schrabenzieher mit kompletten bit set
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:07c938e8-2828-4156-97b9-8a07a1cd8e1a
+SUMMARY:🔲 Wärmelichtkamarera
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:17ab6ab6-16a2-42b4-8c1b-f35120755cb0
+SUMMARY:🔲 Lötwerkzeug
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b849a00e-dbe4-4949-a582-c32df30936bd
+SUMMARY:🔲 Mikroscop
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:763690c0-49c6-46d3-a4e4-2930d6000ad4
+SUMMARY:🔲 Airbrush
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a290ddf6-aaed-43c5-a1f9-56e24998f4e4
+SUMMARY:🔲 Teleskop
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7462b9cd-7c9b-4f0a-9b74-816c2c750c14
+SUMMARY:🔲 Mikroskop für bakterien/pollen usw.
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md":obsidian://open?vault=Brain-Notes&file=To-Do/aussortieren/Need%20to%20Buy.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c6721a20-2522-4039-8836-e97adfb84914
+SUMMARY:🔲 Alle Inseln eintragen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:df2e2932-a0a2-4f34-a69f-58309114f496
+SUMMARY:🔲 Längengrad eintragen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a812c417-3eed-43bc-8d7b-e2a2be569819
+SUMMARY:🔲 Breitengrad eintragen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2d40fca8-5e7c-411c-b2e8-09bde4e86fca
+SUMMARY:🔲 Große gewässer eintragen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:be1cf2b6-0c89-4d47-9d6f-c0d5cd3c4962
+SUMMARY:🔲 Mythologie mit länder verbinden
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:eb617190-293b-4dd6-b21d-ff7376463755
+SUMMARY:🔲 alle länder mit kontiente verbinden
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:82a3de72-c7e9-41aa-b886-d52603d5e92f
+SUMMARY:🔲 länder mit ökosysteme verbinden
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=hda/wichtig.md":obsidian://open?vault=Brain-Notes&file=hda/wichtig.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:05e158ba-db61-4ca4-82c3-ad26f9681aaa
+SUMMARY:🔲 Machen das Fortschritt nicht im Ticketsystem angezeigt wird und schaffen das in speziellen (dataview wiedergabe)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e2b53a75-ecf3-4a33-8e5e-b7d626c01c3f
+SUMMARY:🔲 Liste mit allen Tickets sortiert nach id also nummer
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:358935d9-4d0b-4a2f-ad3f-97c4591580e9
+SUMMARY:🔲 Knopf zum kreieren von Tickets mit Template\;villeicht sogra template auswahl von verschiedenen je nach thema
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d2a36bde-803c-425a-a33e-979dc17be695
+SUMMARY:🔲 
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:dfd1507b-3e2a-480e-a194-42b7c186efe4
+SUMMARY:🔲 0-25%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8b21f66c-773e-4e5f-a461-8bd6874797be
+SUMMARY:🔲 26-50%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8ca47cf1-522e-455a-9f67-fdd663db7e5d
+SUMMARY:🔲 51-75%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:6816cabb-43e5-4b5c-b9a1-cfbd0b3d84ac
+SUMMARY:🔲 76-100%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Lebenverbesserung/Lebenorganisieren/%C2%B01%20Ticketsystemaufbauen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:fca083f5-f3b7-47e6-94e9-38dff2034a54
+SUMMARY:🔲 **Subticket 1**:
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:1c115507-da13-48cb-9deb-ac34fb7e1732
+SUMMARY:🔲 Aufgabe 1
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d3b9dc24-b1b1-45d9-a671-5512f94b1867
+SUMMARY:🔲 0-25%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e4a9a95d-1923-4142-9287-df27c09697f4
+SUMMARY:🔲 26-50%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:484c7e08-3f06-4d16-af0a-5d1055e8e0bb
+SUMMARY:🔲 51-75%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:67539b3a-b281-4506-83cd-c3105ddc33fa
+SUMMARY:🔲 76-100%
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/unsortierte%20ticktes/Geld%20verwaltung/%C2%B04%20W%C3%A4rmelichtkamarera%20kaufen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c7708c23-3523-48bc-bd73-a7813796f840
+SUMMARY:🔲 Box für alle 3d druck sachen (Kleinkram)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4baf4da4-e6bd-44b6-a0b6-b4dbe68e6578
+SUMMARY:🔲 planen mit expansions platz
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:53c833b0-c28d-4ddd-a99c-38194f8797b9
+SUMMARY:🔲 Spulen aufbewahrungs box
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5c433a6b-9f93-4e30-bf8f-0c62170e901a
+SUMMARY:🔲 planen für genug spulen und auch ihne spulen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:98f08ff4-1a9a-4619-8706-23b3a6455078
+SUMMARY:🔲 staubschutz prints
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b825f026-6ac8-479b-8d88-e4656c52416a
+SUMMARY:🔲 vorne knopf für an aus machen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:dd47f41d-93c8-45f5-aa14-bdaee4e7a49e
+SUMMARY:🔲 Ticket übersicheten rechachieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:16e43431-6b9c-47f9-bd52-e79cb35e6ba2
+SUMMARY:🔲 Fillament rest rechner. (also bei 1kg -231 g print -231g print bei 59% abgebrochen=-632\,71g)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3c390b38-f3ca-4566-8e5f-d683f53ddc2f
+SUMMARY:🔲 pflege tickets für mundgeruch fingernägel monobraue skincare zähneputzenohrenputzen füße saübern
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a3f221d1-797c-470c-90db-682fb73a0b03
+SUMMARY:🔲 Staubschutz obere Z-Achsen Kugellager mit druckdatei versehen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:92fe8b8b-efb0-4281-ac7f-9ee969ae3c06
+SUMMARY:🔲 Staubschutz untere Z-Achsen Kugellager mit druckdatei versehen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-011%20-%20Tickets%20die%20erstellt%20werden%20m%C3%BCssen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:496019d1-88bf-4d63-bf37-28ff53597243
+SUMMARY:🔲 Community Plugin Funktionen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:999fe183-8c5c-43ae-8707-a63e9c54e53e
+SUMMARY:🔲 Obsidian Plugin Funktionen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:df59143f-2840-4d9b-9d95-47e37c94305a
+SUMMARY:🔲 Obsidian Note Funktionen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c4c52cab-0b9b-4c12-9fb0-3d914a0fc61d
+SUMMARY:🔲 Grundlegende Text Formatierung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:10c62d4a-7fb6-4271-a6ed-2f116886540b
+SUMMARY:🔲 
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-010%20-%20Obsidian%20Dokumentation.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a73197df-a301-4fb0-91a0-02eb6b41684e
+SUMMARY:🔲 Klamotten
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:087bee70-ce1e-4774-92c0-e7c124e8c9db
+SUMMARY:🔲 Müll
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4871856c-b7c8-4a7e-9495-edc09b37ed85
+SUMMARY:🔲 Geschirr
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:334d9198-319e-48f1-8c3f-40f0e518e4f2
+SUMMARY:🔲 Schreibtisch aufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5ed17801-12f7-42c9-b623-acea32bfe96f
+SUMMARY:🔲 Wäsche aufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:faaab56d-e8d0-4d66-9c97-360899f5dcdf
+SUMMARY:🔲 Heizungsbereich aufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:22b1a92d-a7a2-44aa-81df-9f358b96dcb3
+SUMMARY:🔲 Bereich vorm bett aufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:58215fc0-dd70-4312-bb0e-b7fdc561ca33
+SUMMARY:🔲 Fernseher aufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7e7a4085-c716-4e3d-8878-4e05559ef93b
+SUMMARY:🔲 Schrankaufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:6aebd71a-4179-4074-ae4f-e5bdd738c2cc
+SUMMARY:🔲 Hängeschrank aufräumen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-005%20-%20Zimmer%20aufr%C3%A4umen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4c0554d4-8c73-4c31-8fbf-6f3e7102fff6
+SUMMARY:🔲 Ticketerstellungs skript
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c04a0c67-78c1-4664-8de1-327ad0aa1c3d
+SUMMARY:🔲 Problem lösen bei dem manche Templates bewirken\, dass beim erstellen von dem Ticket nix passiert
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c16fb8fa-32f3-4c85-bca5-4fa3fa4a56a0
+SUMMARY:🔲 Script Ticket propertie ändern zu Ticketname
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2426a99f-471a-4dd2-9481-a36cfc8a5d06
+SUMMARY:🔲 Script erweiterung
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:57a3da48-fe56-4e35-a125-8d4d6003ea61
+SUMMARY:🔲 Weiter Properties einfügen einfügen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a884371f-0f2e-4db6-b64f-22705209ebd2
+SUMMARY:🔲 status -> aktive/inaktive -> aktive bedeutet das angezeigt wird inaktive das es nicht angezeigt wird(jedoch kann es wieder durch Ticketbearbeitungsdatum aktiviert werden)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:65f9c277-5130-46f6-97c5-f9f6ca56453c
+SUMMARY:🔲 Bearbeitungsstatus
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8420d8ac-756a-4fcb-8dec-ac887222f112
+SUMMARY:🔲 TicketbearbeitungsDatum -> wann das ticket angezeigt wird zum bearbeiten (kann verschoben werden durch Postpone wodurch das ticket inaktive wird und es an dem neuem datum aktiviert wird(Postpone darf keine Daten der vergangenheit nutzen))
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3cc9eb3c-533c-44dd-84cb-ad8d947b6482
+SUMMARY:🔲 auswahl aus einem kalender
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:051fd233-f9d9-4eb4-bd9b-5fb5607c9452
+SUMMARY:🔲 ErstellungsDatum -> wann wurde das ticket erstellt
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:8382ade6-b9ae-44ef-b1f1-d3d7429942e5
+SUMMARY:🔲 auswahl aus einem kalender
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:33f5d072-08cb-4ca5-82f8-575828cb6381
+SUMMARY:🔲 ZielDatum -> bis wann ich es machen will
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a0ef0641-2609-4eb2-9c06-6302f36f742b
+SUMMARY:🔲 auswahl aus einem kalender
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:32897d7e-7d97-4f64-a6aa-fe887d70aa31
+SUMMARY:🔲 LetztesDatum -> bis wann es gemacht werden muss
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:70e14ab6-4e3b-42dc-9412-c8b17925eb21
+SUMMARY:🔲 auswahl aus einem kalender
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:14600d66-c938-4f95-a825-91d17ade0993
+SUMMARY:🔲 Nebenkategorie
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2b839d3f-1c3e-41e1-be65-7ecc5a64b2fc
+SUMMARY:🔲 Bearbeitungsgruppe
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e66ff2ae-8c59-4baa-90c2-b322292716ea
+SUMMARY:🔲 Kategroien aus eine liste auswählen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:ce106727-a477-4918-8ebb-612baff2f197
+SUMMARY:🔲 Nebenkategroien aus eine liste auswählen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f0dc173a-8bf4-48c5-b9ac-dc3e0c502c2a
+SUMMARY:🔲 Templates erstellen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d53aa2e8-0523-4f58-ae73-05d88f8a1a1d
+SUMMARY:🔲 Dokumentations bereich
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2ca1c4dc-c7a7-4f49-a88a-e74ed12619f5
+SUMMARY:🔲 Workflow
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c12f6f28-d4cb-4d33-a736-c14ad4685a40
+SUMMARY:🔲 verschieden Workflows für verscheidenen Kategorien
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:43cd04e0-2e98-4f3d-add2-8e1e7c3ed9ac
+SUMMARY:🔲 Dashboards erstellen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4fdf2ea3-7ade-44fd-98f0-ee4041d272dc
+SUMMARY:🔲 skripte
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:64fa1e15-a69d-4069-8f1a-502ee94a8b4a
+SUMMARY:🔲 Automatische tickets für wiederholenede tickets
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2694f1b1-f488-4f02-a260-ae5b7fd98285
+SUMMARY:🔲 Steuern
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2a798c5c-9b4f-4ba4-a554-c9e8541801f3
+SUMMARY:🔲 Bettwäsche
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:ede2a5c9-d57e-4f6f-8ec8-422348b30836
+SUMMARY:🔲 Haareschneiden
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:874906d9-218e-4d81-a6eb-c7ecdfa7ffed
+SUMMARY:🔲 PlanungsTag
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:f4dd85df-8314-4444-8db7-c2ca9fb9d818
+SUMMARY:🔲 Postpone skript
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3f4a4fa4-7280-480f-aee3-daded80a7454
+SUMMARY:🔲 Reopen tiket skript
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2d1bb1ec-a308-41f8-b3e6-4ea357aca571
+SUMMARY:🔲 start at obsidian start
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:978b0116-4e5e-4ff2-9479-15baa162373e
+SUMMARY:🔲 Uses other skript to see what skript is postponed (uses postpone skript)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:119b6026-e5ec-48e7-b45f-3a1c67b1931f
+SUMMARY:🔲 
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-006%20-%20Ticketsystem%20erstellen.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:2c4ce788-4fff-47d8-9d37-c578e457e9e5
+SUMMARY:🔲 d
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4def4a7d-8aca-42c2-a459-4c696ee8469e
+SUMMARY:🔲 81/82 Playlists aussortiernen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:7cc56741-9e42-41dd-8c51-5f0672a5978c
+SUMMARY:🔲 Playlists zum behalten (müssen aber trozdem nachgeprüft uns aussortiert werden)
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:84bc6e30-9780-4954-a0e3-8978a2f5a210
+SUMMARY:🔲 ?3D Druck
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:e2d32b3b-4627-4924-87d9-331a377f920c
+SUMMARY:🔲 ?Anime/Manga
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:c10d9314-85fd-4636-9f38-2b0b1901c5a7
+SUMMARY:🔲 ?Aussehen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3452fa83-1cbe-4d18-8c8b-22932784fa91
+SUMMARY:🔲 ?Guitare
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:81f53b23-dd12-4664-9f8c-c959dc3cc812
+SUMMARY:🔲 ?Essen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:af461aa4-0139-4606-b59d-e408c66c361a
+SUMMARY:🔲 ?Haus/Wohnung/Zimmer
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:3819adee-d689-4550-bb92-c575e7e14441
+SUMMARY:🔲 ?Kunst
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:4e544a49-6d20-4c41-b9fa-c4995a586065
+SUMMARY:🔲 ?Lebenorganisieren
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:5875c5e1-8817-47c9-ad9e-dcb6f806d65c
+SUMMARY:🔲 ?Machen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:43d6dcf8-5f9e-4fe6-8be2-166daf12038e
+SUMMARY:🔲 ?Spiele
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9ec2f618-66f1-4888-ab0b-4f48b35acb86
+SUMMARY:🔲 ?Minecraft
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:9a14787f-ace8-4c7c-967a-f449cfcebe6a
+SUMMARY:🔲 ?Ark
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:23cda5a5-246e-4137-a252-e42ed15d488f
+SUMMARY:🔲 ?Skyrim
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:d9aa6aa3-7e50-4f72-af93-1c0e0213993e
+SUMMARY:🔲 ?Musik
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:61614fc9-53cb-4bda-a9b4-2be41f1b8f90
+SUMMARY:🔲 ?WierdeMusik
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:b80a4281-ef4e-4533-95f4-98eaab3b2258
+SUMMARY:🔲 ?Pflanzen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a3e3e31a-a50a-4b4f-9c8b-8b90a23f1fef
+SUMMARY:🔲 ?Puzzle
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:70555d5a-14ff-489c-bad4-6af09296e4d5
+SUMMARY:🔲 ?Reisen
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:add1308d-4f76-480c-bb24-a039940b98c3
+SUMMARY:🔲 ?Religion
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:a9237dab-c9b0-4c7f-ad00-fdebd4056b2f
+SUMMARY:🔲 ?Sport
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:57fd86ad-fd3b-4206-84e2-cc353545c1fd
+SUMMARY:🔲 ?Wissenschaft
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+BEGIN:VTODO
+UID:558e97ac-132e-4df9-9b3d-fe4a60abec86
+SUMMARY:🔲 ?Windows&Linux&Desktop
+LOCATION:ALTREP="obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md":obsidian://open?vault=Brain-Notes&file=-Ticketsystem/Tickets/T-004%20-%20Youtube%20Playlists%20sortieren.md
+STATUS:NEEDS-ACTION
+END:VTODO
+END:VCALENDAR

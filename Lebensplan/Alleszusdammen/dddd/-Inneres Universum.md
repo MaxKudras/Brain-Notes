@@ -1,0 +1,1 @@
+**Zufallsprinzip im Alltag** – Entscheidungen durch Würfel oder Algorithmen steuern.
