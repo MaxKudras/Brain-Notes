@@ -2,9 +2,16 @@
 ## Große Vision
 ### Vision der Lebensbereiche
 ### Zukunftsvision
+Skizziere deine Wunschwelt in 10/20/35/50 Jahren
 ## Ziele
+### Zielsetzungsstrategie
+#### Ziele in kleiner Meilensteine unterteilen
 ### Ziele der Lebensbereiche
 #### Karriere Ziele
+### Zeitliche Ziele
+#### 5 Jahres Ziele
+#### 10 Jahres Ziele
+#### 20 Jahres Ziele
 ### Bucketliste
 ### Wunschziele
 ### Mielensteine
@@ -19,9 +26,11 @@
 #### Persönlichkeitsanalyse
 #### Identitätsfindung (langfristige Entwicklung)
 ### Lebensphilosophie & Sinn
+#### Meine Lebensphilosophie
+#### Mein Sinn des Lebens
 # Zeitnavigator
 ## Zeitmanagement 
-### Zeitmanagements Strategien 
+### Zeitmanagements Strategien t
 #### Arbeitsabläufen Optimieren
 #### Fokustage
 #### Pflegetage
@@ -32,6 +41,8 @@
 ### Fokus & Priorisierung
 #### Deepwork
 ### Produktivität
+#### Lebensframework Review
+Lege einen festen Zeitpunkt (wöchentlich/monatlich) fest, an dem du dein gesamtes Lebensframework reflektierst und anpasst.
 ### Kalender
 #### Sozial Kalender
 ##### Geburtstage
@@ -42,10 +53,17 @@
 ###### Geplante Familienaktivitäten 
 ###### Geplante Aktivitäten mit Freunden
 ###### Geplante Aktivitäten mit Partner
+### Erinnerungen
+#### Steuererklärungserinnerung
+#### Amtserinnerung
+#### Dokumenten Fristen
 
 ## Planung & Review
 ### Tagesjournal
 #### Tagesreflexion
+#### Tagesroutinen
+##### Morgenroutine
+##### Abendroutine
 #### Tages Prioritäten
 ##### Top 3 Prioritäten
 ### Wöchentliche Planung
@@ -53,12 +71,29 @@
 #### Wochenrückblick (Erfolge, Herausforderungen)
 #### Wochenendsplanung
 #### Anpassung von Gewohnheiten
+#### Ticketreview
 ### Monatliche Planung
-#### Monatsziele definieren
-#### Monatsrückblick (Fortschritt, Learnings, Routinen)
+#### Monatsziele
+##### Monatsziele definieren
+##### Monatsziele anpassen
+#### Monatsrückblick 
+##### Fortschrittrückblicke
+##### Learningsrückblicke
+##### Routinenrückblicke
+##### Sportrückblicke
+#### Monatsprojekte
+##### Monatsprojekte anpassen
+### Quartal Planung
 ### Jährliche Planung
-#### Jahresziele überprüfen und anpassen  
-#### Jahresrückblick (Erfolge, Rückschläge, neue Visionen)
+#### Jahresziele
+##### Jahresziele definieren
+##### Jahressziele anpassen
+#### Jahresrückblick 
+##### Erfolgsrückblicke
+##### Rückschläge
+##### Ziel Fortschritt
+##### Lessons Learned
+#### Jahresvision anpassen
 ### Lebensrückblick
 ### Reflexionen
 #### Routinen Reflexion
@@ -69,19 +104,29 @@
 #### Pflegeroutinen Tracker
 ##### Haarroutine Tracker
 ##### Hautpflegeroutine Tracker
-#### Abendroutine Tracker
-#### Morgenroutine Tracker
-#### Sportroutine Tracker
-#### Essensroutine Tracker
-#### Lernroutine Tracker
-#### Meditationsroutine Tracker
-#### Renigungsroutinen Tracker
+#### Kernroutinen
+##### Abendroutine Tracker
+##### Morgenroutine Tracker
+#### Gesundheitsroutinen
+##### Sportroutine Tracker
+##### Essensroutine Tracker
+##### Meditationsroutine Tracker
+##### Schlaf Tracker
+#### Produktivitätsroutinen
+##### Lernroutine Tracker
+##### Renigungsroutinen Tracker
+#### Kreativitätsroutinen
 ### Gewohnheiten
 #### Nachhaltige Gewohnheiten
 ##### Müllvermeidung
 ###### Mülltrennung
 ###### Plastikverbrauch minimieren
 ##### Ökologischen Fußabdruck verringern
+#### Trigger
+##### Schlechte Gewohnheitstrigger
+#### Micro Gewohnheiten
+#### Schlechte Gewohnheiten vermeinden
+#### Gute Gewohnheiten aufbauen
 # Alltagsmanagement
 ## Wohnen
 ### Haushalt
@@ -97,8 +142,13 @@
 ##### Nachhaltigkeit
 ##### Reparatur
 ###### Haushaltsreparaturen
+###### Haushaltswartungspläne
+##### Einkaufsliste
 #### Putzpläne
-##### Renigungsroutinen 
+##### Reinigungsroutinen 
+##### Reinigungscheckliste 
+##### Organisationscheckliste 
+##### Frühjahrsputz
 ### Inventur
 #### Haushaltsvorrat
 ##### Lebensmittelvorrat 
@@ -108,17 +158,38 @@
 #### Smart Home
 ##### Smarte Geräte
 ##### Heimautomatisierung
+##### Stromsparautomatisierung
 #### Kleidung
 #### Besitzverwaltung
 ##### Besitz Optimierung
 #### Weitere Wertgegenstände über 10 €
 ### Innenarchitektur
 #### Wohnung einrichten
-##### Mödel ideen
+##### Einrichtungsideen 
+###### Möbelideen
+###### Pflanzenideen
+##### Möbelarrangements
+###### Feng Shui-Prinzipien
 ##### Smart Home ideen
 ###### Wohnungsautomatisierungen 
-##### Zimmer Farben
+##### Zimmerfarben
 ##### Wohnungsdekorationen 
+###### Winter Deko
+###### Frühlings Deko
+###### Herbst Deko
+###### Sommer Deko
+###### Weinachts Deko
+###### Neujahr Deko
+###### Halloween Deko
+###### Chinesisches Neujahr Deko
+##### Raumaufteilung
+###### Maximale Funktionalität
+###### Rückzugsortes
+###### Fitnessbereich
+###### Hobbybereich
+###### Home Office Büro
+##### Renovierung
+##### Ideales Zuhause
 #### Organisation des Wohnraums
 ##### Optimale Ordnungssysteme
 ##### Produktiver Homeoffice Arbeitsplatz
@@ -145,23 +216,50 @@
 ### Recht
 #### Arbeitsgesetze
 #### Mietrecht
+#### Checklisten für behördliche Angelegenheiten
 ### Dokumente
 #### Verträge
 ##### Arbeitsvertrag
 ##### Versicherung
+###### Krankenversicherungen 
 #### Rechtliche Dokumente
 ##### Willenserklärung 
+##### Steuerunterlagen
+#### Allgemeine Dokumente
+##### Zeugnisse
+##### Ausbildungsnachweis
+##### Zertifikate
+#### Rechnungen
 #### Digitale Backups
+#### Physische Backups
+#### Dokumentereview
 ### Sicherheit
 #### Notfallplan
-##### Jobverlust
+##### Notfallkontakte
+###### Anwalt
+###### Notare
+###### Arzt
+###### Behörde
+###### Versicherung
+##### Finanzielle Notlage
+###### Jobverlust
 ##### Trennung
 ##### Krankheit
+##### Katastrophen
+###### Stromausfall
+###### Feueralarm
+#### Vorsorgemaßnahmen
+##### Vorsorgemaßnahmen Review
 #### Sicherheitsstrategien
+##### Finanzielle Sicherheitsstrategien
 #### Erste Hilfe
-#### Accountmanagement
 #### Cybersicherheit & Datenschutz
 ##### Backupmanagment
+##### Accountmanagement
+##### Digitale Sicherheitschecks
+###### VPN
+###### Werbeblocker
+###### Trackingblocker 
 # Vitaloase (Gesundheit)
 ## Allgemeine Gesundheit 
 ### Wohlbefinden
@@ -186,9 +284,11 @@
 #### Ernährungs Tracker
 #### Superfoods
 #### Must have Lebensmittel
+#### Wasser Tracker
 ### Ernährungspläne
 #### Biohacking-Diäten
 #### Mealpreaping
+#### Allgemeiner Ernährungsplan
 ### Supplements
 #### Creatin
 #### Omega 3
@@ -210,6 +310,9 @@
 ### Atmung
 ### Fitness
 #### Fitness
+##### Trainingsplan
+###### Kraftsportplan
+###### Flexibilitätsplan
 ##### Fitnessroutine
 ###### Maximaler Fitness Erfolg in minimaler Zeit
 ##### Kraftsport (Link mit Hobbys)
@@ -229,12 +332,16 @@
 #### Kognitive Fähigkeiten verbessern
 ### Stressbewältigung
 #### Schnelle Stressbewältigungsstrategien
+#### Atmung gegen Stressbewältigung
+#### Stressbewältigende Musik
 ### Emotionen
 ### Mentale Energie
 ### Schlaf
 ##### Erholung steigern
 ##### Schlaftracking
 ##### Schlafhygiene
+##### Schlafroutine
+### Burnout Prävention
 # Inneres Universum (Persönliche entwicklung)
 ## Erfolge dokumentieren
 ## Rückblicke
@@ -265,6 +372,21 @@
 #### Charisma verbessern
 ### Logik & kritisches Denken verbessern
 ## Denkweisen
+### Zufallsprinzip im Alltag
+Entscheidungen durch Würfel oder Algorithmen steuern.
+### No-Excuse-Mindset 
+Nie wieder faul oder unmotiviert sein
+### Negative Gedankenmuster umwandeln
+### First Principles Thinking 
+Probleme auf ihre Grundbausteine zerlegen
+### Second-Order Thinking 
+Über die langfristigen Konsequenzen deiner Entscheidungen nachdenken
+### Survivorship Bias 
+Warum wir oft falsche Schlussfolgerungen ziehen
+### Denken in Wahrscheinlichkeiten 
+Logische Entscheidungen auf Basis von Statistik
+### Reverse Engineering von Erfolg 
+Erfolgreiche Menschen analysieren und nachmachen
 ## Stärken & Schwächen
 ### Stärken
 ### Schwächen
@@ -302,15 +424,27 @@
 #### Schulden die ich bekomme
 #### Abos
 ##### Prime
+#### Budgetplanung
+##### Monatliches Budget
+##### Jährliches Budget
+##### Reise Budget
+###### Kurzreise Budget
+###### Weltreise Budget
+###### Langzeitreise Budget
+##### Projekt Budget
 ### Haushaltsplan
 #### Einnahmen
 #### Ausgaben
+#### Ersparnisse
 ### Nebeneinkommen
 #### Passive Nebeneinkommen
 #### Nebenjob
 #### Geldverdiene Projekte
+#### Online Business ideen
+#### Produkt- und Dienstleistungsideen
 ### Vermögensaufbau
 #### Finanzstrategien
+#### Finanzziele
 #### Investition
 ##### Investitionsstrategien
 ##### Aktien
@@ -319,14 +453,16 @@
 #### Sparstrategie
 ##### Einsparpotenziale
 ##### Langfristige Sparstrategien 
+##### Sparziele
 #### Altersvorsorge & Notfallfond
 ##### Rente
+##### Rücklagen
 #### Ausgabenmanagement
 ### Steuern & Versicherungen
 #### Steuerplanung 
 ##### Steuererklärung
 ##### Steueroptimierung
-#### Versicherungen 
+#### Versicherungskosten 
 ## Karriere
 ### Berufliche Entwicklung
 #### Ausbildung
@@ -341,10 +477,12 @@
 ##### Unersetzliche Fähigkeiten aufbauen
 #### Weiterbildung
 ##### Weiterbildungsliste
+##### Kurse und Programme
 ### Arbeitsplatz
 Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ### Karriereplanung
 #### LinkedIn
+#### Perfekte Bewerbung
 #### Gehaltsvorstellung
 #### Homeoffice
 ##### Produktives Arbeiten im Homeoffice
@@ -355,9 +493,19 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 #### effizientes Arbeiten
 #### Zeitmanagement
 #### Persönliche Performance Reviews
+####
 # Wissenskompendium (Bildung)
 ## Bildungsstrategie
+### Lernziele in Unterkategorien einteilen
+z. B. Programmieren, Fremdsprachen, Chemie, Kampftsport, 
+### Bildung Tracker
+### Wissensdatenbank optimieren  
+Richte eine zentrale Wissensdatenbank ein, in der du alle Erkenntnisse, Artikel und Zusammenfassungen (mit Quellen) speicherst.
+### Lernpläne adaptiv gestalten
+Mache deine Lernpläne dynamisch, sodass du sie je nach Fortschritt regelmäßig anpassen und reflektieren kannst (inklusive Erfolgsmessung).
 ## Lernplan
+### Lernziele
+### Geplante Lerninhalte
 ## Skills
 ### Fallen lernen
 ### Speed reading
@@ -371,6 +519,7 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ### Cloud und Virtualisierung Wissen
 ### IT Sicherheit Wissen
 #### Physische Sicherheit
+#### Cyber Security Wissen
 ### Technologie Trends
 ### KI wissen
 ### Automatisierung Wissen
@@ -399,7 +548,9 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ### Reiseziele
 #### Sprachreisen
 #### Langfristige Reiseziele
+##### Kontinent Rundreisen
 #### Außergewöhnliche Erlebnisse
+##### Hidden Gems
 #### Wunschorte
 ##### Wüsten
 ##### Arktis
@@ -407,6 +558,13 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ##### Pyramiden von Giza
 ##### Polarlichter
 ##### Schloss Neuschwanstein
+##### Safari
+##### Machu Picchu
+#### Länder Reiseziele
+##### Australien
+##### USA
+##### Japan
+##### Brasilien
 ### Reisen
 #### Langfristige Reisen
 #### Geplante Reisen
@@ -418,6 +576,8 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 #### Kurz Reisen
 ##### Waldwanderung
 ##### Seeausflug
+##### Stadtausflüge
+##### Roadtrips
 ### Abenteuer
 #### Extremsport
 ## Projekte
@@ -484,15 +644,34 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ### Strukturänderungen
 ### Neue Features im System
 ### Systemreflexionen
+regelmäßige Systemreviews ein, in denen du überlegst, was gut funktioniert und was optimiert werden kann.
 ### Backup-Strategien
 ### Templates Management
+Entwickle Vorlagen für neue Projekte, Systemaufgaben oder To-Do-Listen, die du über Skripte oder Automatisierungen immer wieder neu einsetzen kannst.
 ###  Bets Practise Workflows
 ### Lebensframework Vor und Nachteile
-##  Lebensframeworksysteme 
+### Systemchange Log
+Füge ein Protokoll hinzu, in dem du alle Änderungen, Erweiterungen und Anpassungen dokumentierst.
+### Systemlogbuch
+Integriere ein Logbuch, in dem du täglich oder wöchentlich Notizen machst, welche Systemverbesserungen du umgesetzt hast und welche noch offen sind.
+##  Lebensframework Systeme 
+### Lebensframework Systemlegende
+#### Taglegende
+#### Farblegende
+#### Emoji Legende
+#### Template Legende
+#### Skriptlegenden
+#### Programmlegende
+##### Obsidian Legende
+###### Obsidian Plugin Legende
 ### Lebensplan
+#### Tags
+Nutze Tags systematisch, um Inhalte thematisch zu verknüpfen (z. B. #Gesundheit, #Priorität, #Erfolg).
 ### Ticketsystem
 #### Ticketsystem Skripte
 #### Ticketsystem Templates
+##### Visuelle Elemente einbinden
+Nutze Diagramme, Zeitachsen und Mindmaps, um komplexe Zusammenhänge visuell darzustellen.
 #### Tickets
 ##### Kategorien
 ##### Subkategorien
@@ -500,11 +679,34 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ##### Dringlichkeiten
 ##### Eisenhowermatrix (Prioritäten & Dringlichkeiten)
 ##### Status
+##### Interaktive Checklisten
+Setze dynamische Checklisten ein, mit denen du tägliche, wöchentliche und monatliche Aufgaben automatisch abhakst und als Dashboard darstellst.
+##### Tags
+Nutze Tags systematisch, um Inhalte thematisch zu verknüpfen (z. B. #Gesundheit, #Priorität, #Erfolg).
 ### Bulletjournal
+#### Interaktive Checklisten
+Setze dynamische Checklisten ein, mit denen du tägliche, wöchentliche und monatliche Aufgaben automatisch abhakst und als Dashboard darstellst.
+#### Visuelle Elemente einbinden
+Nutze Diagramme, Zeitachsen und Mindmaps, um komplexe Zusammenhänge visuell darzustellen.
 ### Wissensdatenbank
+#### Visuelle Elemente einbinden
+Nutze Diagramme, Zeitachsen und Mindmaps, um komplexe Zusammenhänge visuell darzustellen.
+#### Tags
+Nutze Tags systematisch, um Inhalte thematisch zu verknüpfen (z. B. #Gesundheit, #Priorität, #Erfolg).
+#### Verlinkungen konsequent nutzen
+Reduziere Wiederholungen, indem du zentrale Themen (wie etwa Rückenschmerzen) nur einmal erfasst und in anderen Bereichen via Links referenzierst.
 ### To Do Listen (Aufgaben die man am Tag oder Woche machen muss/soll)
 #### Eisenhowermatrix
-### Lebensframework Dashboard (Links zu allem wichtigen im Lebensframework)
+#### Interaktive Checklisten
+Setze dynamische Checklisten ein, mit denen du tägliche, wöchentliche und monatliche Aufgaben automatisch abhakst und als Dashboard darstellst.
+#### Verlinkungen konsequent nutzen
+Reduziere Wiederholungen, indem du zentrale Themen (wie etwa Rückenschmerzen) nur einmal erfasst und in anderen Bereichen via Links referenzierst.
+### Lebensframework Dashboard 
+#### Visuelle Elemente einbinden
+Nutze Diagramme, Zeitachsen und Mindmaps, um komplexe Zusammenhänge visuell darzustellen.
+#### Cross-Referenzierung optimieren
+Reduziere Wiederholungen, indem du zentrale Themen (wie etwa Rückenschmerzen) nur einmal erfasst und in anderen Bereichen via Links referenzierst.(Links zu allem wichtigen im Lebensframework)
+Verlinke verwandte Inhalte (z. B. aus „Persönliche Entwicklung“ und „Kognition & Selbstführung“) stärker, sodass du sie jederzeit im Kontext siehst.
 ### Kalender
 #### Erinnerungen
 ### Webmedienspeicher
@@ -513,12 +715,19 @@ Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 #### Pintnerest speicher
 #### Spotify Musik speicher
 #### Website Daten speicher
+### Finanz Dashboard
+#### Einnahmen & Ausgaben
+#### Investitionen
+#### Notfallreserven
 
 ## Automatisierungen & digitale Tools
 ### Finanzielle Automatisierung
 #### Notfallfonds Automatisierung
 #### Investition Automatisierung
 ## Systemplan
+### Regelmäßige System Updates
+### Windows 11 PC
+#### Windows 11 Leistungsoptimierung
 ## Programme
 ### Obsidian
 ### Spotify

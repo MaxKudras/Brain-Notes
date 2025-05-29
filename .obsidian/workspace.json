@@ -14,31 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "-Ticketsystem/Tickets/T-015 - Lebensplan zusammenschreiben.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "T-015 - Lebensplan zusammenschreiben"
-            }
-          },
-          {
-            "id": "33de8f07bd432e3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lebensplan/Alleszusdammen/Lebenskategorien liste prototyp.md",
+                "file": "Lebensplan/Alleszusdammen/dddd/-Vermögens Domäne.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -53,7 +29,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Lebenskategorien liste prototyp"
+              "title": "-Vermögens Domäne"
             }
           },
           {
@@ -62,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📒Wisften(👨‍🔬️-💵-🔢)/👨‍🔬️Naturwissenschaften (⚕-🌐-🦠-🧪-🧲)/🧪Chemie/AC/AC.md",
+                "file": "Lebensplan/Alleszusdammen/Plan fürs Leben.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -77,59 +53,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "AC"
-            }
-          },
-          {
-            "id": "597f84d2dea5f3a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lebensplan/Alleszusdammen/dddd/-Inneres Universum.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "-Inneres Universum"
-            }
-          },
-          {
-            "id": "5434e53a34f82f86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lebensplan/Alleszusdammen/dddd/-Alltagsmanagement.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "-Alltagsmanagement"
+              "title": "Plan fürs Leben"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "ebcf7197fc20ce21",
@@ -257,12 +184,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "📒Wisften(👨‍🔬️-💵-🔢)/👨‍🔬️Naturwissenschaften (⚕-🌐-🦠-🧪-🧲)/🧪Chemie/AC/AC.md",
+                "file": "Lebensplan/Gesamter Lebensplan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from AC"
+              "title": "Outgoing links from Gesamter Lebensplan"
             }
           }
         ],
@@ -358,47 +285,47 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "413fb37392e1b459",
+  "active": "009d683840c0c2e4",
   "lastOpenFiles": [
-    "testets.md",
+    "Lebensplan/Alleszusdammen/dddd/-Vermögens Domäne.md",
+    "Lebensplan/Gesamter Lebensplan.md",
+    "Lebensplan/Alleszusdammen/dddd/-Zeitnavigator.md",
+    "Lebensplan/Alleszusdammen/Test notiz.md",
+    "Lebensplan/Alleszusdammen/dddd/-lebenskompass.md",
+    "Lebensplan/Alleszusdammen/Plan fürs Leben.md",
+    "Lebensplan/Alleszusdammen/lebens keinej.md",
+    "Lebensplan/Alleszusdammen/gggggg.md",
+    "Lebensplan/Alleszusdammen/dddd/KP.md",
+    "-Ticketsystem/Tickets/T-015 - Lebensplan zusammenschreiben.md",
+    "10.Systemschmiede/Systemplan/Windows 11 PC/Windows 11 Leistungsoptimierung.md",
+    "10.Systemschmiede/Systemplan/Windows 11 PC",
+    "10.Systemschmiede/Systemplan/Systemplan.canvas",
+    "Lebensplan/Plan Definitionen/10. Systemschmiede.md",
+    "10.Systemschmiede/Systemplan",
+    "10.Systemschmiede",
+    "_attachments/_attachments.md",
+    "Lebensplan/Alleszusdammen/Lebenskategorien liste prototyp.md",
+    "Lebensplan/Alleszusdammen/dddd/-Inneres Universum.md",
+    "Lebensplan/Alleszusdammen/dddd/-Gesundheit.md",
+    "Lebensplan/Alleszusdammen/dddd/-Alltagsmanagement.md",
+    "Lebensplan/Lebensplan.md",
+    "-Ticketsystem/-Ticketsystem.md",
     "📒Wisften(👨‍🔬️-💵-🔢)/👨‍🔬️Naturwissenschaften (⚕-🌐-🦠-🧪-🧲)/🧪Chemie/AC/AC.md",
+    "testets.md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/Wireless Network/WLAN (Wireless LAN).md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/MAN (Metropolition Area Network).md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/LAN (Local Area Network).md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/PAN (Personal Area Network).md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/Wireless Network",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/WAN (Wide Area Network).md",
-    "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen/GAN (Global Area Network).md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen/Grundlegende Netzwerktypen",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerktypen",
-    "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur/Netzwerkinfrastruktur.md",
     "AusbildungsVault/Wissensbank/Netzwerk/Netzwerkinfrastruktur",
-    "AusbildungsVault/Wissensbank/Netzwerk/Netzwerk.md",
     "AusbildungsVault/Wissensbank/Netzwerk",
-    "AusbildungsVault/Wissensbank/Infrastruktur/Rechenzentrums Infrastuktur/Rack.md",
     "AusbildungsVault/Wissensbank/Infrastruktur/Rechenzentrums Infrastuktur",
-    "AusbildungsVault/Wissensbank/Infrastruktur/Rechenzentrum Grundlagen/Einführung in Rechenzentren.md",
     "AusbildungsVault/Wissensbank/Infrastruktur/Rechenzentrum Grundlagen",
-    "AusbildungsVault/Wissensbank/Infrastruktur",
-    "AusbildungsVault/Wissensbank",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Infrastruktur (Rechenzentrum)/Rack- & Verkabelungsmanagement/Rack- & Verkabelungsmanagement.md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Infrastruktur (Rechenzentrum)/Rack- & Verkabelungsmanagement/Grundlagen der Rack-Organisation.md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Netzwerk (Netzwerktechnik)/Netzwerkinfrastruktur & Verkabelung.md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Netzwerk (Netzwerktechnik)/Grundlagen der Netzwerktechnik.md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Netzwerk (Netzwerktechnik)/Netzwerk (Netzwerktechnik).md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Netzwerk (Netzwerktechnik)/Praktische Netzwerkaufgaben.md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Netzwerk (Netzwerktechnik)/Netzwerkgeräte und -strukturen.md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Server (Systemadministration)/Server (Systemadministration).md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Infrastruktur (Rechenzentrum)/Rack- & Verkabelungsmanagement",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Infrastruktur (Rechenzentrum)/Infrastruktur (Rechenzentrum).md",
-    "AusbildungsVault/Plan/Abarbeiten/Lern Plan Kategorien/Lern Plan Kategorien.md",
-    "AusbildungsVault/Plan/Abarbeiten/To do für arbeit.md",
-    "AusbildungsVault/Plan/Abarbeiten/Untitled.md",
-    "AusbildungsVault/Plan/Abarbeiten/Untitled 6.md",
-    "AusbildungsVault/Plan/Abarbeiten/Untitled 7.md",
     "AusbildungsVault/Plan/Abarbeiten/Abarbeiten.canvas",
     "AusbildungsVault/Plan/Fachinformatiker Lernplan.canvas",
-    "Lebensplan/Systemplan.canvas",
     "Grichische Mythology Stammbaum.canvas",
     "-Ticketsystem/DSB/Haupt-DSB.canvas",
     "-Ticketsystem/DSB/Zentral-DSB.canvas",

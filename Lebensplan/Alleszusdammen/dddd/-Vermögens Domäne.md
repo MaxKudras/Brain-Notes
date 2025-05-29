@@ -9,13 +9,6 @@ Haushaltsbudget
         
     - Reflexion & Performance-Reviews
         
-2. **Finanzen**
-    
-    - Budgetplanung (Monat/Jahr)
-        
-    - Spar- & Investitionsziele (Langfristig & Mittelfristig)
-        
-    - Notfallfonds & Versicherungen
 
 3. **Karriere & Bildung**
     
@@ -27,7 +20,5 @@ Haushaltsbudget
 4. **Finanzen**
     
     - Dashboard: Einnahmen/Ausgaben, Budgetdiagramm
-        
-    - Sparziele: Notfallfonds, Altersvorsorge
-        
+
     - Automatisierungen: Daueraufträge, Spar-Skripte
