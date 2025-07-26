@@ -22452,6 +22452,52 @@ var import_obsidian2 = require("obsidian");
 
 // src/settings/plugin-settings.control.ts
 var import_obsidian = require("obsidian");
+
+// src/functions/style.func.ts
+var mapboxStyles = [
+  {
+    mapboxName: "streets-v12",
+    blockName: "streets",
+    settingsName: "Streets"
+  },
+  {
+    mapboxName: "outdoors-v12",
+    blockName: "outdoors",
+    settingsName: "Outdoors"
+  },
+  {
+    mapboxName: "light-v11",
+    blockName: "light",
+    settingsName: "Light"
+  },
+  {
+    mapboxName: "dark-v11",
+    blockName: "dark",
+    settingsName: "Dark"
+  },
+  {
+    mapboxName: "satellite-v9",
+    blockName: "satellite",
+    settingsName: "Satellite"
+  },
+  {
+    mapboxName: "satellite-streets-v12",
+    blockName: "satellite-streets",
+    settingsName: "Satellite Streets"
+  },
+  {
+    mapboxName: "navigation-day-v1",
+    blockName: "navigation-day",
+    settingsName: "Navigation Day"
+  },
+  {
+    mapboxName: "navigation-night-v1",
+    blockName: "navigation-night",
+    settingsName: "Navigation Night"
+  }
+];
+
+// src/settings/plugin-settings.control.ts
 var apiTokenSetting = (containerEl, plugin, callback) => {
   new import_obsidian.Setting(containerEl).setName("Mapbox API token").setDesc("Please provide your mapbox API token.").addText(
     (text) => text.setPlaceholder("pk.ey...").setValue(plugin.settings.mapboxToken).onChange(async (value) => callback(value))
@@ -22470,8 +22516,15 @@ var markerSizeSetting = (containerEl, plugin, callback) => {
   );
 };
 var mapStyleSetting = (containerEl, plugin, callback) => {
+  const stylesAsRecords = mapboxStyles.reduce(
+    (acc, style) => {
+      acc[style.mapboxName] = style.settingsName;
+      return acc;
+    },
+    {}
+  );
   new import_obsidian.Setting(containerEl).setName("Default map style").setDesc("Select the default style which is used for your maps.").addDropdown(
-    (text) => text.addOption("streets-v12", "Streets").addOption("outdoors-v12", "Outdoors").addOption("light-v11", "Light").addOption("dark-v11", "Dark").addOption("satellite-v9", "Satellite").addOption("satellite-streets-v12", "Satellite Streets").addOption("navigation-day-v1", "Navigation Day").addOption("navigation-night-v1", "Navigation Night").setValue(plugin.settings.mapStyle).onChange(async (value) => callback(value))
+    (text) => text.addOptions(stylesAsRecords).setValue(plugin.settings.mapStyle).onChange(async (value) => callback(value))
   );
 };
 var markerColorSetting = (containerEl, plugin, callback) => {
@@ -22750,13 +22803,16 @@ var toggleReverseCoordinates = async (plugin) => {
 // src/functions/version-hint.func.ts
 var import_obsidian15 = require("obsidian");
 var checkVersionUpdate = async (plugin) => {
-  const data = await plugin.loadData();
-  if (data && data.version === plugin.manifest.version)
+  let data = await plugin.loadData();
+  if (data && data.version && plugin.manifest && data.version === plugin.manifest.version)
     return;
   new import_obsidian15.Notice(
     `Mapbox plugin has been updated to version ${plugin.manifest.version}. Check the changelog for more information and new features.`,
     5e3
   );
+  if (!data) {
+    data = {};
+  }
   data.version = plugin.manifest.version;
   await plugin.saveData(data);
 };
@@ -22800,9 +22856,12 @@ var findMarkerIcon = (rows) => {
   return makiIcon;
 };
 var findMapStyle = (rows) => {
+  var _a;
   let mapStyle = rows.find((l) => l.toLowerCase().startsWith("style:"));
-  if (mapStyle)
+  if (mapStyle) {
     mapStyle = mapStyle.toLocaleLowerCase().replace("style:", "").trim();
+    mapStyle = (_a = mapboxStyles.find((s) => s.blockName === mapStyle)) == null ? void 0 : _a.mapboxName;
+  }
   return mapStyle;
 };
 var findMapZoom = (rows) => {

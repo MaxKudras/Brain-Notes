@@ -2443,7 +2443,7 @@ var require_react_dom_development = __commonJS({
         var HostPortal = 4;
         var HostComponent = 5;
         var HostText = 6;
-        var Fragment2 = 7;
+        var Fragment3 = 7;
         var Mode = 8;
         var ContextConsumer = 9;
         var ContextProvider = 10;
@@ -3599,7 +3599,7 @@ var require_react_dom_development = __commonJS({
               return "DehydratedFragment";
             case ForwardRef:
               return getWrappedName$1(type, type.render, "ForwardRef");
-            case Fragment2:
+            case Fragment3:
               return "Fragment";
             case HostComponent:
               return type;
@@ -12000,7 +12000,7 @@ var require_react_dom_development = __commonJS({
             }
           }
           function updateFragment2(returnFiber, current2, fragment, lanes, key) {
-            if (current2 === null || current2.tag !== Fragment2) {
+            if (current2 === null || current2.tag !== Fragment3) {
               var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
               created.return = returnFiber;
               return created;
@@ -12403,7 +12403,7 @@ var require_react_dom_development = __commonJS({
               if (child.key === key) {
                 var elementType = element.type;
                 if (elementType === REACT_FRAGMENT_TYPE) {
-                  if (child.tag === Fragment2) {
+                  if (child.tag === Fragment3) {
                     deleteRemainingChildren(returnFiber, child.sibling);
                     var existing = useFiber(child, element.props.children);
                     existing.return = returnFiber;
@@ -17880,7 +17880,7 @@ var require_react_dom_development = __commonJS({
               var _resolvedProps2 = workInProgress2.elementType === type ? _unresolvedProps2 : resolveDefaultProps(type, _unresolvedProps2);
               return updateForwardRef(current2, workInProgress2, type, _resolvedProps2, renderLanes2);
             }
-            case Fragment2:
+            case Fragment3:
               return updateFragment(current2, workInProgress2, renderLanes2);
             case Mode:
               return updateMode(current2, workInProgress2, renderLanes2);
@@ -18153,7 +18153,7 @@ var require_react_dom_development = __commonJS({
             case SimpleMemoComponent:
             case FunctionComponent:
             case ForwardRef:
-            case Fragment2:
+            case Fragment3:
             case Mode:
             case Profiler:
             case ContextConsumer:
@@ -22412,7 +22412,7 @@ var require_react_dom_development = __commonJS({
           return fiber;
         }
         function createFiberFromFragment(elements, mode, lanes, key) {
-          var fiber = createFiber(Fragment2, elements, key, mode);
+          var fiber = createFiber(Fragment3, elements, key, mode);
           fiber.lanes = lanes;
           return fiber;
         }
@@ -103774,6 +103774,7 @@ var SettingsForm = (props) => {
   const [fileDatePropertyStr, setFileDatePropertyStr] = (0, import_react7.useState)(plugin.settings.fileDateProperty);
   const [fileDatePropertyFormatStr, setFileDatePropertyFormatStr] = (0, import_react7.useState)(plugin.settings.fileDatePropertyFormat);
   const [fileIndexEnabled, setFileIndexEnabled] = (0, import_react7.useState)(plugin.settings.fileIndexEnabled);
+  const [fileDeletionIndexEnabled, setFileDeletionIndexEnabled] = (0, import_react7.useState)(plugin.settings.fileDeletionIndexEnabled);
   const [fileIndexPath, setFileIndexPath] = (0, import_react7.useState)(plugin.settings.fileIndexPath);
   const [legendOrder, setLegendOrder] = (0, import_react7.useState)(plugin.settings.legendOrder);
   const [singleMatchCategories, setSingleMatchCategories] = (0, import_react7.useState)(plugin.settings.categories.filter((c) => !c.alwaysApply));
@@ -103800,6 +103801,11 @@ var SettingsForm = (props) => {
     plugin.saveSettings().then(() => {
     });
   }, [fileIndexEnabled]);
+  (0, import_react7.useEffect)(() => {
+    plugin.settings.fileDeletionIndexEnabled = fileDeletionIndexEnabled;
+    plugin.saveSettings().then(() => {
+    });
+  }, [fileDeletionIndexEnabled]);
   (0, import_react7.useEffect)(() => {
     plugin.settings.fileIndexPath = fileIndexPath;
     plugin.saveSettings().then(() => {
@@ -104036,6 +104042,25 @@ var SettingsForm = (props) => {
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-setting-control", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("button", { onClick: resetCategories, children: "Reset categories" }) })
     ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting-info", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-setting-info-name", children: "Track file deletion" }),
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting-info-desc", children: [
+          "Enable tracking of file deletion dates in the graph. If enabled, the graph will decrease on the dates when files have been deleted. If disabled, the graph is cumulative, meaning it will always increase but will be based on the currently existing files. To activate this setting, the ",
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("b", { children: "Automated file index" }),
+          " must be enabled."
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-setting-control", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+        "input",
+        {
+          type: "checkbox",
+          disabled: !fileIndexEnabled,
+          checked: fileIndexEnabled && fileDeletionIndexEnabled,
+          onChange: (e2) => setFileDeletionIndexEnabled(!fileDeletionIndexEnabled)
+        }
+      ) })
+    ] }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-separator" }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h3", { children: "File metadata" }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("p", { children: "By default, the plugin relies on the system file creation date." }),
@@ -104089,7 +104114,7 @@ var SettingsForm = (props) => {
         }
       ) })
     ] }),
-    fileIndexEnabled && /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting", children: [
+    fileIndexEnabled && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_jsx_runtime4.Fragment, { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting", children: [
       /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting-info", children: [
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-setting-info-name", children: "File creation date index" }),
         /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-setting-info-desc", children: "Specify path to a csv file containing the file creation date index" })
@@ -104104,7 +104129,7 @@ var SettingsForm = (props) => {
           onChange: (e2) => setFileIndexPath(e2.target.value)
         }
       ) })
-    ] }),
+    ] }) }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "technerium-vshp-settings-separator" }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h3", { children: "Troubleshooting" }),
     /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "technerium-vshp-settings-setting", children: [
@@ -104144,6 +104169,7 @@ var DEFAULT_SETTINGS = {
   fileDateProperty: "",
   fileDatePropertyFormat: "",
   fileIndexEnabled: false,
+  fileDeletionIndexEnabled: false,
   fileIndexPath: "file_index.csv",
   legendOrder: "ASCENDING_CHART_VALUE" /* ASCENDING_CHART_VALUE */,
   categories: [
@@ -104199,11 +104225,15 @@ var LineData = class {
     this.category = category;
     this.cumulativeTotal = 0;
   }
-  addEntry(dayDate) {
+  addEntry(dayDate, deletion = false) {
     let counter = this.series[dayDate.getTime()];
     if (!counter)
       counter = 0;
-    counter++;
+    if (deletion) {
+      counter--;
+    } else {
+      counter++;
+    }
     this.series[dayDate.getTime()] = counter;
     this.cumulativeTotal++;
     if (this.minDate == null || this.minDate > dayDate) {
@@ -104233,7 +104263,7 @@ var GraphData = class {
       return (a.cumulativeTotal - b.cumulativeTotal) * factor;
     });
   }
-  addEntry(category, dayDate) {
+  addEntry(category, dayDate, deletion = false) {
     let normalizedDate = new Date(dayDate);
     normalizedDate.setHours(12, 0, 0, 0);
     let lineData = this.lines.find((ld) => ld.category == category);
@@ -104241,7 +104271,7 @@ var GraphData = class {
       lineData = new LineData(category);
       this.lines.push(lineData);
     }
-    lineData.addEntry(normalizedDate);
+    lineData.addEntry(normalizedDate, deletion);
     if ([null, -1].contains(this.plugin.settings.startDateBasedOn) || this.plugin.settings.startDateBasedOn == category.id) {
       if (this.minDate == null || this.minDate > normalizedDate) {
         this.minDate = new Date(normalizedDate);
@@ -104386,6 +104416,42 @@ var GraphModal = class extends import_obsidian3.Modal {
         }
       }
     }
+    if (plugin.settings.fileDeletionIndexEnabled) {
+      const deletedFilePaths = Object.keys(fileDataIndex).filter(
+        (filePath) => fileDataIndex[filePath].deletionDate != null
+      );
+      console.log("Accounting for deleted files", deletedFilePaths);
+      for (const filePath of deletedFilePaths) {
+        let matchingCategories = [];
+        let matchFound = false;
+        const singleApplyCategories = categories.filter((c) => !c.alwaysApply);
+        const alwaysApplyCategories = categories.filter((c) => c.alwaysApply);
+        for (const category of singleApplyCategories) {
+          const pattern = category.pattern;
+          matchFound = this.checkPattern(pattern, filePath);
+          if (matchFound) {
+            matchingCategories.push(category);
+            break;
+          }
+        }
+        for (const category of alwaysApplyCategories) {
+          const pattern = category.pattern;
+          if (this.checkPattern(pattern, filePath)) {
+            matchingCategories.push(category);
+          }
+        }
+        if (matchingCategories) {
+          const fileCDate = fileDataIndex[filePath].creationDate;
+          const fileDDate = fileDataIndex[filePath].deletionDate;
+          for (const category of matchingCategories) {
+            result.addEntry(category, fileCDate);
+            if (fileDDate) {
+              result.addEntry(category, fileDDate, true);
+            }
+          }
+        }
+      }
+    }
     result.orderLines();
     return result;
   }
@@ -104501,10 +104567,12 @@ var FileIndex = class {
             const filePath = row[0];
             const fileDate = (0, import_obsidian4.moment)(row[1], dateFormat).toDate();
             const entryProtected = row[2] == "TRUE";
+            const deletionDate = row[3] ? (0, import_obsidian4.moment)(row[3], dateFormat).toDate() : null;
             index[filePath] = {
               path: filePath,
               creationDate: fileDate,
-              isProtected: entryProtected
+              isProtected: entryProtected,
+              deletionDate
             };
           }
         }
@@ -104549,14 +104617,19 @@ var FileIndex = class {
         {
           path: file.path,
           creationDate: fileCreatedDate,
-          isProtected: indexEntry ? indexEntry.isProtected : false
+          isProtected: indexEntry ? indexEntry.isProtected : false,
+          deletionDate: null
         }
       );
       obsidianCachedPaths.push(file.path);
     }
     const missingFiles = indexedPaths.filter((element) => !obsidianCachedPaths.includes(element));
     for (const path of missingFiles) {
-      updatedIndexEntries.push(index[path]);
+      const indexEntryDeletedFile = index[path];
+      if (!indexEntryDeletedFile.deletionDate) {
+        indexEntryDeletedFile.deletionDate = new Date();
+      }
+      updatedIndexEntries.push(indexEntryDeletedFile);
     }
     updatedIndexEntries.sort((a, b) => {
       if (a.path < b.path)
@@ -104565,10 +104638,19 @@ var FileIndex = class {
         return 1;
       return 0;
     });
-    await obsidianApp.vault.modify(csvFile, '"File Path","Created Date (System)","Protect Date"\n');
+    await obsidianApp.vault.modify(csvFile, '"File Path","Created Date (System)","Protect Date","Deleted Date"');
     for (const row of updatedIndexEntries) {
-      await obsidianApp.vault.append(csvFile, `"${row.path}",${(0, import_obsidian4.moment)(row.creationDate).format(indexDateFormat)},${row.isProtected ? "TRUE" : "FALSE"}
-`);
+      const creationDateFormatted = (0, import_obsidian4.moment)(row.creationDate).format(indexDateFormat);
+      const isProtectedFormatted = row.isProtected ? "TRUE" : "FALSE";
+      let deletionDateFormatted = "";
+      if (row.deletionDate) {
+        deletionDateFormatted = (0, import_obsidian4.moment)(row.deletionDate).format(indexDateFormat);
+      }
+      await obsidianApp.vault.append(
+        csvFile,
+        `"
+${row.path}",${creationDateFormatted},${isProtectedFormatted},${deletionDateFormatted}`
+      );
     }
     if (oneTimeExec) {
       new import_obsidian4.Notice("[Vault size history] Index file updated successfully");

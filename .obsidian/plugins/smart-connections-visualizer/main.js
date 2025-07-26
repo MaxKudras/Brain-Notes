@@ -4844,8 +4844,8 @@ var ScGraphItemView = class extends import_obsidian.ItemView {
     return window.smart_env;
   }
   get smartNotes() {
-    var _a, _b, _c, _d;
-    return (_d = (_c = (_b = (_a = window.SmartSearch) == null ? void 0 : _a.main) == null ? void 0 : _b.env) == null ? void 0 : _c.smart_sources) == null ? void 0 : _d.items;
+    var _a, _b;
+    return (_b = (_a = window.smart_env) == null ? void 0 : _a.smart_sources) == null ? void 0 : _b.items;
   }
   async onOpen() {
     this.contentEl.createEl("h2", { text: "Smart Visualizer" });

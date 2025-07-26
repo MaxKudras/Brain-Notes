@@ -1089,22 +1089,20 @@
 
 /* src/sidebar/css/oracles.css */
 .iron-vault-oracles-list {
-  & .ruleset {
-    & > .wrapper > details span {
+  & li.ruleset {
+    & > details > summary {
       font-size: 1.4em;
       border-bottom: 1px solid var(--background-secondary);
     }
     background-color: var(--background-secondary);
-    & > .wrapper {
-      & > .content {
-        padding: 0;
-      }
+    & > .content {
+      padding: 0;
     }
     & li:has(+ li) {
       border-bottom: 1px solid var(--background-secondary);
     }
   }
-  & .oracle-group li {
+  & .oracle-group li.oracle-item {
     display: flex;
     flex-direction: row;
     padding: 0.5em;
@@ -1125,29 +1123,27 @@
       gap: 0.4em;
     }
   }
-  & .ruleset > .wrapper > .content {
+  & .ruleset > .content {
     padding: 0 !important;
   }
 }
 
 /* src/sidebar/css/moves.css */
 .iron-vault-moves-list {
-  & .ruleset {
-    & > .wrapper > details span {
+  & li.ruleset {
+    & > details > summary {
       font-size: 1.4em;
       border-bottom: 1px solid var(--background-secondary);
     }
     background-color: var(--background-secondary);
-    & > .wrapper {
-      & > .content {
-        padding: 0;
-      }
+    & > .content {
+      padding: 0;
     }
-    & li:has(+ li) {
+    &:has(+ li) {
       border-bottom: 1px solid var(--background-secondary);
     }
   }
-  & .move-category li {
+  & .move-category li.move-item {
     display: flex;
     flex-direction: column;
     padding: 0.5em;
@@ -1158,9 +1154,13 @@
       margin-top: 0.2em;
       color: var(--text-muted);
     }
-    & > :first-child {
+    & > details > summary,
+    & > header {
       font-size: 1.2em;
       font-weight: var(--font-semibold);
+      &:hover {
+        cursor: pointer;
+      }
     }
     &:has(+ li) {
       border-bottom: 1px solid var(--background-secondary-alt);
@@ -1172,7 +1172,7 @@
       background-color: var(--background-modifier-active-hover);
     }
   }
-  & .ruleset > .wrapper > .content {
+  & .ruleset > .content {
     padding: 0 !important;
   }
 }
@@ -1190,30 +1190,24 @@
   height: 2em;
   font-size: 1.2em;
 }
-.iron-vault-moves-list,
-.iron-vault-oracles-list,
-.iron-vault-asset-list {
+ul.iron-vault-moves-list,
+ul.iron-vault-oracles-list,
+ul.iron-vault-asset-list {
   margin: 0;
   padding: 0;
   padding-left: 0 !important;
   list-style-type: none;
-  & ul,
-  ol {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
   background-color: var(--background-primary-alt);
-  & summary > span {
-    transition: background-color 200ms ease;
-    &:hover {
-      background-color: var(--background-modifier-hover);
-    }
-    &:active {
-      background-color: var(--background-modifier-active-hover);
-    }
-  }
   & details:has(+ .content) {
+    & > summary > span {
+      transition: background-color 200ms ease;
+      &:hover {
+        background-color: var(--background-modifier-hover);
+      }
+      &:active {
+        background-color: var(--background-modifier-active-hover);
+      }
+    }
     max-width: 100%;
     overflow: hidden;
     & > summary {
@@ -1223,22 +1217,22 @@
       &::marker {
         display: none;
       }
-    }
-    & span {
-      position: relative;
-      padding: 0.5em;
-      display: flex;
-      align-items: center;
-      &:hover {
-        cursor: pointer;
-      }
-      &::before {
-        content: "\25ba";
-        font-size: 1rem;
+      & span {
+        position: relative;
+        padding: 0.5em;
         display: flex;
         align-items: center;
-        margin-right: 0.5rem;
-        transition: rotate 100ms 100ms ease-out;
+        &:hover {
+          cursor: pointer;
+        }
+        &::before {
+          content: "\25ba";
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          margin-right: 0.5rem;
+          transition: rotate 100ms 100ms ease-out;
+        }
       }
     }
   }
@@ -1256,7 +1250,7 @@
       transition: max-height 250ms ease-out, border 0ms linear;
       padding: 0.5em;
     }
-    & span::before {
+    & > summary > span::before {
       rotate: 90deg;
       transition: rotate 100ms ease-out;
     }
@@ -1275,6 +1269,13 @@
   }
 }
 .iron-vault-sidebar-view {
+  font-size: var(--font-ui-small);
+  & .character-tab {
+    padding: var(--size-4-2);
+    & > select {
+      width: 100%;
+    }
+  }
   & .character-tab > .markdown-wrapper > p > .markdown-embed {
     --embed-padding: 1em;
   }
@@ -1306,7 +1307,8 @@
     & > [type=radio] {
       display: none;
       & ~ .content {
-        overflow-y: auto;
+        overflow-y: scroll;
+        padding-bottom: var(--size-4-8);
         display: none;
       }
       &:checked ~ label {
@@ -1345,6 +1347,7 @@ table.iron-vault-oracle-table {
   border-collapse: collapse;
   box-shadow: var(--shadow);
   margin-top: 1em;
+  margin-bottom: 1em;
   & thead {
     position: sticky;
     top: 0;
@@ -2380,6 +2383,9 @@ table.iron-vault-oracle-table {
     color: var(--text-muted);
     font-weight: var(--font-semibold);
   }
+}
+.iron-vault-move-buttons {
+  padding-top: 0.5em;
   & .rollable-stats {
     display: flex;
     flex-flow: row wrap;

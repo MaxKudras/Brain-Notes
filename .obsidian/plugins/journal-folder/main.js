@@ -106,24 +106,30 @@ var PluginFeatureSet = class {
 };
 _pluginFeatures = new WeakMap();
 
-// node_modules/esm-env/prod-browser.js
-var DEV = false;
+// node_modules/esm-env/dev-fallback.js
+var _a, _b;
+var node_env = (_b = (_a = globalThis.process) == null ? void 0 : _a.env) == null ? void 0 : _b.NODE_ENV;
+var dev_fallback_default = node_env && !node_env.toLowerCase().startsWith("prod");
 
-// node_modules/svelte/src/internal/client/utils.js
+// node_modules/svelte/src/internal/shared/utils.js
 var is_array = Array.isArray;
+var index_of = Array.prototype.indexOf;
 var array_from = Array.from;
 var object_keys = Object.keys;
-var is_frozen = Object.isFrozen;
 var define_property = Object.defineProperty;
 var get_descriptor = Object.getOwnPropertyDescriptor;
+var get_descriptors = Object.getOwnPropertyDescriptors;
 var object_prototype = Object.prototype;
 var array_prototype = Array.prototype;
 var get_prototype_of = Object.getPrototypeOf;
-var map_prototype = Map.prototype;
-var map_set_method = map_prototype.set;
-var map_get_method = map_prototype.get;
+var is_extensible = Object.isExtensible;
 function is_function(thing) {
   return typeof thing === "function";
+}
+function run_all(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i]();
+  }
 }
 
 // node_modules/svelte/src/internal/client/constants.js
@@ -133,19 +139,23 @@ var RENDER_EFFECT = 1 << 3;
 var BLOCK_EFFECT = 1 << 4;
 var BRANCH_EFFECT = 1 << 5;
 var ROOT_EFFECT = 1 << 6;
-var UNOWNED = 1 << 7;
-var DISCONNECTED = 1 << 8;
-var CLEAN = 1 << 9;
-var DIRTY = 1 << 10;
-var MAYBE_DIRTY = 1 << 11;
-var INERT = 1 << 12;
-var DESTROYED = 1 << 13;
-var EFFECT_RAN = 1 << 14;
-var EFFECT_TRANSPARENT = 1 << 15;
-var LEGACY_DERIVED_PROP = 1 << 16;
-var INSPECT_EFFECT = 1 << 17;
+var BOUNDARY_EFFECT = 1 << 7;
+var UNOWNED = 1 << 8;
+var DISCONNECTED = 1 << 9;
+var CLEAN = 1 << 10;
+var DIRTY = 1 << 11;
+var MAYBE_DIRTY = 1 << 12;
+var INERT = 1 << 13;
+var DESTROYED = 1 << 14;
+var EFFECT_RAN = 1 << 15;
+var EFFECT_TRANSPARENT = 1 << 16;
+var LEGACY_DERIVED_PROP = 1 << 17;
+var INSPECT_EFFECT = 1 << 18;
+var HEAD_EFFECT = 1 << 19;
+var EFFECT_HAS_DERIVED = 1 << 20;
+var EFFECT_IS_UPDATING = 1 << 21;
 var STATE_SYMBOL = Symbol("$state");
-var STATE_FROZEN_SYMBOL = Symbol("$state.frozen");
+var LEGACY_PROPS = Symbol("legacy props");
 var LOADING_ATTR_SYMBOL = Symbol("");
 
 // node_modules/svelte/src/internal/client/reactivity/equality.js
@@ -159,160 +169,962 @@ function safe_equals(value) {
   return !safe_not_equal(value, this.v);
 }
 
+// node_modules/svelte/src/internal/client/errors.js
+function derived_references_self() {
+  if (dev_fallback_default) {
+    const error = new Error(`derived_references_self
+A derived value cannot reference itself recursively
+https://svelte.dev/e/derived_references_self`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/derived_references_self`);
+  }
+}
+function effect_update_depth_exceeded() {
+  if (dev_fallback_default) {
+    const error = new Error(`effect_update_depth_exceeded
+Maximum update depth exceeded. This can happen when a reactive block or effect repeatedly sets a new value. Svelte limits the number of nested updates to prevent infinite loops
+https://svelte.dev/e/effect_update_depth_exceeded`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/effect_update_depth_exceeded`);
+  }
+}
+function hydration_failed() {
+  if (dev_fallback_default) {
+    const error = new Error(`hydration_failed
+Failed to hydrate the application
+https://svelte.dev/e/hydration_failed`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/hydration_failed`);
+  }
+}
+function props_invalid_value(key) {
+  if (dev_fallback_default) {
+    const error = new Error(`props_invalid_value
+Cannot do \`bind:${key}={undefined}\` when \`${key}\` has a fallback value
+https://svelte.dev/e/props_invalid_value`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/props_invalid_value`);
+  }
+}
+function rune_outside_svelte(rune) {
+  if (dev_fallback_default) {
+    const error = new Error(`rune_outside_svelte
+The \`${rune}\` rune is only available inside \`.svelte\` and \`.svelte.js/ts\` files
+https://svelte.dev/e/rune_outside_svelte`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/rune_outside_svelte`);
+  }
+}
+function state_descriptors_fixed() {
+  if (dev_fallback_default) {
+    const error = new Error(`state_descriptors_fixed
+Property descriptors defined on \`$state\` objects must contain \`value\` and always be \`enumerable\`, \`configurable\` and \`writable\`.
+https://svelte.dev/e/state_descriptors_fixed`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/state_descriptors_fixed`);
+  }
+}
+function state_prototype_fixed() {
+  if (dev_fallback_default) {
+    const error = new Error(`state_prototype_fixed
+Cannot set prototype of \`$state\` object
+https://svelte.dev/e/state_prototype_fixed`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/state_prototype_fixed`);
+  }
+}
+function state_unsafe_mutation() {
+  if (dev_fallback_default) {
+    const error = new Error(`state_unsafe_mutation
+Updating state inside a derived or a template expression is forbidden. If the value should not be reactive, declare it without \`$state\`
+https://svelte.dev/e/state_unsafe_mutation`);
+    error.name = "Svelte error";
+    throw error;
+  } else {
+    throw new Error(`https://svelte.dev/e/state_unsafe_mutation`);
+  }
+}
+
+// node_modules/svelte/src/internal/flags/index.js
+var legacy_mode_flag = false;
+var tracing_mode_flag = false;
+function enable_legacy_mode_flag() {
+  legacy_mode_flag = true;
+}
+
 // node_modules/svelte/src/constants.js
 var EACH_ITEM_REACTIVE = 1;
 var EACH_INDEX_REACTIVE = 1 << 1;
-var EACH_KEYED = 1 << 2;
-var EACH_IS_CONTROLLED = 1 << 3;
-var EACH_IS_ANIMATED = 1 << 4;
-var EACH_IS_STRICT_EQUALS = 1 << 6;
+var EACH_IS_CONTROLLED = 1 << 2;
+var EACH_IS_ANIMATED = 1 << 3;
+var EACH_ITEM_IMMUTABLE = 1 << 4;
 var PROPS_IS_IMMUTABLE = 1;
 var PROPS_IS_RUNES = 1 << 1;
 var PROPS_IS_UPDATED = 1 << 2;
-var PROPS_IS_LAZY_INITIAL = 1 << 3;
+var PROPS_IS_BINDABLE = 1 << 3;
+var PROPS_IS_LAZY_INITIAL = 1 << 4;
 var TRANSITION_OUT = 1 << 1;
 var TRANSITION_GLOBAL = 1 << 2;
 var TEMPLATE_FRAGMENT = 1;
 var TEMPLATE_USE_IMPORT_NODE = 1 << 1;
 var HYDRATION_START = "[";
+var HYDRATION_START_ELSE = "[!";
 var HYDRATION_END = "]";
-var HYDRATION_ANCHOR = "";
-var HYDRATION_END_ELSE = `${HYDRATION_END}!`;
 var HYDRATION_ERROR = {};
 var ELEMENT_PRESERVE_ATTRIBUTE_CASE = 1 << 1;
 var UNINITIALIZED = Symbol();
-var PassiveDelegatedEvents = ["touchstart", "touchmove", "touchend"];
+var FILENAME = Symbol("filename");
+var HMR = Symbol("hmr");
+var NAMESPACE_HTML = "http://www.w3.org/1999/xhtml";
 
-// node_modules/svelte/src/internal/client/errors.js
-function effect_update_depth_exceeded() {
-  if (DEV) {
-    const error = new Error(`effect_update_depth_exceeded
-Maximum update depth exceeded. This can happen when a reactive block or effect repeatedly sets a new value. Svelte limits the number of nested updates to prevent infinite loops`);
-    error.name = "Svelte error";
-    throw error;
-  } else {
-    throw new Error("effect_update_depth_exceeded");
+// node_modules/svelte/src/internal/client/dev/tracing.js
+var tracing_expressions = null;
+function get_stack(label) {
+  let error = Error();
+  const stack2 = error.stack;
+  if (stack2) {
+    const lines = stack2.split("\n");
+    const new_lines = ["\n"];
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      if (line === "Error") {
+        continue;
+      }
+      if (line.includes("validate_each_keys")) {
+        return null;
+      }
+      if (line.includes("svelte/src/internal")) {
+        continue;
+      }
+      new_lines.push(line);
+    }
+    if (new_lines.length === 1) {
+      return null;
+    }
+    define_property(error, "stack", {
+      value: new_lines.join("\n")
+    });
+    define_property(error, "name", {
+      // 'Error' suffix is required for stack traces to be rendered properly
+      value: `${label}Error`
+    });
+  }
+  return error;
+}
+
+// node_modules/svelte/src/internal/client/context.js
+var component_context = null;
+function set_component_context(context) {
+  component_context = context;
+}
+var dev_current_component_function = null;
+function set_dev_current_component_function(fn) {
+  dev_current_component_function = fn;
+}
+function push(props, runes = false, fn) {
+  var ctx = component_context = {
+    p: component_context,
+    c: null,
+    d: false,
+    e: null,
+    m: false,
+    s: props,
+    x: null,
+    l: null
+  };
+  if (legacy_mode_flag && !runes) {
+    component_context.l = {
+      s: null,
+      u: null,
+      r1: [],
+      r2: source(false)
+    };
+  }
+  teardown(() => {
+    ctx.d = true;
+  });
+  if (dev_fallback_default) {
+    component_context.function = fn;
+    dev_current_component_function = fn;
   }
 }
-function hydration_failed() {
-  if (DEV) {
-    const error = new Error(`hydration_failed
-Failed to hydrate the application`);
-    error.name = "Svelte error";
-    throw error;
+function pop(component2) {
+  var _a3, _b3;
+  const context_stack_item = component_context;
+  if (context_stack_item !== null) {
+    if (component2 !== void 0) {
+      context_stack_item.x = component2;
+    }
+    const component_effects = context_stack_item.e;
+    if (component_effects !== null) {
+      var previous_effect = active_effect;
+      var previous_reaction = active_reaction;
+      context_stack_item.e = null;
+      try {
+        for (var i = 0; i < component_effects.length; i++) {
+          var component_effect = component_effects[i];
+          set_active_effect(component_effect.effect);
+          set_active_reaction(component_effect.reaction);
+          effect(component_effect.fn);
+        }
+      } finally {
+        set_active_effect(previous_effect);
+        set_active_reaction(previous_reaction);
+      }
+    }
+    component_context = context_stack_item.p;
+    if (dev_fallback_default) {
+      dev_current_component_function = (_b3 = (_a3 = context_stack_item.p) == null ? void 0 : _a3.function) != null ? _b3 : null;
+    }
+    context_stack_item.m = true;
+  }
+  return component2 || /** @type {T} */
+  {};
+}
+function is_runes() {
+  return !legacy_mode_flag || component_context !== null && component_context.l === null;
+}
+
+// node_modules/svelte/src/internal/client/proxy.js
+function proxy(value) {
+  if (typeof value !== "object" || value === null || STATE_SYMBOL in value) {
+    return value;
+  }
+  const prototype = get_prototype_of(value);
+  if (prototype !== object_prototype && prototype !== array_prototype) {
+    return value;
+  }
+  var sources = /* @__PURE__ */ new Map();
+  var is_proxied_array = is_array(value);
+  var version = state(0);
+  var stack2 = dev_fallback_default && tracing_mode_flag ? get_stack("CreatedAt") : null;
+  var reaction = active_reaction;
+  var with_parent = (fn) => {
+    var previous_reaction = active_reaction;
+    set_active_reaction(reaction);
+    var result = fn();
+    set_active_reaction(previous_reaction);
+    return result;
+  };
+  if (is_proxied_array) {
+    sources.set("length", state(
+      /** @type {any[]} */
+      value.length,
+      stack2
+    ));
+  }
+  return new Proxy(
+    /** @type {any} */
+    value,
+    {
+      defineProperty(_, prop2, descriptor) {
+        if (!("value" in descriptor) || descriptor.configurable === false || descriptor.enumerable === false || descriptor.writable === false) {
+          state_descriptors_fixed();
+        }
+        var s = sources.get(prop2);
+        if (s === void 0) {
+          s = with_parent(() => state(descriptor.value, stack2));
+          sources.set(prop2, s);
+        } else {
+          set(
+            s,
+            with_parent(() => proxy(descriptor.value))
+          );
+        }
+        return true;
+      },
+      deleteProperty(target, prop2) {
+        var s = sources.get(prop2);
+        if (s === void 0) {
+          if (prop2 in target) {
+            sources.set(
+              prop2,
+              with_parent(() => state(UNINITIALIZED, stack2))
+            );
+            update_version(version);
+          }
+        } else {
+          if (is_proxied_array && typeof prop2 === "string") {
+            var ls = (
+              /** @type {Source<number>} */
+              sources.get("length")
+            );
+            var n = Number(prop2);
+            if (Number.isInteger(n) && n < ls.v) {
+              set(ls, n);
+            }
+          }
+          set(s, UNINITIALIZED);
+          update_version(version);
+        }
+        return true;
+      },
+      get(target, prop2, receiver) {
+        var _a3;
+        if (prop2 === STATE_SYMBOL) {
+          return value;
+        }
+        var s = sources.get(prop2);
+        var exists = prop2 in target;
+        if (s === void 0 && (!exists || ((_a3 = get_descriptor(target, prop2)) == null ? void 0 : _a3.writable))) {
+          s = with_parent(() => state(proxy(exists ? target[prop2] : UNINITIALIZED), stack2));
+          sources.set(prop2, s);
+        }
+        if (s !== void 0) {
+          var v = get(s);
+          return v === UNINITIALIZED ? void 0 : v;
+        }
+        return Reflect.get(target, prop2, receiver);
+      },
+      getOwnPropertyDescriptor(target, prop2) {
+        var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
+        if (descriptor && "value" in descriptor) {
+          var s = sources.get(prop2);
+          if (s)
+            descriptor.value = get(s);
+        } else if (descriptor === void 0) {
+          var source2 = sources.get(prop2);
+          var value2 = source2 == null ? void 0 : source2.v;
+          if (source2 !== void 0 && value2 !== UNINITIALIZED) {
+            return {
+              enumerable: true,
+              configurable: true,
+              value: value2,
+              writable: true
+            };
+          }
+        }
+        return descriptor;
+      },
+      has(target, prop2) {
+        var _a3;
+        if (prop2 === STATE_SYMBOL) {
+          return true;
+        }
+        var s = sources.get(prop2);
+        var has = s !== void 0 && s.v !== UNINITIALIZED || Reflect.has(target, prop2);
+        if (s !== void 0 || active_effect !== null && (!has || ((_a3 = get_descriptor(target, prop2)) == null ? void 0 : _a3.writable))) {
+          if (s === void 0) {
+            s = with_parent(() => state(has ? proxy(target[prop2]) : UNINITIALIZED, stack2));
+            sources.set(prop2, s);
+          }
+          var value2 = get(s);
+          if (value2 === UNINITIALIZED) {
+            return false;
+          }
+        }
+        return has;
+      },
+      set(target, prop2, value2, receiver) {
+        var _a3;
+        var s = sources.get(prop2);
+        var has = prop2 in target;
+        if (is_proxied_array && prop2 === "length") {
+          for (var i = value2; i < /** @type {Source<number>} */
+          s.v; i += 1) {
+            var other_s = sources.get(i + "");
+            if (other_s !== void 0) {
+              set(other_s, UNINITIALIZED);
+            } else if (i in target) {
+              other_s = with_parent(() => state(UNINITIALIZED, stack2));
+              sources.set(i + "", other_s);
+            }
+          }
+        }
+        if (s === void 0) {
+          if (!has || ((_a3 = get_descriptor(target, prop2)) == null ? void 0 : _a3.writable)) {
+            s = with_parent(() => state(void 0, stack2));
+            set(
+              s,
+              with_parent(() => proxy(value2))
+            );
+            sources.set(prop2, s);
+          }
+        } else {
+          has = s.v !== UNINITIALIZED;
+          set(
+            s,
+            with_parent(() => proxy(value2))
+          );
+        }
+        var descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
+        if (descriptor == null ? void 0 : descriptor.set) {
+          descriptor.set.call(receiver, value2);
+        }
+        if (!has) {
+          if (is_proxied_array && typeof prop2 === "string") {
+            var ls = (
+              /** @type {Source<number>} */
+              sources.get("length")
+            );
+            var n = Number(prop2);
+            if (Number.isInteger(n) && n >= ls.v) {
+              set(ls, n + 1);
+            }
+          }
+          update_version(version);
+        }
+        return true;
+      },
+      ownKeys(target) {
+        get(version);
+        var own_keys = Reflect.ownKeys(target).filter((key2) => {
+          var source3 = sources.get(key2);
+          return source3 === void 0 || source3.v !== UNINITIALIZED;
+        });
+        for (var [key, source2] of sources) {
+          if (source2.v !== UNINITIALIZED && !(key in target)) {
+            own_keys.push(key);
+          }
+        }
+        return own_keys;
+      },
+      setPrototypeOf() {
+        state_prototype_fixed();
+      }
+    }
+  );
+}
+function update_version(signal, d = 1) {
+  set(signal, signal.v + d);
+}
+function get_proxied_value(value) {
+  try {
+    if (value !== null && typeof value === "object" && STATE_SYMBOL in value) {
+      return value[STATE_SYMBOL];
+    }
+  } catch (e) {
+  }
+  return value;
+}
+
+// node_modules/svelte/src/internal/client/reactivity/deriveds.js
+function derived(fn) {
+  var flags = DERIVED | DIRTY;
+  var parent_derived = active_reaction !== null && (active_reaction.f & DERIVED) !== 0 ? (
+    /** @type {Derived} */
+    active_reaction
+  ) : null;
+  if (active_effect === null || parent_derived !== null && (parent_derived.f & UNOWNED) !== 0) {
+    flags |= UNOWNED;
   } else {
-    throw new Error("hydration_failed");
+    active_effect.f |= EFFECT_HAS_DERIVED;
+  }
+  const signal = {
+    ctx: component_context,
+    deps: null,
+    effects: null,
+    equals,
+    f: flags,
+    fn,
+    reactions: null,
+    rv: 0,
+    v: (
+      /** @type {V} */
+      null
+    ),
+    wv: 0,
+    parent: parent_derived != null ? parent_derived : active_effect
+  };
+  if (dev_fallback_default && tracing_mode_flag) {
+    signal.created = get_stack("CreatedAt");
+  }
+  return signal;
+}
+function derived_safe_equal(fn) {
+  const signal = derived(fn);
+  signal.equals = safe_equals;
+  return signal;
+}
+function destroy_derived_effects(derived2) {
+  var effects = derived2.effects;
+  if (effects !== null) {
+    derived2.effects = null;
+    for (var i = 0; i < effects.length; i += 1) {
+      destroy_effect(
+        /** @type {Effect} */
+        effects[i]
+      );
+    }
   }
 }
-function props_invalid_value(key) {
-  if (DEV) {
-    const error = new Error(`props_invalid_value
-Cannot do \`bind:${key}={undefined}\` when \`${key}\` has a fallback value`);
-    error.name = "Svelte error";
-    throw error;
-  } else {
-    throw new Error("props_invalid_value");
+var stack = [];
+function get_derived_parent_effect(derived2) {
+  var parent = derived2.parent;
+  while (parent !== null) {
+    if ((parent.f & DERIVED) === 0) {
+      return (
+        /** @type {Effect} */
+        parent
+      );
+    }
+    parent = parent.parent;
   }
+  return null;
 }
-function rune_outside_svelte(rune) {
-  if (DEV) {
-    const error = new Error(`rune_outside_svelte
-The \`${rune}\` rune is only available inside \`.svelte\` and \`.svelte.js/ts\` files`);
-    error.name = "Svelte error";
-    throw error;
+function execute_derived(derived2) {
+  var value;
+  var prev_active_effect = active_effect;
+  set_active_effect(get_derived_parent_effect(derived2));
+  if (dev_fallback_default) {
+    let prev_inspect_effects = inspect_effects;
+    set_inspect_effects(/* @__PURE__ */ new Set());
+    try {
+      if (stack.includes(derived2)) {
+        derived_references_self();
+      }
+      stack.push(derived2);
+      destroy_derived_effects(derived2);
+      value = update_reaction(derived2);
+    } finally {
+      set_active_effect(prev_active_effect);
+      set_inspect_effects(prev_inspect_effects);
+      stack.pop();
+    }
   } else {
-    throw new Error("rune_outside_svelte");
+    try {
+      destroy_derived_effects(derived2);
+      value = update_reaction(derived2);
+    } finally {
+      set_active_effect(prev_active_effect);
+    }
   }
+  return value;
 }
-function state_prototype_fixed() {
-  if (DEV) {
-    const error = new Error(`state_prototype_fixed
-Cannot set prototype of \`$state\` object`);
-    error.name = "Svelte error";
-    throw error;
-  } else {
-    throw new Error("state_prototype_fixed");
-  }
-}
-function state_unsafe_mutation() {
-  if (DEV) {
-    const error = new Error(`state_unsafe_mutation
-Updating state inside a derived is forbidden. If the value should not be reactive, declare it without \`$state\``);
-    error.name = "Svelte error";
-    throw error;
-  } else {
-    throw new Error("state_unsafe_mutation");
+function update_derived(derived2) {
+  var value = execute_derived(derived2);
+  var status = (skip_reaction || (derived2.f & UNOWNED) !== 0) && derived2.deps !== null ? MAYBE_DIRTY : CLEAN;
+  set_signal_status(derived2, status);
+  if (!derived2.equals(value)) {
+    derived2.v = value;
+    derived2.wv = increment_write_version();
   }
 }
 
 // node_modules/svelte/src/internal/client/reactivity/sources.js
-function source(v) {
-  return {
+var inspect_effects = /* @__PURE__ */ new Set();
+var old_values = /* @__PURE__ */ new Map();
+function set_inspect_effects(v) {
+  inspect_effects = v;
+}
+function source(v, stack2) {
+  var signal = {
     f: 0,
     // TODO ideally we could skip this altogether, but it causes type errors
     v,
     reactions: null,
     equals,
-    version: 0
+    rv: 0,
+    wv: 0
   };
+  if (dev_fallback_default && tracing_mode_flag) {
+    signal.created = stack2 != null ? stack2 : get_stack("CreatedAt");
+    signal.debug = null;
+  }
+  return signal;
 }
-function mutable_source(initial_value) {
-  var _a, _b;
+function state(v, stack2) {
+  const s = source(v, stack2);
+  push_reaction_value(s);
+  return s;
+}
+function mutable_source(initial_value, immutable = false) {
+  var _a3, _b3;
   const s = source(initial_value);
-  s.equals = safe_equals;
-  if (current_component_context !== null && current_component_context.l !== null) {
-    ((_b = (_a = current_component_context.l).s) != null ? _b : _a.s = []).push(s);
+  if (!immutable) {
+    s.equals = safe_equals;
+  }
+  if (legacy_mode_flag && component_context !== null && component_context.l !== null) {
+    ((_b3 = (_a3 = component_context.l).s) != null ? _b3 : _a3.s = []).push(s);
   }
   return s;
 }
-function set(source2, value) {
-  var initialized = source2.v !== UNINITIALIZED;
-  if (initialized && current_reaction !== null && is_runes() && (current_reaction.f & DERIVED) !== 0) {
+function set(source2, value, should_proxy = false) {
+  var _a3;
+  if (active_reaction !== null && !untracking && is_runes() && (active_reaction.f & (DERIVED | BLOCK_EFFECT)) !== 0 && !((_a3 = reaction_sources) == null ? void 0 : _a3.includes(source2))) {
     state_unsafe_mutation();
   }
+  let new_value = should_proxy ? proxy(value) : value;
+  return internal_set(source2, new_value);
+}
+function internal_set(source2, value) {
+  var _a3;
   if (!source2.equals(value)) {
+    var old_value = source2.v;
+    if (is_destroying_effect) {
+      old_values.set(source2, value);
+    } else {
+      old_values.set(source2, old_value);
+    }
     source2.v = value;
-    source2.version = increment_version();
-    mark_reactions(source2, DIRTY, true);
-    if (is_runes() && initialized && current_effect !== null && (current_effect.f & CLEAN) !== 0 && (current_effect.f & BRANCH_EFFECT) === 0) {
-      if (current_dependencies !== null && current_dependencies.includes(source2)) {
-        set_signal_status(current_effect, DIRTY);
-        schedule_effect(current_effect);
-      } else {
-        if (current_untracked_writes === null) {
-          set_current_untracked_writes([source2]);
-        } else {
-          current_untracked_writes.push(source2);
-        }
+    if (dev_fallback_default && tracing_mode_flag) {
+      source2.updated = get_stack("UpdatedAt");
+      if (active_effect != null) {
+        source2.trace_need_increase = true;
+        (_a3 = source2.trace_v) != null ? _a3 : source2.trace_v = old_value;
       }
     }
-    if (DEV) {
-      for (const effect2 of inspect_effects) {
-        execute_effect(effect2);
+    if ((source2.f & DERIVED) !== 0) {
+      if ((source2.f & DIRTY) !== 0) {
+        execute_derived(
+          /** @type {Derived} */
+          source2
+        );
+      }
+      set_signal_status(source2, (source2.f & UNOWNED) === 0 ? CLEAN : MAYBE_DIRTY);
+    }
+    source2.wv = increment_write_version();
+    mark_reactions(source2, DIRTY);
+    if (is_runes() && active_effect !== null && (active_effect.f & CLEAN) !== 0 && (active_effect.f & (BRANCH_EFFECT | ROOT_EFFECT)) === 0) {
+      if (untracked_writes === null) {
+        set_untracked_writes([source2]);
+      } else {
+        untracked_writes.push(source2);
+      }
+    }
+    if (dev_fallback_default && inspect_effects.size > 0) {
+      const inspects = Array.from(inspect_effects);
+      for (const effect2 of inspects) {
+        if ((effect2.f & CLEAN) !== 0) {
+          set_signal_status(effect2, MAYBE_DIRTY);
+        }
+        if (check_dirtiness(effect2)) {
+          update_effect(effect2);
+        }
       }
       inspect_effects.clear();
     }
   }
   return value;
 }
-
-// node_modules/svelte/src/internal/client/dom/reconciler.js
-function create_fragment_from_html(html2) {
-  var elem = document.createElement("template");
-  elem.innerHTML = html2;
-  return elem.content;
-}
-function remove(current) {
-  if (is_array(current)) {
-    for (var i = 0; i < current.length; i++) {
-      var node = current[i];
-      if (node.isConnected) {
-        node.remove();
+function mark_reactions(signal, status) {
+  var reactions = signal.reactions;
+  if (reactions === null)
+    return;
+  var runes = is_runes();
+  var length = reactions.length;
+  for (var i = 0; i < length; i++) {
+    var reaction = reactions[i];
+    var flags = reaction.f;
+    if ((flags & DIRTY) !== 0)
+      continue;
+    if (!runes && reaction === active_effect)
+      continue;
+    if (dev_fallback_default && (flags & INSPECT_EFFECT) !== 0) {
+      inspect_effects.add(reaction);
+      continue;
+    }
+    set_signal_status(reaction, status);
+    if ((flags & (CLEAN | UNOWNED)) !== 0) {
+      if ((flags & DERIVED) !== 0) {
+        mark_reactions(
+          /** @type {Derived} */
+          reaction,
+          MAYBE_DIRTY
+        );
+      } else {
+        schedule_effect(
+          /** @type {Effect} */
+          reaction
+        );
       }
     }
-  } else if (current.isConnected) {
-    current.remove();
   }
+}
+
+// node_modules/svelte/src/internal/client/warnings.js
+var bold = "font-weight: bold";
+var normal = "font-weight: normal";
+function hydration_attribute_changed(attribute, html2, value) {
+  if (dev_fallback_default) {
+    console.warn(`%c[svelte] hydration_attribute_changed
+%cThe \`${attribute}\` attribute on \`${html2}\` changed its value between server and client renders. The client value, \`${value}\`, will be ignored in favour of the server value
+https://svelte.dev/e/hydration_attribute_changed`, bold, normal);
+  } else {
+    console.warn(`https://svelte.dev/e/hydration_attribute_changed`);
+  }
+}
+function hydration_mismatch(location) {
+  if (dev_fallback_default) {
+    console.warn(`%c[svelte] hydration_mismatch
+%c${location ? `Hydration failed because the initial UI does not match what was rendered on the server. The error occurred near ${location}` : "Hydration failed because the initial UI does not match what was rendered on the server"}
+https://svelte.dev/e/hydration_mismatch`, bold, normal);
+  } else {
+    console.warn(`https://svelte.dev/e/hydration_mismatch`);
+  }
+}
+function lifecycle_double_unmount() {
+  if (dev_fallback_default) {
+    console.warn(`%c[svelte] lifecycle_double_unmount
+%cTried to unmount a component that was not mounted
+https://svelte.dev/e/lifecycle_double_unmount`, bold, normal);
+  } else {
+    console.warn(`https://svelte.dev/e/lifecycle_double_unmount`);
+  }
+}
+function state_proxy_equality_mismatch(operator) {
+  if (dev_fallback_default) {
+    console.warn(`%c[svelte] state_proxy_equality_mismatch
+%cReactive \`$state(...)\` proxies and the values they proxy have different identities. Because of this, comparisons with \`${operator}\` will produce unexpected results
+https://svelte.dev/e/state_proxy_equality_mismatch`, bold, normal);
+  } else {
+    console.warn(`https://svelte.dev/e/state_proxy_equality_mismatch`);
+  }
+}
+
+// node_modules/svelte/src/internal/client/dom/hydration.js
+var hydrating = false;
+function set_hydrating(value) {
+  hydrating = value;
+}
+var hydrate_node;
+function set_hydrate_node(node) {
+  if (node === null) {
+    hydration_mismatch();
+    throw HYDRATION_ERROR;
+  }
+  return hydrate_node = node;
+}
+function hydrate_next() {
+  return set_hydrate_node(
+    /** @type {TemplateNode} */
+    get_next_sibling(hydrate_node)
+  );
+}
+function reset(node) {
+  if (!hydrating)
+    return;
+  if (get_next_sibling(hydrate_node) !== null) {
+    hydration_mismatch();
+    throw HYDRATION_ERROR;
+  }
+  hydrate_node = node;
+}
+function next(count = 1) {
+  if (hydrating) {
+    var i = count;
+    var node = hydrate_node;
+    while (i--) {
+      node = /** @type {TemplateNode} */
+      get_next_sibling(node);
+    }
+    hydrate_node = node;
+  }
+}
+function remove_nodes() {
+  var depth = 0;
+  var node = hydrate_node;
+  while (true) {
+    if (node.nodeType === 8) {
+      var data = (
+        /** @type {Comment} */
+        node.data
+      );
+      if (data === HYDRATION_END) {
+        if (depth === 0)
+          return node;
+        depth -= 1;
+      } else if (data === HYDRATION_START || data === HYDRATION_START_ELSE) {
+        depth += 1;
+      }
+    }
+    var next2 = (
+      /** @type {TemplateNode} */
+      get_next_sibling(node)
+    );
+    node.remove();
+    node = next2;
+  }
+}
+function read_hydration_instruction(node) {
+  if (!node || node.nodeType !== 8) {
+    hydration_mismatch();
+    throw HYDRATION_ERROR;
+  }
+  return (
+    /** @type {Comment} */
+    node.data
+  );
+}
+
+// node_modules/svelte/src/internal/client/dev/equality.js
+function init_array_prototype_warnings() {
+  const array_prototype2 = Array.prototype;
+  const cleanup = Array.__svelte_cleanup;
+  if (cleanup) {
+    cleanup();
+  }
+  const { indexOf, lastIndexOf, includes } = array_prototype2;
+  array_prototype2.indexOf = function(item, from_index) {
+    const index2 = indexOf.call(this, item, from_index);
+    if (index2 === -1) {
+      for (let i = from_index != null ? from_index : 0; i < this.length; i += 1) {
+        if (get_proxied_value(this[i]) === item) {
+          state_proxy_equality_mismatch("array.indexOf(...)");
+          break;
+        }
+      }
+    }
+    return index2;
+  };
+  array_prototype2.lastIndexOf = function(item, from_index) {
+    const index2 = lastIndexOf.call(this, item, from_index != null ? from_index : this.length - 1);
+    if (index2 === -1) {
+      for (let i = 0; i <= (from_index != null ? from_index : this.length - 1); i += 1) {
+        if (get_proxied_value(this[i]) === item) {
+          state_proxy_equality_mismatch("array.lastIndexOf(...)");
+          break;
+        }
+      }
+    }
+    return index2;
+  };
+  array_prototype2.includes = function(item, from_index) {
+    const has = includes.call(this, item, from_index);
+    if (!has) {
+      for (let i = 0; i < this.length; i += 1) {
+        if (get_proxied_value(this[i]) === item) {
+          state_proxy_equality_mismatch("array.includes(...)");
+          break;
+        }
+      }
+    }
+    return has;
+  };
+  Array.__svelte_cleanup = () => {
+    array_prototype2.indexOf = indexOf;
+    array_prototype2.lastIndexOf = lastIndexOf;
+    array_prototype2.includes = includes;
+  };
+}
+
+// node_modules/svelte/src/internal/client/dom/operations.js
+var $window;
+var $document;
+var is_firefox;
+var first_child_getter;
+var next_sibling_getter;
+function init_operations() {
+  if ($window !== void 0) {
+    return;
+  }
+  $window = window;
+  $document = document;
+  is_firefox = /Firefox/.test(navigator.userAgent);
+  var element_prototype = Element.prototype;
+  var node_prototype = Node.prototype;
+  var text_prototype = Text.prototype;
+  first_child_getter = get_descriptor(node_prototype, "firstChild").get;
+  next_sibling_getter = get_descriptor(node_prototype, "nextSibling").get;
+  if (is_extensible(element_prototype)) {
+    element_prototype.__click = void 0;
+    element_prototype.__className = void 0;
+    element_prototype.__attributes = null;
+    element_prototype.__style = void 0;
+    element_prototype.__e = void 0;
+  }
+  if (is_extensible(text_prototype)) {
+    text_prototype.__t = void 0;
+  }
+  if (dev_fallback_default) {
+    element_prototype.__svelte_meta = null;
+    init_array_prototype_warnings();
+  }
+}
+function create_text(value = "") {
+  return document.createTextNode(value);
+}
+function get_first_child(node) {
+  return first_child_getter.call(node);
+}
+function get_next_sibling(node) {
+  return next_sibling_getter.call(node);
+}
+function child(node, is_text) {
+  if (!hydrating) {
+    return get_first_child(node);
+  }
+  var child2 = (
+    /** @type {TemplateNode} */
+    get_first_child(hydrate_node)
+  );
+  if (child2 === null) {
+    child2 = hydrate_node.appendChild(create_text());
+  } else if (is_text && child2.nodeType !== 3) {
+    var text2 = create_text();
+    child2 == null ? void 0 : child2.before(text2);
+    set_hydrate_node(text2);
+    return text2;
+  }
+  set_hydrate_node(child2);
+  return child2;
+}
+function first_child(fragment, is_text) {
+  var _a3, _b3;
+  if (!hydrating) {
+    var first = (
+      /** @type {DocumentFragment} */
+      get_first_child(
+        /** @type {Node} */
+        fragment
+      )
+    );
+    if (first instanceof Comment && first.data === "")
+      return get_next_sibling(first);
+    return first;
+  }
+  if (is_text && ((_a3 = hydrate_node) == null ? void 0 : _a3.nodeType) !== 3) {
+    var text2 = create_text();
+    (_b3 = hydrate_node) == null ? void 0 : _b3.before(text2);
+    set_hydrate_node(text2);
+    return text2;
+  }
+  return hydrate_node;
+}
+function sibling(node, count = 1, is_text = false) {
+  let next_sibling = hydrating ? hydrate_node : node;
+  var last_sibling;
+  while (count--) {
+    last_sibling = next_sibling;
+    next_sibling = /** @type {TemplateNode} */
+    get_next_sibling(next_sibling);
+  }
+  if (!hydrating) {
+    return next_sibling;
+  }
+  var type = next_sibling == null ? void 0 : next_sibling.nodeType;
+  if (is_text && type !== 3) {
+    var text2 = create_text();
+    if (next_sibling === null) {
+      last_sibling == null ? void 0 : last_sibling.after(text2);
+    } else {
+      next_sibling.before(text2);
+    }
+    set_hydrate_node(text2);
+    return text2;
+  }
+  set_hydrate_node(next_sibling);
+  return (
+    /** @type {TemplateNode} */
+    next_sibling
+  );
+}
+function clear_text_content(node) {
+  node.textContent = "";
 }
 
 // node_modules/svelte/src/internal/client/reactivity/effects.js
@@ -326,46 +1138,63 @@ function push_effect(effect2, parent_effect) {
     parent_effect.last = effect2;
   }
 }
-function create_effect(type, fn, sync) {
-  var is_root = (type & ROOT_EFFECT) !== 0;
+function create_effect(type, fn, sync, push2 = true) {
+  var _a3;
+  var parent = active_effect;
+  if (dev_fallback_default) {
+    while (parent !== null && (parent.f & INSPECT_EFFECT) !== 0) {
+      parent = parent.parent;
+    }
+  }
   var effect2 = {
-    ctx: current_component_context,
+    ctx: component_context,
     deps: null,
-    dom: null,
+    nodes_start: null,
+    nodes_end: null,
     f: type | DIRTY,
     first: null,
     fn,
     last: null,
     next: null,
-    parent: is_root ? null : current_effect,
+    parent,
     prev: null,
     teardown: null,
-    transitions: null
+    transitions: null,
+    wv: 0
   };
-  if (DEV) {
+  if (dev_fallback_default) {
     effect2.component_function = dev_current_component_function;
   }
   if (sync) {
-    var previously_flushing_effect = is_flushing_effect;
     try {
-      set_is_flushing_effect(true);
-      execute_effect(effect2);
+      update_effect(effect2);
       effect2.f |= EFFECT_RAN;
-    } finally {
-      set_is_flushing_effect(previously_flushing_effect);
+    } catch (e) {
+      destroy_effect(effect2);
+      throw e;
     }
   } else if (fn !== null) {
     schedule_effect(effect2);
   }
-  var inert = sync && effect2.deps === null && effect2.first === null && effect2.dom === null && effect2.teardown === null;
-  if (!inert && !is_root) {
-    if (current_effect !== null) {
-      push_effect(effect2, current_effect);
+  var inert = sync && effect2.deps === null && effect2.first === null && effect2.nodes_start === null && effect2.teardown === null && (effect2.f & (EFFECT_HAS_DERIVED | BOUNDARY_EFFECT)) === 0;
+  if (!inert && push2) {
+    if (parent !== null) {
+      push_effect(effect2, parent);
     }
-    if (current_reaction !== null && (current_reaction.f & DERIVED) !== 0) {
-      push_effect(effect2, current_reaction);
+    if (active_reaction !== null && (active_reaction.f & DERIVED) !== 0) {
+      var derived2 = (
+        /** @type {Derived} */
+        active_reaction
+      );
+      ((_a3 = derived2.effects) != null ? _a3 : derived2.effects = []).push(effect2);
     }
   }
+  return effect2;
+}
+function teardown(fn) {
+  const effect2 = create_effect(RENDER_EFFECT, null, false);
+  set_signal_status(effect2, CLEAN);
+  effect2.teardown = fn;
   return effect2;
 }
 function effect_root(fn) {
@@ -374,72 +1203,132 @@ function effect_root(fn) {
     destroy_effect(effect2);
   };
 }
+function component_root(fn) {
+  const effect2 = create_effect(ROOT_EFFECT, fn, true);
+  return (options = {}) => {
+    return new Promise((fulfil) => {
+      if (options.outro) {
+        pause_effect(effect2, () => {
+          destroy_effect(effect2);
+          fulfil(void 0);
+        });
+      } else {
+        destroy_effect(effect2);
+        fulfil(void 0);
+      }
+    });
+  };
+}
 function effect(fn) {
   return create_effect(EFFECT, fn, false);
 }
 function render_effect(fn) {
   return create_effect(RENDER_EFFECT, fn, true);
 }
-function template_effect(fn) {
-  if (DEV) {
-    define_property(fn, "name", {
+function template_effect(fn, thunks = [], d = derived) {
+  const deriveds = thunks.map(d);
+  const effect2 = () => fn(...deriveds.map(get));
+  if (dev_fallback_default) {
+    define_property(effect2, "name", {
       value: "{expression}"
     });
   }
-  return render_effect(fn);
+  return block(effect2);
 }
 function block(fn, flags = 0) {
   return create_effect(RENDER_EFFECT | BLOCK_EFFECT | flags, fn, true);
 }
-function branch(fn) {
-  return create_effect(RENDER_EFFECT | BRANCH_EFFECT, fn, true);
+function branch(fn, push2 = true) {
+  return create_effect(RENDER_EFFECT | BRANCH_EFFECT, fn, true, push2);
 }
 function execute_effect_teardown(effect2) {
   var teardown2 = effect2.teardown;
   if (teardown2 !== null) {
     const previously_destroying_effect = is_destroying_effect;
-    const previous_reaction = current_reaction;
+    const previous_reaction = active_reaction;
     set_is_destroying_effect(true);
-    set_current_reaction(null);
+    set_active_reaction(null);
     try {
       teardown2.call(null);
     } finally {
       set_is_destroying_effect(previously_destroying_effect);
-      set_current_reaction(previous_reaction);
+      set_active_reaction(previous_reaction);
     }
   }
 }
-function destroy_effect(effect2, remove_dom = true) {
-  var dom = effect2.dom;
-  if (dom !== null && remove_dom) {
-    remove(dom);
+function destroy_effect_children(signal, remove_dom = false) {
+  var effect2 = signal.first;
+  signal.first = signal.last = null;
+  while (effect2 !== null) {
+    var next2 = effect2.next;
+    if ((effect2.f & ROOT_EFFECT) !== 0) {
+      effect2.parent = null;
+    } else {
+      destroy_effect(effect2, remove_dom);
+    }
+    effect2 = next2;
   }
-  destroy_effect_children(effect2, remove_dom);
+}
+function destroy_block_effect_children(signal) {
+  var effect2 = signal.first;
+  while (effect2 !== null) {
+    var next2 = effect2.next;
+    if ((effect2.f & BRANCH_EFFECT) === 0) {
+      destroy_effect(effect2);
+    }
+    effect2 = next2;
+  }
+}
+function destroy_effect(effect2, remove_dom = true) {
+  var removed = false;
+  if ((remove_dom || (effect2.f & HEAD_EFFECT) !== 0) && effect2.nodes_start !== null) {
+    remove_effect_dom(
+      effect2.nodes_start,
+      /** @type {TemplateNode} */
+      effect2.nodes_end
+    );
+    removed = true;
+  }
+  destroy_effect_children(effect2, remove_dom && !removed);
   remove_reactions(effect2, 0);
   set_signal_status(effect2, DESTROYED);
-  if (effect2.transitions) {
-    for (const transition2 of effect2.transitions) {
+  var transitions = effect2.transitions;
+  if (transitions !== null) {
+    for (const transition2 of transitions) {
       transition2.stop();
     }
   }
   execute_effect_teardown(effect2);
   var parent = effect2.parent;
-  if (parent !== null && (effect2.f & BRANCH_EFFECT) !== 0 && parent.first !== null) {
+  if (parent !== null && parent.first !== null) {
     unlink_effect(effect2);
   }
-  effect2.next = effect2.prev = effect2.teardown = effect2.ctx = effect2.dom = effect2.deps = effect2.parent = effect2.fn = null;
+  if (dev_fallback_default) {
+    effect2.component_function = null;
+  }
+  effect2.next = effect2.prev = effect2.teardown = effect2.ctx = effect2.deps = effect2.fn = effect2.nodes_start = effect2.nodes_end = null;
+}
+function remove_effect_dom(node, end) {
+  while (node !== null) {
+    var next2 = node === end ? null : (
+      /** @type {TemplateNode} */
+      get_next_sibling(node)
+    );
+    node.remove();
+    node = next2;
+  }
 }
 function unlink_effect(effect2) {
   var parent = effect2.parent;
   var prev = effect2.prev;
-  var next = effect2.next;
+  var next2 = effect2.next;
   if (prev !== null)
-    prev.next = next;
-  if (next !== null)
-    next.prev = prev;
+    prev.next = next2;
+  if (next2 !== null)
+    next2.prev = prev;
   if (parent !== null) {
     if (parent.first === effect2)
-      parent.first = next;
+      parent.first = next2;
     if (parent.last === effect2)
       parent.last = prev;
   }
@@ -490,8 +1379,12 @@ function resume_children(effect2, local) {
   if ((effect2.f & INERT) === 0)
     return;
   effect2.f ^= INERT;
+  if ((effect2.f & CLEAN) === 0) {
+    effect2.f ^= CLEAN;
+  }
   if (check_dirtiness(effect2)) {
-    execute_effect(effect2);
+    set_signal_status(effect2, DIRTY);
+    schedule_effect(effect2);
   }
   var child2 = effect2.first;
   while (child2 !== null) {
@@ -509,775 +1402,474 @@ function resume_children(effect2, local) {
   }
 }
 
-// node_modules/svelte/src/internal/client/warnings.js
-var bold = "font-weight: bold";
-var normal = "font-weight: normal";
-function hydration_attribute_changed(attribute, html2, value) {
-  if (DEV) {
-    console.warn(`%c[svelte] hydration_attribute_changed
-%cThe \`${attribute}\` attribute on \`${html2}\` changed its value between server and client renders. The client value, \`${value}\`, will be ignored in favour of the server value`, bold, normal);
-  } else {
-    console.warn("hydration_attribute_changed");
-  }
-}
-function hydration_mismatch(location) {
-  if (DEV) {
-    console.warn(`%c[svelte] hydration_mismatch
-%c${location ? `Hydration failed because the initial UI does not match what was rendered on the server. The error occurred near ${location}` : "Hydration failed because the initial UI does not match what was rendered on the server"}`, bold, normal);
-  } else {
-    console.warn("hydration_mismatch");
-  }
-}
-function lifecycle_double_unmount() {
-  if (DEV) {
-    console.warn(`%c[svelte] lifecycle_double_unmount
-%cTried to unmount a component that was not mounted`, bold, normal);
-  } else {
-    console.warn("lifecycle_double_unmount");
-  }
-}
-function ownership_invalid_mutation(component2, owner) {
-  if (DEV) {
-    console.warn(`%c[svelte] ownership_invalid_mutation
-%c${component2 ? `${component2} mutated a value owned by ${owner}. This is strongly discouraged. Consider passing values to child components with \`bind:\`, or use a callback instead` : "Mutating a value outside the component that created it is strongly discouraged. Consider passing values to child components with `bind:`, or use a callback instead"}`, bold, normal);
-  } else {
-    console.warn("ownership_invalid_mutation");
-  }
-}
-function state_proxy_equality_mismatch(operator) {
-  if (DEV) {
-    console.warn(`%c[svelte] state_proxy_equality_mismatch
-%cReactive \`$state(...)\` proxies and the values they proxy have different identities. Because of this, comparisons with \`${operator}\` will produce unexpected results. Consider using \`$state.is(a, b)\` instead`, bold, normal);
-  } else {
-    console.warn("state_proxy_equality_mismatch");
-  }
-}
-
-// node_modules/svelte/src/internal/client/dev/ownership.js
-var boundaries = {};
-var chrome_pattern = /at (?:.+ \()?(.+):(\d+):(\d+)\)?$/;
-var firefox_pattern = /@(.+):(\d+):(\d+)$/;
-function get_stack() {
-  var _a;
-  const stack = new Error().stack;
-  if (!stack)
-    return null;
-  const entries = [];
-  for (const line of stack.split("\n")) {
-    let match = (_a = chrome_pattern.exec(line)) != null ? _a : firefox_pattern.exec(line);
-    if (match) {
-      entries.push({
-        file: match[1],
-        line: +match[2],
-        column: +match[3]
-      });
-    }
-  }
-  return entries;
-}
-function get_component() {
-  var _a;
-  const stack = (_a = get_stack()) == null ? void 0 : _a.slice(4);
-  if (!stack)
-    return null;
-  for (let i = 0; i < stack.length; i++) {
-    const entry = stack[i];
-    const modules = boundaries[entry.file];
-    if (!modules) {
-      if (i === 0)
-        return null;
-      continue;
-    }
-    for (const module2 of modules) {
-      if (module2.start.line < entry.line && module2.end.line > entry.line) {
-        return module2.component;
-      }
-    }
-  }
-  return null;
-}
-var ADD_OWNER = Symbol("ADD_OWNER");
-function widen_ownership(from, to) {
-  if (to.owners === null) {
-    return;
-  }
-  while (from) {
-    if (from.owners === null) {
-      to.owners = null;
-      break;
-    }
-    for (const owner of from.owners) {
-      to.owners.add(owner);
-    }
-    from = from.parent;
-  }
-}
-function has_owner(metadata, component2) {
-  if (metadata.owners === null) {
-    return true;
-  }
-  return metadata.owners.has(component2) || metadata.parent !== null && has_owner(metadata.parent, component2);
-}
-function get_owner(metadata) {
-  var _a, _b;
-  return (_b = (_a = metadata == null ? void 0 : metadata.owners) == null ? void 0 : _a.values().next().value) != null ? _b : get_owner(
-    /** @type {import('#client').ProxyMetadata} */
-    metadata.parent
-  );
-}
-function check_ownership(metadata) {
-  const component2 = get_component();
-  if (component2 && !has_owner(metadata, component2)) {
-    let original = get_owner(metadata);
-    if (original.filename !== component2.filename) {
-      ownership_invalid_mutation(component2.filename, original.filename);
-    } else {
-      ownership_invalid_mutation();
-    }
-  }
-}
-
-// node_modules/svelte/src/internal/client/proxy.js
-function proxy(value, immutable = true, parent = null, prev) {
-  var _a, _b;
-  if (typeof value === "object" && value != null && !is_frozen(value) && !(STATE_FROZEN_SYMBOL in value)) {
-    if (STATE_SYMBOL in value) {
-      const metadata = (
-        /** @type {import('#client').ProxyMetadata<T>} */
-        value[STATE_SYMBOL]
-      );
-      if (metadata.t === value || metadata.p === value) {
-        if (DEV) {
-          widen_ownership(metadata, metadata);
-          metadata.parent = parent;
-        }
-        return metadata.p;
-      }
-    }
-    const prototype = get_prototype_of(value);
-    if (prototype === object_prototype || prototype === array_prototype) {
-      const proxy2 = new Proxy(value, state_proxy_handler);
-      define_property(value, STATE_SYMBOL, {
-        value: (
-          /** @type {import('#client').ProxyMetadata} */
-          {
-            s: /* @__PURE__ */ new Map(),
-            v: source(0),
-            a: is_array(value),
-            i: immutable,
-            p: proxy2,
-            t: value
-          }
-        ),
-        writable: true,
-        enumerable: false
-      });
-      if (DEV) {
-        value[STATE_SYMBOL].parent = parent;
-        if (prev) {
-          const prev_owners = (_b = (_a = prev == null ? void 0 : prev.v) == null ? void 0 : _a[STATE_SYMBOL]) == null ? void 0 : _b.owners;
-          value[STATE_SYMBOL].owners = prev_owners ? new Set(prev_owners) : null;
-        } else {
-          value[STATE_SYMBOL].owners = parent === null ? current_component_context !== null ? /* @__PURE__ */ new Set([current_component_context.function]) : null : /* @__PURE__ */ new Set();
-        }
-      }
-      return proxy2;
-    }
-  }
-  return value;
-}
-function update_version(signal, d = 1) {
-  set(signal, signal.v + d);
-}
-var state_proxy_handler = {
-  defineProperty(target, prop2, descriptor) {
-    if (descriptor.value) {
-      const metadata = target[STATE_SYMBOL];
-      const s = metadata.s.get(prop2);
-      if (s !== void 0)
-        set(s, proxy(descriptor.value, metadata.i, metadata));
-    }
-    return Reflect.defineProperty(target, prop2, descriptor);
-  },
-  deleteProperty(target, prop2) {
-    const metadata = target[STATE_SYMBOL];
-    const s = metadata.s.get(prop2);
-    const is_array2 = metadata.a;
-    const boolean = delete target[prop2];
-    if (is_array2 && boolean) {
-      const ls = metadata.s.get("length");
-      const length = target.length - 1;
-      if (ls !== void 0 && ls.v !== length) {
-        set(ls, length);
-      }
-    }
-    if (s !== void 0)
-      set(s, UNINITIALIZED);
-    if (boolean) {
-      update_version(metadata.v);
-    }
-    return boolean;
-  },
-  get(target, prop2, receiver) {
-    var _a;
-    if (prop2 === STATE_SYMBOL) {
-      return Reflect.get(target, STATE_SYMBOL);
-    }
-    const metadata = target[STATE_SYMBOL];
-    let s = metadata.s.get(prop2);
-    if (s === void 0 && (!(prop2 in target) || ((_a = get_descriptor(target, prop2)) == null ? void 0 : _a.writable))) {
-      s = (metadata.i ? source : mutable_source)(proxy(target[prop2], metadata.i, metadata));
-      metadata.s.set(prop2, s);
-    }
-    if (s !== void 0) {
-      const value = get(s);
-      return value === UNINITIALIZED ? void 0 : value;
-    }
-    return Reflect.get(target, prop2, receiver);
-  },
-  getOwnPropertyDescriptor(target, prop2) {
-    const descriptor = Reflect.getOwnPropertyDescriptor(target, prop2);
-    if (descriptor && "value" in descriptor) {
-      const metadata = target[STATE_SYMBOL];
-      const s = metadata.s.get(prop2);
-      if (s) {
-        descriptor.value = get(s);
-      }
-    }
-    return descriptor;
-  },
-  has(target, prop2) {
-    var _a;
-    if (prop2 === STATE_SYMBOL) {
-      return true;
-    }
-    const metadata = target[STATE_SYMBOL];
-    const has = Reflect.has(target, prop2);
-    let s = metadata.s.get(prop2);
-    if (s !== void 0 || current_effect !== null && (!has || ((_a = get_descriptor(target, prop2)) == null ? void 0 : _a.writable))) {
-      if (s === void 0) {
-        s = (metadata.i ? source : mutable_source)(
-          has ? proxy(target[prop2], metadata.i, metadata) : UNINITIALIZED
-        );
-        metadata.s.set(prop2, s);
-      }
-      const value = get(s);
-      if (value === UNINITIALIZED) {
-        return false;
-      }
-    }
-    return has;
-  },
-  set(target, prop2, value, receiver) {
-    const metadata = target[STATE_SYMBOL];
-    let s = metadata.s.get(prop2);
-    if (s === void 0) {
-      untrack(() => receiver[prop2]);
-      s = metadata.s.get(prop2);
-    }
-    if (s !== void 0) {
-      set(s, proxy(value, metadata.i, metadata));
-    }
-    const is_array2 = metadata.a;
-    const not_has = !(prop2 in target);
-    if (DEV) {
-      const prop_metadata = value == null ? void 0 : value[STATE_SYMBOL];
-      if (prop_metadata && (prop_metadata == null ? void 0 : prop_metadata.parent) !== metadata) {
-        widen_ownership(metadata, prop_metadata);
-      }
-      check_ownership(metadata);
-    }
-    if (is_array2 && prop2 === "length") {
-      for (let i = value; i < target.length; i += 1) {
-        const s2 = metadata.s.get(i + "");
-        if (s2 !== void 0)
-          set(s2, UNINITIALIZED);
-      }
-    }
-    target[prop2] = value;
-    if (not_has) {
-      if (is_array2) {
-        const ls = metadata.s.get("length");
-        const length = target.length;
-        if (ls !== void 0 && ls.v !== length) {
-          set(ls, length);
-        }
-      }
-      update_version(metadata.v);
-    }
-    return true;
-  },
-  ownKeys(target) {
-    const metadata = target[STATE_SYMBOL];
-    get(metadata.v);
-    return Reflect.ownKeys(target);
-  }
-};
-if (DEV) {
-  state_proxy_handler.setPrototypeOf = () => {
-    state_prototype_fixed();
-  };
-}
-function get_proxied_value(value) {
-  if (value !== null && typeof value === "object" && STATE_SYMBOL in value) {
-    var metadata = value[STATE_SYMBOL];
-    if (metadata) {
-      return metadata.p;
-    }
-  }
-  return value;
-}
-
-// node_modules/svelte/src/internal/shared/utils.js
-function run_all(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    arr[i]();
-  }
-}
-
 // node_modules/svelte/src/internal/client/dom/task.js
-var is_micro_task_queued = false;
-var is_idle_task_queued = false;
-var current_queued_micro_tasks = [];
-var current_queued_idle_tasks = [];
-function process_micro_tasks() {
-  is_micro_task_queued = false;
-  const tasks = current_queued_micro_tasks.slice();
-  current_queued_micro_tasks = [];
+var micro_tasks = [];
+var idle_tasks = [];
+function run_micro_tasks() {
+  var tasks = micro_tasks;
+  micro_tasks = [];
   run_all(tasks);
 }
-function process_idle_tasks() {
-  is_idle_task_queued = false;
-  const tasks = current_queued_idle_tasks.slice();
-  current_queued_idle_tasks = [];
+function run_idle_tasks() {
+  var tasks = idle_tasks;
+  idle_tasks = [];
   run_all(tasks);
 }
 function queue_micro_task(fn) {
-  if (!is_micro_task_queued) {
-    is_micro_task_queued = true;
-    queueMicrotask(process_micro_tasks);
+  if (micro_tasks.length === 0) {
+    queueMicrotask(run_micro_tasks);
   }
-  current_queued_micro_tasks.push(fn);
+  micro_tasks.push(fn);
 }
 function flush_tasks() {
-  if (is_micro_task_queued) {
-    process_micro_tasks();
+  if (micro_tasks.length > 0) {
+    run_micro_tasks();
   }
-  if (is_idle_task_queued) {
-    process_idle_tasks();
-  }
-}
-
-// node_modules/svelte/src/internal/client/reactivity/deriveds.js
-var updating_derived = false;
-function derived(fn) {
-  let flags = DERIVED | DIRTY;
-  if (current_effect === null)
-    flags |= UNOWNED;
-  const signal = {
-    deps: null,
-    deriveds: null,
-    equals,
-    f: flags,
-    first: null,
-    fn,
-    last: null,
-    reactions: null,
-    v: (
-      /** @type {V} */
-      null
-    ),
-    version: 0
-  };
-  if (current_reaction !== null && (current_reaction.f & DERIVED) !== 0) {
-    var current_derived = (
-      /** @type {import('#client').Derived<V>} */
-      current_reaction
-    );
-    if (current_derived.deriveds === null) {
-      current_derived.deriveds = [signal];
-    } else {
-      current_derived.deriveds.push(signal);
-    }
-  }
-  return signal;
-}
-function derived_safe_equal(fn) {
-  const signal = derived(fn);
-  signal.equals = safe_equals;
-  return signal;
-}
-function destroy_derived_children(signal) {
-  destroy_effect_children(signal);
-  var deriveds = signal.deriveds;
-  if (deriveds !== null) {
-    signal.deriveds = null;
-    for (var i = 0; i < deriveds.length; i += 1) {
-      destroy_derived(deriveds[i]);
-    }
-  }
-}
-function update_derived(derived2) {
-  var previous_updating_derived = updating_derived;
-  updating_derived = true;
-  destroy_derived_children(derived2);
-  var value = execute_reaction_fn(derived2);
-  updating_derived = previous_updating_derived;
-  var status = (current_skip_reaction || (derived2.f & UNOWNED) !== 0) && derived2.deps !== null ? MAYBE_DIRTY : CLEAN;
-  set_signal_status(derived2, status);
-  if (!derived2.equals(value)) {
-    derived2.v = value;
-    derived2.version = increment_version();
-    mark_reactions(derived2, DIRTY, false);
-  }
-}
-function destroy_derived(signal) {
-  destroy_derived_children(signal);
-  remove_reactions(signal, 0);
-  set_signal_status(signal, DESTROYED);
-  signal.first = signal.last = signal.deps = signal.reactions = // @ts-expect-error `signal.fn` cannot be `null` while the signal is alive
-  signal.fn = null;
-}
-
-// node_modules/svelte/src/internal/shared/errors.js
-function snippet_used_as_component() {
-  if (DEV) {
-    const error = new Error(`snippet_used_as_component
-A snippet must be rendered with \`{@render ...}\``);
-    error.name = "Svelte error";
-    throw error;
-  } else {
-    throw new Error("snippet_used_as_component");
+  if (idle_tasks.length > 0) {
+    run_idle_tasks();
   }
 }
 
 // node_modules/svelte/src/internal/client/runtime.js
-var FLUSH_MICROTASK = 0;
-var FLUSH_SYNC = 1;
 var handled_errors = /* @__PURE__ */ new WeakSet();
-var current_scheduler_mode = FLUSH_MICROTASK;
-var is_micro_task_queued2 = false;
-var is_flushing_effect = false;
+var is_throwing_error = false;
+var is_flushing = false;
+var last_scheduled_effect = null;
+var is_updating_effect = false;
 var is_destroying_effect = false;
-function set_is_flushing_effect(value) {
-  is_flushing_effect = value;
-}
 function set_is_destroying_effect(value) {
   is_destroying_effect = value;
 }
-var inspect_effects = /* @__PURE__ */ new Set();
-var current_queued_root_effects = [];
-var flush_count = 0;
-var current_reaction = null;
-function set_current_reaction(reaction) {
-  current_reaction = reaction;
+var queued_root_effects = [];
+var dev_effect_stack = [];
+var active_reaction = null;
+var untracking = false;
+function set_active_reaction(reaction) {
+  active_reaction = reaction;
 }
-var current_effect = null;
-var current_dependencies = null;
-var current_dependencies_index = 0;
-var current_untracked_writes = null;
-function set_current_untracked_writes(value) {
-  current_untracked_writes = value;
+var active_effect = null;
+function set_active_effect(effect2) {
+  active_effect = effect2;
 }
-var current_version = 0;
-var current_skip_reaction = false;
-var is_signals_recorded = false;
-var captured_signals = /* @__PURE__ */ new Set();
-var current_component_context = null;
-var dev_current_component_function = null;
-function increment_version() {
-  return current_version++;
+var reaction_sources = null;
+function push_reaction_value(value) {
+  if (active_reaction !== null && active_reaction.f & EFFECT_IS_UPDATING) {
+    if (reaction_sources === null) {
+      reaction_sources = [value];
+    } else {
+      reaction_sources.push(value);
+    }
+  }
 }
-function is_runes() {
-  return current_component_context !== null && current_component_context.l === null;
+var new_deps = null;
+var skipped_deps = 0;
+var untracked_writes = null;
+function set_untracked_writes(value) {
+  untracked_writes = value;
+}
+var write_version = 1;
+var read_version = 0;
+var skip_reaction = false;
+var captured_signals = null;
+function increment_write_version() {
+  return ++write_version;
 }
 function check_dirtiness(reaction) {
-  var _a, _b;
+  var _a3, _b3;
   var flags = reaction.f;
-  var is_dirty = (flags & DIRTY) !== 0;
-  if (is_dirty) {
+  if ((flags & DIRTY) !== 0) {
     return true;
   }
-  var is_unowned = (flags & UNOWNED) !== 0;
-  var is_disconnected = (flags & DISCONNECTED) !== 0;
   if ((flags & MAYBE_DIRTY) !== 0) {
     var dependencies = reaction.deps;
+    var is_unowned = (flags & UNOWNED) !== 0;
     if (dependencies !== null) {
+      var i;
+      var dependency;
+      var is_disconnected = (flags & DISCONNECTED) !== 0;
+      var is_unowned_connected = is_unowned && active_effect !== null && !skip_reaction;
       var length = dependencies.length;
-      var reactions;
-      for (var i = 0; i < length; i++) {
-        var dependency = dependencies[i];
-        if (!is_dirty && check_dirtiness(
-          /** @type {import('#client').Derived} */
+      if (is_disconnected || is_unowned_connected) {
+        var derived2 = (
+          /** @type {Derived} */
+          reaction
+        );
+        var parent = derived2.parent;
+        for (i = 0; i < length; i++) {
+          dependency = dependencies[i];
+          if (is_disconnected || !((_a3 = dependency == null ? void 0 : dependency.reactions) == null ? void 0 : _a3.includes(derived2))) {
+            ((_b3 = dependency.reactions) != null ? _b3 : dependency.reactions = []).push(derived2);
+          }
+        }
+        if (is_disconnected) {
+          derived2.f ^= DISCONNECTED;
+        }
+        if (is_unowned_connected && parent !== null && (parent.f & UNOWNED) === 0) {
+          derived2.f ^= UNOWNED;
+        }
+      }
+      for (i = 0; i < length; i++) {
+        dependency = dependencies[i];
+        if (check_dirtiness(
+          /** @type {Derived} */
           dependency
         )) {
           update_derived(
-            /** @type {import('#client').Derived} **/
+            /** @type {Derived} */
             dependency
           );
         }
-        var version = dependency.version;
-        if (is_unowned) {
-          if (version > /** @type {import('#client').Derived} */
-          reaction.version) {
-            return true;
-          }
-          if (!current_skip_reaction && !((_a = dependency == null ? void 0 : dependency.reactions) == null ? void 0 : _a.includes(reaction))) {
-            ((_b = dependency.reactions) != null ? _b : dependency.reactions = []).push(reaction);
-          }
-        } else if ((reaction.f & DIRTY) !== 0) {
+        if (dependency.wv > reaction.wv) {
           return true;
-        } else if (is_disconnected) {
-          if (version > /** @type {import('#client').Derived} */
-          reaction.version) {
-            is_dirty = true;
-          }
-          reactions = dependency.reactions;
-          if (reactions === null) {
-            dependency.reactions = [reaction];
-          } else if (!reactions.includes(reaction)) {
-            reactions.push(reaction);
-          }
         }
       }
     }
-    if (!is_unowned) {
+    if (!is_unowned || active_effect !== null && !skip_reaction) {
       set_signal_status(reaction, CLEAN);
     }
-    if (is_disconnected) {
-      reaction.f ^= DISCONNECTED;
-    }
   }
-  return is_dirty;
+  return false;
 }
-function handle_error(error, effect2, component_context) {
-  var _a, _b;
-  if (!DEV || handled_errors.has(error) || component_context === null) {
-    throw error;
-  }
-  const component_stack = [];
-  const effect_name = (_a = effect2.fn) == null ? void 0 : _a.name;
-  if (effect_name) {
-    component_stack.push(effect_name);
-  }
-  let current_context = component_context;
-  while (current_context !== null) {
-    var filename = (_b = current_context.function) == null ? void 0 : _b.filename;
-    if (filename) {
-      const file = filename.split("/").at(-1);
-      component_stack.push(file);
+function propagate_error(error, effect2) {
+  var current = effect2;
+  while (current !== null) {
+    if ((current.f & BOUNDARY_EFFECT) !== 0) {
+      try {
+        current.fn(error);
+        return;
+      } catch (e) {
+        current.f ^= BOUNDARY_EFFECT;
+      }
     }
-    current_context = current_context.p;
+    current = current.parent;
   }
-  const indent = /Firefox/.test(navigator.userAgent) ? "  " : "	";
-  define_property(error, "message", {
-    value: error.message + `
+  is_throwing_error = false;
+  throw error;
+}
+function should_rethrow_error(effect2) {
+  return (effect2.f & DESTROYED) === 0 && (effect2.parent === null || (effect2.parent.f & BOUNDARY_EFFECT) === 0);
+}
+function handle_error(error, effect2, previous_effect, component_context2) {
+  var _a3, _b3;
+  if (is_throwing_error) {
+    if (previous_effect === null) {
+      is_throwing_error = false;
+    }
+    if (should_rethrow_error(effect2)) {
+      throw error;
+    }
+    return;
+  }
+  if (previous_effect !== null) {
+    is_throwing_error = true;
+  }
+  if (dev_fallback_default && component_context2 !== null && error instanceof Error && !handled_errors.has(error)) {
+    handled_errors.add(error);
+    const component_stack = [];
+    const effect_name = (_a3 = effect2.fn) == null ? void 0 : _a3.name;
+    if (effect_name) {
+      component_stack.push(effect_name);
+    }
+    let current_context = component_context2;
+    while (current_context !== null) {
+      var filename = (_b3 = current_context.function) == null ? void 0 : _b3[FILENAME];
+      if (filename) {
+        const file = filename.split("/").pop();
+        component_stack.push(file);
+      }
+      current_context = current_context.p;
+    }
+    const indent = is_firefox ? "  " : "	";
+    define_property(error, "message", {
+      value: error.message + `
 ${component_stack.map((name) => `
 ${indent}in ${name}`).join("")}
 `
-  });
-  const stack = error.stack;
-  if (stack) {
-    const lines = stack.split("\n");
-    const new_lines = [];
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      if (line.includes("svelte/src/internal")) {
-        continue;
-      }
-      new_lines.push(line);
-    }
-    define_property(error, "stack", {
-      value: error.stack + new_lines.join("\n")
     });
-  }
-  handled_errors.add(error);
-  throw error;
-}
-function execute_reaction_fn(signal) {
-  const previous_dependencies = current_dependencies;
-  const previous_dependencies_index = current_dependencies_index;
-  const previous_untracked_writes = current_untracked_writes;
-  const previous_reaction = current_reaction;
-  const previous_skip_reaction = current_skip_reaction;
-  current_dependencies = /** @type {null | import('#client').Value[]} */
-  null;
-  current_dependencies_index = 0;
-  current_untracked_writes = null;
-  current_reaction = (signal.f & (BRANCH_EFFECT | ROOT_EFFECT)) === 0 ? signal : null;
-  current_skip_reaction = !is_flushing_effect && (signal.f & UNOWNED) !== 0;
-  try {
-    let res = (
-      /** @type {Function} */
-      (0, signal.fn)()
-    );
-    let dependencies = (
-      /** @type {import('#client').Value<unknown>[]} **/
-      signal.deps
-    );
-    if (current_dependencies !== null) {
-      let i;
-      if (dependencies !== null) {
-        const deps_length = dependencies.length;
-        const full_current_dependencies = current_dependencies_index === 0 ? current_dependencies : dependencies.slice(0, current_dependencies_index).concat(current_dependencies);
-        const current_dep_length = full_current_dependencies.length;
-        const full_current_dependencies_set = current_dep_length > 16 && deps_length - current_dependencies_index > 1 ? new Set(full_current_dependencies) : null;
-        for (i = current_dependencies_index; i < deps_length; i++) {
-          const dependency = dependencies[i];
-          if (full_current_dependencies_set !== null ? !full_current_dependencies_set.has(dependency) : !full_current_dependencies.includes(dependency)) {
-            remove_reaction(signal, dependency);
-          }
+    define_property(error, "component_stack", {
+      value: component_stack
+    });
+    const stack2 = error.stack;
+    if (stack2) {
+      const lines = stack2.split("\n");
+      const new_lines = [];
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        if (line.includes("svelte/src/internal")) {
+          continue;
         }
+        new_lines.push(line);
       }
-      if (dependencies !== null && current_dependencies_index > 0) {
-        dependencies.length = current_dependencies_index + current_dependencies.length;
-        for (i = 0; i < current_dependencies.length; i++) {
-          dependencies[current_dependencies_index + i] = current_dependencies[i];
+      define_property(error, "stack", {
+        value: new_lines.join("\n")
+      });
+    }
+  }
+  propagate_error(error, effect2);
+  if (should_rethrow_error(effect2)) {
+    throw error;
+  }
+}
+function schedule_possible_effect_self_invalidation(signal, effect2, root3 = true) {
+  var reactions = signal.reactions;
+  if (reactions === null)
+    return;
+  for (var i = 0; i < reactions.length; i++) {
+    var reaction = reactions[i];
+    if (reaction_sources == null ? void 0 : reaction_sources.includes(signal))
+      continue;
+    if ((reaction.f & DERIVED) !== 0) {
+      schedule_possible_effect_self_invalidation(
+        /** @type {Derived} */
+        reaction,
+        effect2,
+        false
+      );
+    } else if (effect2 === reaction) {
+      if (root3) {
+        set_signal_status(reaction, DIRTY);
+      } else if ((reaction.f & CLEAN) !== 0) {
+        set_signal_status(reaction, MAYBE_DIRTY);
+      }
+      schedule_effect(
+        /** @type {Effect} */
+        reaction
+      );
+    }
+  }
+}
+function update_reaction(reaction) {
+  var _a3, _b3;
+  var previous_deps = new_deps;
+  var previous_skipped_deps = skipped_deps;
+  var previous_untracked_writes = untracked_writes;
+  var previous_reaction = active_reaction;
+  var previous_skip_reaction = skip_reaction;
+  var previous_reaction_sources = reaction_sources;
+  var previous_component_context = component_context;
+  var previous_untracking = untracking;
+  var flags = reaction.f;
+  new_deps = /** @type {null | Value[]} */
+  null;
+  skipped_deps = 0;
+  untracked_writes = null;
+  skip_reaction = (flags & UNOWNED) !== 0 && (untracking || !is_updating_effect || active_reaction === null);
+  active_reaction = (flags & (BRANCH_EFFECT | ROOT_EFFECT)) === 0 ? reaction : null;
+  reaction_sources = null;
+  set_component_context(reaction.ctx);
+  untracking = false;
+  read_version++;
+  reaction.f |= EFFECT_IS_UPDATING;
+  try {
+    var result = (
+      /** @type {Function} */
+      (0, reaction.fn)()
+    );
+    var deps = reaction.deps;
+    if (new_deps !== null) {
+      var i;
+      remove_reactions(reaction, skipped_deps);
+      if (deps !== null && skipped_deps > 0) {
+        deps.length = skipped_deps + new_deps.length;
+        for (i = 0; i < new_deps.length; i++) {
+          deps[skipped_deps + i] = new_deps[i];
         }
       } else {
-        signal.deps = /** @type {import('#client').Value<V>[]} **/
-        dependencies = current_dependencies;
+        reaction.deps = deps = new_deps;
       }
-      if (!current_skip_reaction) {
-        for (i = current_dependencies_index; i < dependencies.length; i++) {
-          const dependency = dependencies[i];
-          const reactions = dependency.reactions;
-          if (reactions === null) {
-            dependency.reactions = [signal];
-          } else if (reactions[reactions.length - 1] !== signal && !reactions.includes(signal)) {
-            reactions.push(signal);
-          }
+      if (!skip_reaction) {
+        for (i = skipped_deps; i < deps.length; i++) {
+          ((_b3 = (_a3 = deps[i]).reactions) != null ? _b3 : _a3.reactions = []).push(reaction);
         }
       }
-    } else if (dependencies !== null && current_dependencies_index < dependencies.length) {
-      remove_reactions(signal, current_dependencies_index);
-      dependencies.length = current_dependencies_index;
+    } else if (deps !== null && skipped_deps < deps.length) {
+      remove_reactions(reaction, skipped_deps);
+      deps.length = skipped_deps;
     }
-    return res;
+    if (is_runes() && untracked_writes !== null && !untracking && deps !== null && (reaction.f & (DERIVED | MAYBE_DIRTY | DIRTY)) === 0) {
+      for (i = 0; i < /** @type {Source[]} */
+      untracked_writes.length; i++) {
+        schedule_possible_effect_self_invalidation(
+          untracked_writes[i],
+          /** @type {Effect} */
+          reaction
+        );
+      }
+    }
+    if (previous_reaction !== null && previous_reaction !== reaction) {
+      read_version++;
+      if (untracked_writes !== null) {
+        if (previous_untracked_writes === null) {
+          previous_untracked_writes = untracked_writes;
+        } else {
+          previous_untracked_writes.push(.../** @type {Source[]} */
+          untracked_writes);
+        }
+      }
+    }
+    return result;
   } finally {
-    current_dependencies = previous_dependencies;
-    current_dependencies_index = previous_dependencies_index;
-    current_untracked_writes = previous_untracked_writes;
-    current_reaction = previous_reaction;
-    current_skip_reaction = previous_skip_reaction;
+    new_deps = previous_deps;
+    skipped_deps = previous_skipped_deps;
+    untracked_writes = previous_untracked_writes;
+    active_reaction = previous_reaction;
+    skip_reaction = previous_skip_reaction;
+    reaction_sources = previous_reaction_sources;
+    set_component_context(previous_component_context);
+    untracking = previous_untracking;
+    reaction.f ^= EFFECT_IS_UPDATING;
   }
 }
 function remove_reaction(signal, dependency) {
-  const reactions = dependency.reactions;
-  let reactions_length = 0;
+  let reactions = dependency.reactions;
   if (reactions !== null) {
-    reactions_length = reactions.length - 1;
-    const index2 = reactions.indexOf(signal);
+    var index2 = index_of.call(reactions, signal);
     if (index2 !== -1) {
-      if (reactions_length === 0) {
-        dependency.reactions = null;
+      var new_length = reactions.length - 1;
+      if (new_length === 0) {
+        reactions = dependency.reactions = null;
       } else {
-        reactions[index2] = reactions[reactions_length];
+        reactions[index2] = reactions[new_length];
         reactions.pop();
       }
     }
   }
-  if (reactions_length === 0 && (dependency.f & DERIVED) !== 0) {
+  if (reactions === null && (dependency.f & DERIVED) !== 0 && // Destroying a child effect while updating a parent effect can cause a dependency to appear
+  // to be unused, when in fact it is used by the currently-updating parent. Checking `new_deps`
+  // allows us to skip the expensive work of disconnecting and immediately reconnecting it
+  (new_deps === null || !new_deps.includes(dependency))) {
     set_signal_status(dependency, MAYBE_DIRTY);
     if ((dependency.f & (UNOWNED | DISCONNECTED)) === 0) {
       dependency.f ^= DISCONNECTED;
     }
+    destroy_derived_effects(
+      /** @type {Derived} **/
+      dependency
+    );
     remove_reactions(
-      /** @type {import('#client').Derived} **/
+      /** @type {Derived} **/
       dependency,
       0
     );
   }
 }
 function remove_reactions(signal, start_index) {
-  const dependencies = signal.deps;
-  if (dependencies !== null) {
-    const active_dependencies = start_index === 0 ? null : dependencies.slice(0, start_index);
-    let i;
-    for (i = start_index; i < dependencies.length; i++) {
-      const dependency = dependencies[i];
-      if (active_dependencies === null || !active_dependencies.includes(dependency)) {
-        remove_reaction(signal, dependency);
-      }
-    }
+  var dependencies = signal.deps;
+  if (dependencies === null)
+    return;
+  for (var i = start_index; i < dependencies.length; i++) {
+    remove_reaction(signal, dependencies[i]);
   }
 }
-function destroy_effect_children(signal, remove_dom = true) {
-  let effect2 = signal.first;
-  signal.first = null;
-  signal.last = null;
-  var sibling2;
-  while (effect2 !== null) {
-    sibling2 = effect2.next;
-    destroy_effect(effect2, remove_dom);
-    effect2 = sibling2;
-  }
-}
-function execute_effect(effect2) {
+function update_effect(effect2) {
   var flags = effect2.f;
   if ((flags & DESTROYED) !== 0) {
     return;
   }
   set_signal_status(effect2, CLEAN);
-  var component_context = effect2.ctx;
-  var previous_effect = current_effect;
-  var previous_component_context = current_component_context;
-  current_effect = effect2;
-  current_component_context = component_context;
-  if (DEV) {
+  var previous_effect = active_effect;
+  var previous_component_context = component_context;
+  var was_updating_effect = is_updating_effect;
+  active_effect = effect2;
+  is_updating_effect = true;
+  if (dev_fallback_default) {
     var previous_component_fn = dev_current_component_function;
-    dev_current_component_function = effect2.component_function;
+    set_dev_current_component_function(effect2.component_function);
   }
   try {
-    if ((flags & BLOCK_EFFECT) === 0) {
+    if ((flags & BLOCK_EFFECT) !== 0) {
+      destroy_block_effect_children(effect2);
+    } else {
       destroy_effect_children(effect2);
     }
     execute_effect_teardown(effect2);
-    var teardown2 = execute_reaction_fn(effect2);
+    var teardown2 = update_reaction(effect2);
     effect2.teardown = typeof teardown2 === "function" ? teardown2 : null;
-  } catch (error) {
-    handle_error(
-      /** @type {Error} */
-      error,
-      effect2,
-      current_component_context
-    );
-  } finally {
-    current_effect = previous_effect;
-    current_component_context = previous_component_context;
-    if (DEV) {
-      dev_current_component_function = previous_component_fn;
-    }
-  }
-}
-function infinite_loop_guard() {
-  if (flush_count > 1e3) {
-    flush_count = 0;
-    effect_update_depth_exceeded();
-  }
-  flush_count++;
-}
-function flush_queued_root_effects(root_effects) {
-  var length = root_effects.length;
-  if (length === 0) {
-    return;
-  }
-  infinite_loop_guard();
-  var previously_flushing_effect = is_flushing_effect;
-  is_flushing_effect = true;
-  try {
-    for (var i = 0; i < length; i++) {
-      var effect2 = root_effects[i];
-      if (effect2.first === null && (effect2.f & BRANCH_EFFECT) === 0) {
-        flush_queued_effects([effect2]);
-      } else {
-        var collected_effects = [];
-        process_effects(effect2, collected_effects);
-        flush_queued_effects(collected_effects);
+    effect2.wv = write_version;
+    var deps = effect2.deps;
+    if (dev_fallback_default && tracing_mode_flag && (effect2.f & DIRTY) !== 0 && deps !== null) {
+      for (let i = 0; i < deps.length; i++) {
+        var dep = deps[i];
+        if (dep.trace_need_increase) {
+          dep.wv = increment_write_version();
+          dep.trace_need_increase = void 0;
+          dep.trace_v = void 0;
+        }
       }
     }
+    if (dev_fallback_default) {
+      dev_effect_stack.push(effect2);
+    }
+  } catch (error) {
+    handle_error(error, effect2, previous_effect, previous_component_context || effect2.ctx);
   } finally {
-    is_flushing_effect = previously_flushing_effect;
+    is_updating_effect = was_updating_effect;
+    active_effect = previous_effect;
+    if (dev_fallback_default) {
+      set_dev_current_component_function(previous_component_fn);
+    }
+  }
+}
+function log_effect_stack() {
+  console.error(
+    "Last ten effects were: ",
+    dev_effect_stack.slice(-10).map((d) => d.fn)
+  );
+  dev_effect_stack = [];
+}
+function infinite_loop_guard() {
+  try {
+    effect_update_depth_exceeded();
+  } catch (error) {
+    if (dev_fallback_default) {
+      define_property(error, "stack", {
+        value: ""
+      });
+    }
+    if (last_scheduled_effect !== null) {
+      if (dev_fallback_default) {
+        try {
+          handle_error(error, last_scheduled_effect, null, null);
+        } catch (e) {
+          log_effect_stack();
+          throw e;
+        }
+      } else {
+        handle_error(error, last_scheduled_effect, null, null);
+      }
+    } else {
+      if (dev_fallback_default) {
+        log_effect_stack();
+      }
+      throw error;
+    }
+  }
+}
+function flush_queued_root_effects() {
+  var was_updating_effect = is_updating_effect;
+  try {
+    var flush_count = 0;
+    is_updating_effect = true;
+    while (queued_root_effects.length > 0) {
+      if (flush_count++ > 1e3) {
+        infinite_loop_guard();
+      }
+      var root_effects = queued_root_effects;
+      var length = root_effects.length;
+      queued_root_effects = [];
+      for (var i = 0; i < length; i++) {
+        var collected_effects = process_effects(root_effects[i]);
+        flush_queued_effects(collected_effects);
+      }
+      old_values.clear();
+    }
+  } finally {
+    is_flushing = false;
+    is_updating_effect = was_updating_effect;
+    last_scheduled_effect = null;
+    if (dev_fallback_default) {
+      dev_effect_stack = [];
+    }
   }
 }
 function flush_queued_effects(effects) {
@@ -1286,507 +1878,233 @@ function flush_queued_effects(effects) {
     return;
   for (var i = 0; i < length; i++) {
     var effect2 = effects[i];
-    if ((effect2.f & (DESTROYED | INERT)) === 0 && check_dirtiness(effect2)) {
-      execute_effect(effect2);
-      if (effect2.deps === null && effect2.first === null && effect2.dom === null) {
-        if (effect2.teardown === null) {
-          unlink_effect(effect2);
-        } else {
-          effect2.fn = null;
+    if ((effect2.f & (DESTROYED | INERT)) === 0) {
+      try {
+        if (check_dirtiness(effect2)) {
+          update_effect(effect2);
+          if (effect2.deps === null && effect2.first === null && effect2.nodes_start === null) {
+            if (effect2.teardown === null) {
+              unlink_effect(effect2);
+            } else {
+              effect2.fn = null;
+            }
+          }
         }
+      } catch (error) {
+        handle_error(error, effect2, null, effect2.ctx);
       }
     }
-  }
-}
-function process_deferred() {
-  is_micro_task_queued2 = false;
-  if (flush_count > 1001) {
-    return;
-  }
-  const previous_queued_root_effects = current_queued_root_effects;
-  current_queued_root_effects = [];
-  flush_queued_root_effects(previous_queued_root_effects);
-  if (!is_micro_task_queued2) {
-    flush_count = 0;
   }
 }
 function schedule_effect(signal) {
-  if (current_scheduler_mode === FLUSH_MICROTASK) {
-    if (!is_micro_task_queued2) {
-      is_micro_task_queued2 = true;
-      queueMicrotask(process_deferred);
-    }
+  if (!is_flushing) {
+    is_flushing = true;
+    queueMicrotask(flush_queued_root_effects);
   }
-  var effect2 = signal;
+  var effect2 = last_scheduled_effect = signal;
   while (effect2.parent !== null) {
     effect2 = effect2.parent;
     var flags = effect2.f;
-    if ((flags & BRANCH_EFFECT) !== 0) {
+    if ((flags & (ROOT_EFFECT | BRANCH_EFFECT)) !== 0) {
       if ((flags & CLEAN) === 0)
         return;
-      set_signal_status(effect2, MAYBE_DIRTY);
+      effect2.f ^= CLEAN;
     }
   }
-  current_queued_root_effects.push(effect2);
+  queued_root_effects.push(effect2);
 }
-function process_effects(effect2, collected_effects) {
-  var current_effect2 = effect2.first;
+function process_effects(root3) {
   var effects = [];
-  main_loop:
-    while (current_effect2 !== null) {
-      var flags = current_effect2.f;
-      var is_active = (flags & (DESTROYED | INERT)) === 0;
-      var is_branch = flags & BRANCH_EFFECT;
-      var is_clean = (flags & CLEAN) !== 0;
-      var child2 = current_effect2.first;
-      if (is_active && (!is_branch || !is_clean)) {
-        if (is_branch) {
-          set_signal_status(current_effect2, CLEAN);
-        }
-        if ((flags & RENDER_EFFECT) !== 0) {
-          if (!is_branch && check_dirtiness(current_effect2)) {
-            execute_effect(current_effect2);
-            child2 = current_effect2.first;
+  var effect2 = root3;
+  while (effect2 !== null) {
+    var flags = effect2.f;
+    var is_branch = (flags & (BRANCH_EFFECT | ROOT_EFFECT)) !== 0;
+    var is_skippable_branch = is_branch && (flags & CLEAN) !== 0;
+    if (!is_skippable_branch && (flags & INERT) === 0) {
+      if ((flags & EFFECT) !== 0) {
+        effects.push(effect2);
+      } else if (is_branch) {
+        effect2.f ^= CLEAN;
+      } else {
+        try {
+          if (check_dirtiness(effect2)) {
+            update_effect(effect2);
           }
-          if (child2 !== null) {
-            current_effect2 = child2;
-            continue;
-          }
-        } else if ((flags & EFFECT) !== 0) {
-          if (is_branch || is_clean) {
-            if (child2 !== null) {
-              current_effect2 = child2;
-              continue;
-            }
-          } else {
-            effects.push(current_effect2);
-          }
+        } catch (error) {
+          handle_error(error, effect2, null, effect2.ctx);
         }
       }
-      var sibling2 = current_effect2.next;
-      if (sibling2 === null) {
-        let parent = current_effect2.parent;
-        while (parent !== null) {
-          if (effect2 === parent) {
-            break main_loop;
-          }
-          var parent_sibling = parent.next;
-          if (parent_sibling !== null) {
-            current_effect2 = parent_sibling;
-            continue main_loop;
-          }
-          parent = parent.parent;
-        }
+      var child2 = effect2.first;
+      if (child2 !== null) {
+        effect2 = child2;
+        continue;
       }
-      current_effect2 = sibling2;
     }
-  for (var i = 0; i < effects.length; i++) {
-    child2 = effects[i];
-    collected_effects.push(child2);
-    process_effects(child2, collected_effects);
+    var parent = effect2.parent;
+    effect2 = effect2.next;
+    while (effect2 === null && parent !== null) {
+      effect2 = parent.next;
+      parent = parent.parent;
+    }
   }
+  return effects;
 }
-function flush_sync(fn, flush_previous = true) {
-  var previous_scheduler_mode = current_scheduler_mode;
-  var previous_queued_root_effects = current_queued_root_effects;
-  try {
-    infinite_loop_guard();
-    const root_effects = [];
-    current_scheduler_mode = FLUSH_SYNC;
-    current_queued_root_effects = root_effects;
-    is_micro_task_queued2 = false;
-    if (flush_previous) {
-      flush_queued_root_effects(previous_queued_root_effects);
-    }
-    var result = fn == null ? void 0 : fn();
+function flushSync(fn) {
+  var result;
+  if (fn) {
+    is_flushing = true;
+    flush_queued_root_effects();
+    is_flushing = true;
+    result = fn();
+  }
+  while (true) {
     flush_tasks();
-    if (current_queued_root_effects.length > 0 || root_effects.length > 0) {
-      flush_sync();
+    if (queued_root_effects.length === 0) {
+      return (
+        /** @type {T} */
+        result
+      );
     }
-    flush_count = 0;
-    return result;
-  } finally {
-    current_scheduler_mode = previous_scheduler_mode;
-    current_queued_root_effects = previous_queued_root_effects;
+    is_flushing = true;
+    flush_queued_root_effects();
   }
 }
 function get(signal) {
-  const flags = signal.f;
-  if ((flags & DESTROYED) !== 0) {
-    return signal.v;
-  }
-  if (is_signals_recorded) {
+  var flags = signal.f;
+  var is_derived = (flags & DERIVED) !== 0;
+  if (captured_signals !== null) {
     captured_signals.add(signal);
   }
-  if (current_reaction !== null) {
-    const unowned = (current_reaction.f & UNOWNED) !== 0;
-    const dependencies = current_reaction.deps;
-    if (current_dependencies === null && dependencies !== null && dependencies[current_dependencies_index] === signal && !(unowned && current_effect !== null)) {
-      current_dependencies_index++;
-    } else if (dependencies === null || current_dependencies_index === 0 || dependencies[current_dependencies_index - 1] !== signal) {
-      if (current_dependencies === null) {
-        current_dependencies = [signal];
-      } else if (current_dependencies[current_dependencies.length - 1] !== signal) {
-        current_dependencies.push(signal);
+  if (active_reaction !== null && !untracking) {
+    if (!(reaction_sources == null ? void 0 : reaction_sources.includes(signal))) {
+      var deps = active_reaction.deps;
+      if (signal.rv < read_version) {
+        signal.rv = read_version;
+        if (new_deps === null && deps !== null && deps[skipped_deps] === signal) {
+          skipped_deps++;
+        } else if (new_deps === null) {
+          new_deps = [signal];
+        } else if (!skip_reaction || !new_deps.includes(signal)) {
+          new_deps.push(signal);
+        }
       }
     }
-    if (current_untracked_writes !== null && current_effect !== null && (current_effect.f & CLEAN) !== 0 && (current_effect.f & BRANCH_EFFECT) === 0 && current_untracked_writes.includes(signal)) {
-      set_signal_status(current_effect, DIRTY);
-      schedule_effect(current_effect);
-    }
-  }
-  if ((flags & DERIVED) !== 0 && check_dirtiness(
-    /** @type {import('#client').Derived} */
-    signal
-  )) {
-    update_derived(
-      /** @type {import('#client').Derived} **/
+  } else if (is_derived && /** @type {Derived} */
+  signal.deps === null && /** @type {Derived} */
+  signal.effects === null) {
+    var derived2 = (
+      /** @type {Derived} */
       signal
     );
+    var parent = derived2.parent;
+    if (parent !== null && (parent.f & UNOWNED) === 0) {
+      derived2.f ^= UNOWNED;
+    }
+  }
+  if (is_derived) {
+    derived2 = /** @type {Derived} */
+    signal;
+    if (check_dirtiness(derived2)) {
+      update_derived(derived2);
+    }
+  }
+  if (dev_fallback_default && tracing_mode_flag && tracing_expressions !== null && active_reaction !== null && tracing_expressions.reaction === active_reaction) {
+    if (signal.debug) {
+      signal.debug();
+    } else if (signal.created) {
+      var entry = tracing_expressions.entries.get(signal);
+      if (entry === void 0) {
+        entry = { read: [] };
+        tracing_expressions.entries.set(signal, entry);
+      }
+      entry.read.push(get_stack("TracedAt"));
+    }
+  }
+  if (is_destroying_effect && old_values.has(signal)) {
+    return old_values.get(signal);
   }
   return signal.v;
 }
-function mark_reactions(signal, to_status, force_schedule) {
-  var reactions = signal.reactions;
-  if (reactions === null)
-    return;
-  var runes = is_runes();
-  var length = reactions.length;
-  for (var i = 0; i < length; i++) {
-    var reaction = reactions[i];
-    var flags = reaction.f;
-    if (DEV && (flags & INSPECT_EFFECT) !== 0) {
-      inspect_effects.add(reaction);
-      continue;
-    }
-    if ((flags & DIRTY) !== 0 || (!force_schedule || !runes) && reaction === current_effect) {
-      continue;
-    }
-    set_signal_status(reaction, to_status);
-    var maybe_dirty = (flags & MAYBE_DIRTY) !== 0;
-    var unowned = (flags & UNOWNED) !== 0;
-    if ((flags & CLEAN) !== 0 || maybe_dirty && unowned) {
-      if ((reaction.f & DERIVED) !== 0) {
-        mark_reactions(
-          /** @type {import('#client').Derived} */
-          reaction,
-          MAYBE_DIRTY,
-          force_schedule
-        );
-      } else {
-        schedule_effect(
-          /** @type {import('#client').Effect} */
-          reaction
-        );
-      }
-    }
-  }
-}
 function untrack(fn) {
-  const previous_reaction = current_reaction;
+  var previous_untracking = untracking;
   try {
-    current_reaction = null;
+    untracking = true;
     return fn();
   } finally {
-    current_reaction = previous_reaction;
+    untracking = previous_untracking;
   }
 }
 var STATUS_MASK = ~(DIRTY | MAYBE_DIRTY | CLEAN);
 function set_signal_status(signal, status) {
   signal.f = signal.f & STATUS_MASK | status;
 }
-function is_signal(val) {
-  return typeof val === "object" && val !== null && typeof /** @type {import('#client').Value<V>} */
-  val.f === "number";
-}
-function push(props, runes = false, fn) {
-  current_component_context = {
-    p: current_component_context,
-    c: null,
-    e: null,
-    m: false,
-    s: props,
-    x: null,
-    l: null
-  };
-  if (!runes) {
-    current_component_context.l = {
-      s: null,
-      u: null,
-      r1: [],
-      r2: source(false)
-    };
-  }
-  if (DEV) {
-    current_component_context.function = fn;
-    dev_current_component_function = fn;
-  }
-}
-function pop(component2) {
-  var _a, _b;
-  const context_stack_item = current_component_context;
-  if (context_stack_item !== null) {
-    if (component2 !== void 0) {
-      context_stack_item.x = component2;
-    }
-    const effects = context_stack_item.e;
-    if (effects !== null) {
-      context_stack_item.e = null;
-      for (var i = 0; i < effects.length; i++) {
-        effect(effects[i]);
-      }
-    }
-    current_component_context = context_stack_item.p;
-    if (DEV) {
-      dev_current_component_function = (_b = (_a = context_stack_item.p) == null ? void 0 : _a.function) != null ? _b : null;
-    }
-    context_stack_item.m = true;
-  }
-  return component2 || /** @type {T} */
-  {};
-}
-function unwrap(value) {
-  if (is_signal(value)) {
-    return get(value);
-  }
-  return value;
-}
-if (DEV) {
-  let throw_rune_error = function(rune) {
-    if (!(rune in globalThis)) {
-      let value;
-      Object.defineProperty(globalThis, rune, {
-        configurable: true,
-        // eslint-disable-next-line getter-return
-        get: () => {
-          if (value !== void 0) {
-            return value;
-          }
-          rune_outside_svelte(rune);
-        },
-        set: (v) => {
-          value = v;
-        }
-      });
-    }
-  };
-  throw_rune_error("$state");
-  throw_rune_error("$effect");
-  throw_rune_error("$derived");
-  throw_rune_error("$inspect");
-  throw_rune_error("$props");
-  throw_rune_error("$bindable");
-}
 
-// node_modules/svelte/src/internal/client/dom/hydration.js
-var hydrating = false;
-function set_hydrating(value) {
-  hydrating = value;
-}
-var hydrate_nodes = (
-  /** @type {any} */
-  null
-);
-var hydrate_start;
-function set_hydrate_nodes(nodes) {
-  hydrate_nodes = nodes;
-  hydrate_start = nodes && nodes[0];
-}
-function hydrate_anchor(node) {
-  var _a, _b;
-  if (node.nodeType !== 8) {
-    return node;
-  }
-  var current = (
-    /** @type {Node | null} */
-    node
-  );
-  if (
-    /** @type {Comment} */
-    current.data !== HYDRATION_START
-  ) {
-    return node;
-  }
-  var nodes = [];
-  var depth = 0;
-  while ((current = /** @type {Node} */
-  current.nextSibling) !== null) {
-    if (current.nodeType === 8) {
-      var data = (
-        /** @type {Comment} */
-        current.data
-      );
-      if (data === HYDRATION_START) {
-        depth += 1;
-      } else if (data[0] === HYDRATION_END) {
-        if (depth === 0) {
-          hydrate_nodes = /** @type {import('#client').TemplateNode[]} */
-          nodes;
-          hydrate_start = /** @type {import('#client').TemplateNode} */
-          nodes[0];
-          return current;
-        }
-        depth -= 1;
-      }
-    }
-    nodes.push(current);
-  }
-  let location;
-  if (DEV) {
-    const loc = (_b = (_a = node.parentNode) == null ? void 0 : _a.__svelte_meta) == null ? void 0 : _b.loc;
-    if (loc) {
-      location = `${loc.file}:${loc.line}:${loc.column}`;
-    }
-  }
-  hydration_mismatch(location);
-  throw HYDRATION_ERROR;
-}
-
-// node_modules/svelte/src/internal/client/dev/equality.js
-function init_array_prototype_warnings() {
-  const array_prototype2 = Array.prototype;
-  const cleanup = Array.__svelte_cleanup;
-  if (cleanup) {
-    cleanup();
-  }
-  const { indexOf, lastIndexOf, includes } = array_prototype2;
-  array_prototype2.indexOf = function(item, from_index) {
-    const index2 = indexOf.call(this, item, from_index);
-    if (index2 === -1) {
-      const test = indexOf.call(get_proxied_value(this), get_proxied_value(item), from_index);
-      if (test !== -1) {
-        state_proxy_equality_mismatch("array.indexOf(...)");
-      }
-    }
-    return index2;
-  };
-  array_prototype2.lastIndexOf = function(item, from_index) {
-    const index2 = lastIndexOf.call(this, item, from_index != null ? from_index : this.length - 1);
-    if (index2 === -1) {
-      const test = lastIndexOf.call(
-        get_proxied_value(this),
-        get_proxied_value(item),
-        from_index != null ? from_index : this.length - 1
-      );
-      if (test !== -1) {
-        state_proxy_equality_mismatch("array.lastIndexOf(...)");
-      }
-    }
-    return index2;
-  };
-  array_prototype2.includes = function(item, from_index) {
-    const has = includes.call(this, item, from_index);
-    if (!has) {
-      const test = includes.call(get_proxied_value(this), get_proxied_value(item), from_index);
-      if (test) {
-        state_proxy_equality_mismatch("array.includes(...)");
-      }
-    }
-    return has;
-  };
-  Array.__svelte_cleanup = () => {
-    array_prototype2.indexOf = indexOf;
-    array_prototype2.lastIndexOf = lastIndexOf;
-    array_prototype2.includes = includes;
-  };
-}
-
-// node_modules/svelte/src/internal/client/dom/operations.js
-var $window;
-var $document;
-function init_operations() {
-  if ($window !== void 0) {
-    return;
-  }
-  $window = window;
-  $document = document;
-  var element_prototype = Element.prototype;
-  element_prototype.__click = void 0;
-  element_prototype.__className = "";
-  element_prototype.__attributes = null;
-  element_prototype.__e = void 0;
-  Text.prototype.__t = void 0;
-  if (DEV) {
-    element_prototype.__svelte_meta = null;
-    init_array_prototype_warnings();
-  }
-}
-function empty() {
-  return document.createTextNode("");
-}
-function child(node) {
-  const child2 = node.firstChild;
-  if (!hydrating)
-    return child2;
-  if (child2 === null) {
-    return node.appendChild(empty());
-  }
-  return hydrate_anchor(child2);
-}
-function first_child(fragment, is_text) {
-  var _a, _b;
-  if (!hydrating) {
-    return (
-      /** @type {DocumentFragment} */
-      fragment.firstChild
-    );
-  }
-  if (is_text && ((_a = hydrate_start) == null ? void 0 : _a.nodeType) !== 3) {
-    var text2 = empty();
-    var dom = (
-      /** @type {import('#client').TemplateNode[]} */
-      /** @type {import('#client').Effect} */
-      current_effect.dom
-    );
-    dom.unshift(text2);
-    (_b = hydrate_start) == null ? void 0 : _b.before(text2);
-    return text2;
-  }
-  return hydrate_anchor(hydrate_start);
-}
-function sibling(node, is_text = false) {
-  var next_sibling = (
-    /** @type {import('#client').TemplateNode} */
-    node.nextSibling
-  );
-  if (!hydrating) {
-    return next_sibling;
-  }
-  var type = next_sibling.nodeType;
-  if (type === 8 && /** @type {Comment} */
-  next_sibling.data === HYDRATION_ANCHOR) {
-    return sibling(next_sibling, is_text);
-  }
-  if (is_text && type !== 3) {
-    var text2 = empty();
-    var dom = (
-      /** @type {import('#client').TemplateNode[]} */
-      /** @type {import('#client').Effect} */
-      current_effect.dom
-    );
-    dom.unshift(text2);
-    next_sibling == null ? void 0 : next_sibling.before(text2);
-    return text2;
-  }
-  return hydrate_anchor(
-    /** @type {Node} */
-    next_sibling
-  );
-}
-function clear_text_content(node) {
-  node.textContent = "";
+// node_modules/svelte/src/utils.js
+var DOM_BOOLEAN_ATTRIBUTES = [
+  "allowfullscreen",
+  "async",
+  "autofocus",
+  "autoplay",
+  "checked",
+  "controls",
+  "default",
+  "disabled",
+  "formnovalidate",
+  "hidden",
+  "indeterminate",
+  "inert",
+  "ismap",
+  "loop",
+  "multiple",
+  "muted",
+  "nomodule",
+  "novalidate",
+  "open",
+  "playsinline",
+  "readonly",
+  "required",
+  "reversed",
+  "seamless",
+  "selected",
+  "webkitdirectory",
+  "defer",
+  "disablepictureinpicture",
+  "disableremoteplayback"
+];
+var DOM_PROPERTIES = [
+  ...DOM_BOOLEAN_ATTRIBUTES,
+  "formNoValidate",
+  "isMap",
+  "noModule",
+  "playsInline",
+  "readOnly",
+  "value",
+  "volume",
+  "defaultValue",
+  "defaultChecked",
+  "srcObject",
+  "noValidate",
+  "allowFullscreen",
+  "disablePictureInPicture",
+  "disableRemotePlayback"
+];
+var PASSIVE_EVENTS = ["touchstart", "touchmove"];
+function is_passive_event(name) {
+  return PASSIVE_EVENTS.includes(name);
 }
 
 // node_modules/svelte/src/internal/client/dom/elements/events.js
+var all_registered_events = /* @__PURE__ */ new Set();
+var root_event_handles = /* @__PURE__ */ new Set();
 function handle_event_propagation(event2) {
-  var _a;
+  var _a3;
   var handler_element = this;
   var owner_document = (
     /** @type {Node} */
     handler_element.ownerDocument
   );
   var event_name = event2.type;
-  var path = ((_a = event2.composedPath) == null ? void 0 : _a.call(event2)) || [];
+  var path = ((_a3 = event2.composedPath) == null ? void 0 : _a3.call(event2)) || [];
   var current_target = (
     /** @type {null | Element} */
     path[0] || event2.target
@@ -1818,16 +2136,22 @@ function handle_event_propagation(event2) {
       return current_target || owner_document;
     }
   });
+  var previous_reaction = active_reaction;
+  var previous_effect = active_effect;
+  set_active_reaction(null);
+  set_active_effect(null);
   try {
     var throw_error;
     var other_errors = [];
     while (current_target !== null) {
-      var parent_element = current_target.parentNode || /** @type {any} */
+      var parent_element = current_target.assignedSlot || current_target.parentNode || /** @type {any} */
       current_target.host || null;
       try {
         var delegated = current_target["__" + event_name];
-        if (delegated !== void 0 && !/** @type {any} */
-        current_target.disabled) {
+        if (delegated != null && (!/** @type {any} */
+        current_target.disabled || // DOM could've been updated already by the time this is reached, so we check this as well
+        // -> the target could not have been disabled because it emits the event in the first place
+        event2.target === current_target)) {
           if (is_array(delegated)) {
             var [fn, ...data] = delegated;
             fn.apply(current_target, [event2, ...data]);
@@ -1857,7 +2181,9 @@ function handle_event_propagation(event2) {
     }
   } finally {
     event2.__root = handler_element;
-    current_target = handler_element;
+    delete event2.currentTarget;
+    set_active_reaction(previous_reaction);
+    set_active_effect(previous_effect);
   }
 }
 
@@ -1867,56 +2193,137 @@ function reset_head_anchor() {
   head_anchor = void 0;
 }
 
-// node_modules/svelte/src/internal/shared/validate.js
-var snippet_symbol = Symbol.for("svelte.snippet");
-function validate_component(component_fn) {
-  if ((component_fn == null ? void 0 : component_fn[snippet_symbol]) === true) {
-    snippet_used_as_component();
+// node_modules/svelte/src/internal/client/dom/reconciler.js
+function create_fragment_from_html(html2) {
+  var elem = document.createElement("template");
+  elem.innerHTML = html2;
+  return elem.content;
+}
+
+// node_modules/svelte/src/internal/client/dom/template.js
+function assign_nodes(start, end) {
+  var effect2 = (
+    /** @type {Effect} */
+    active_effect
+  );
+  if (effect2.nodes_start === null) {
+    effect2.nodes_start = start;
+    effect2.nodes_end = end;
   }
-  return component_fn;
+}
+function template(content, flags) {
+  var is_fragment = (flags & TEMPLATE_FRAGMENT) !== 0;
+  var use_import_node = (flags & TEMPLATE_USE_IMPORT_NODE) !== 0;
+  var node;
+  var has_start = !content.startsWith("<!>");
+  return () => {
+    if (hydrating) {
+      assign_nodes(hydrate_node, null);
+      return hydrate_node;
+    }
+    if (node === void 0) {
+      node = create_fragment_from_html(has_start ? content : "<!>" + content);
+      if (!is_fragment)
+        node = /** @type {Node} */
+        get_first_child(node);
+    }
+    var clone = (
+      /** @type {TemplateNode} */
+      use_import_node || is_firefox ? document.importNode(node, true) : node.cloneNode(true)
+    );
+    if (is_fragment) {
+      var start = (
+        /** @type {TemplateNode} */
+        get_first_child(clone)
+      );
+      var end = (
+        /** @type {TemplateNode} */
+        clone.lastChild
+      );
+      assign_nodes(start, end);
+    } else {
+      assign_nodes(clone, clone);
+    }
+    return clone;
+  };
+}
+function comment() {
+  if (hydrating) {
+    assign_nodes(hydrate_node, null);
+    return hydrate_node;
+  }
+  var frag = document.createDocumentFragment();
+  var start = document.createComment("");
+  var anchor = create_text();
+  frag.append(start, anchor);
+  assign_nodes(start, anchor);
+  return frag;
+}
+function append(anchor, dom) {
+  if (hydrating) {
+    active_effect.nodes_end = hydrate_node;
+    hydrate_next();
+    return;
+  }
+  if (anchor === null) {
+    return;
+  }
+  anchor.before(
+    /** @type {Node} */
+    dom
+  );
 }
 
 // node_modules/svelte/src/internal/client/render.js
-var all_registered_events = /* @__PURE__ */ new Set();
-var root_event_handles = /* @__PURE__ */ new Set();
 var should_intro = true;
 function set_text(text2, value) {
-  var _a;
-  const prev = (_a = text2.__t) != null ? _a : text2.__t = text2.nodeValue;
-  if (prev !== value) {
-    text2.nodeValue = text2.__t = value;
+  var _a3;
+  var str = value == null ? "" : typeof value === "object" ? value + "" : value;
+  if (str !== ((_a3 = text2.__t) != null ? _a3 : text2.__t = text2.nodeValue)) {
+    text2.__t = str;
+    text2.nodeValue = str + "";
   }
 }
 function mount(component2, options) {
-  var _a;
-  if (DEV) {
-    validate_component(component2);
-  }
-  const anchor = (_a = options.anchor) != null ? _a : options.target.appendChild(empty());
-  return flush_sync(() => _mount(component2, { ...options, anchor }), false);
+  return _mount(component2, options);
 }
 function hydrate(component2, options) {
-  if (DEV) {
-    validate_component(component2);
-  }
+  var _a3;
+  init_operations();
+  options.intro = (_a3 = options.intro) != null ? _a3 : false;
   const target = options.target;
-  const previous_hydrate_nodes = hydrate_nodes;
+  const was_hydrating = hydrating;
+  const previous_hydrate_node = hydrate_node;
   try {
-    return flush_sync(() => {
-      set_hydrating(true);
-      var node = target.firstChild;
-      while (node && (node.nodeType !== 8 || /** @type {Comment} */
-      node.data !== HYDRATION_START)) {
-        node = node.nextSibling;
-      }
-      if (!node) {
-        throw HYDRATION_ERROR;
-      }
-      const anchor = hydrate_anchor(node);
-      const instance = _mount(component2, { ...options, anchor });
-      set_hydrating(false);
-      return instance;
-    }, false);
+    var anchor = (
+      /** @type {TemplateNode} */
+      get_first_child(target)
+    );
+    while (anchor && (anchor.nodeType !== 8 || /** @type {Comment} */
+    anchor.data !== HYDRATION_START)) {
+      anchor = /** @type {TemplateNode} */
+      get_next_sibling(anchor);
+    }
+    if (!anchor) {
+      throw HYDRATION_ERROR;
+    }
+    set_hydrating(true);
+    set_hydrate_node(
+      /** @type {Comment} */
+      anchor
+    );
+    hydrate_next();
+    const instance = _mount(component2, { ...options, anchor });
+    if (hydrate_node === null || hydrate_node.nodeType !== 8 || /** @type {Comment} */
+    hydrate_node.data !== HYDRATION_END) {
+      hydration_mismatch();
+      throw HYDRATION_ERROR;
+    }
+    set_hydrating(false);
+    return (
+      /**  @type {Exports} */
+      instance
+    );
   } catch (error) {
     if (error === HYDRATION_ERROR) {
       if (options.recover === false) {
@@ -1929,93 +2336,150 @@ function hydrate(component2, options) {
     }
     throw error;
   } finally {
-    set_hydrating(!!previous_hydrate_nodes);
-    set_hydrate_nodes(previous_hydrate_nodes);
+    set_hydrating(was_hydrating);
+    set_hydrate_node(previous_hydrate_node);
     reset_head_anchor();
   }
 }
-function _mount(Component, { target, anchor, props = {}, events, context, intro = false }) {
+var document_listeners = /* @__PURE__ */ new Map();
+function _mount(Component, { target, anchor, props = {}, events, context, intro = true }) {
   init_operations();
-  const registered_events = /* @__PURE__ */ new Set();
-  const event_handle = (events2) => {
-    for (let i = 0; i < events2.length; i++) {
-      const event_name = events2[i];
-      const passive = PassiveDelegatedEvents.includes(event_name);
-      if (!registered_events.has(event_name)) {
-        registered_events.add(event_name);
-        target.addEventListener(event_name, handle_event_propagation, { passive });
-        document.addEventListener(event_name, handle_event_propagation, { passive });
+  var registered_events = /* @__PURE__ */ new Set();
+  var event_handle = (events2) => {
+    for (var i = 0; i < events2.length; i++) {
+      var event_name = events2[i];
+      if (registered_events.has(event_name))
+        continue;
+      registered_events.add(event_name);
+      var passive2 = is_passive_event(event_name);
+      target.addEventListener(event_name, handle_event_propagation, { passive: passive2 });
+      var n = document_listeners.get(event_name);
+      if (n === void 0) {
+        document.addEventListener(event_name, handle_event_propagation, { passive: passive2 });
+        document_listeners.set(event_name, 1);
+      } else {
+        document_listeners.set(event_name, n + 1);
       }
     }
   };
   event_handle(array_from(all_registered_events));
   root_event_handles.add(event_handle);
-  let component2 = void 0;
-  const unmount2 = effect_root(() => {
+  var component2 = void 0;
+  var unmount2 = component_root(() => {
+    var anchor_node = anchor != null ? anchor : target.appendChild(create_text());
     branch(() => {
       if (context) {
         push({});
         var ctx = (
-          /** @type {import('#client').ComponentContext} */
-          current_component_context
+          /** @type {ComponentContext} */
+          component_context
         );
         ctx.c = context;
       }
       if (events) {
         props.$$events = events;
       }
+      if (hydrating) {
+        assign_nodes(
+          /** @type {TemplateNode} */
+          anchor_node,
+          null
+        );
+      }
       should_intro = intro;
-      component2 = Component(anchor, props) || {};
+      component2 = Component(anchor_node, props) || {};
       should_intro = true;
+      if (hydrating) {
+        active_effect.nodes_end = hydrate_node;
+      }
       if (context) {
         pop();
       }
     });
     return () => {
-      for (const event_name of registered_events) {
+      var _a3;
+      for (var event_name of registered_events) {
         target.removeEventListener(event_name, handle_event_propagation);
-        document.removeEventListener(event_name, handle_event_propagation);
+        var n = (
+          /** @type {number} */
+          document_listeners.get(event_name)
+        );
+        if (--n === 0) {
+          document.removeEventListener(event_name, handle_event_propagation);
+          document_listeners.delete(event_name);
+        } else {
+          document_listeners.set(event_name, n);
+        }
       }
       root_event_handles.delete(event_handle);
-      mounted_components.delete(component2);
+      if (anchor_node !== anchor) {
+        (_a3 = anchor_node.parentNode) == null ? void 0 : _a3.removeChild(anchor_node);
+      }
     };
   });
   mounted_components.set(component2, unmount2);
   return component2;
 }
 var mounted_components = /* @__PURE__ */ new WeakMap();
-function unmount(component2) {
+function unmount(component2, options) {
   const fn = mounted_components.get(component2);
-  if (DEV && !fn) {
-    lifecycle_double_unmount();
-    console.trace("stack trace");
+  if (fn) {
+    mounted_components.delete(component2);
+    return fn(options);
   }
-  fn == null ? void 0 : fn();
+  if (dev_fallback_default) {
+    lifecycle_double_unmount();
+  }
+  return Promise.resolve();
 }
 
 // node_modules/svelte/src/internal/client/dom/blocks/if.js
-function if_block(anchor, get_condition, consequent_fn, alternate_fn = null, elseif = false) {
+function if_block(node, fn, [root_index, hydrate_index] = [0, 0]) {
+  if (hydrating && root_index === 0) {
+    hydrate_next();
+  }
+  var anchor = node;
   var consequent_effect = null;
   var alternate_effect = null;
-  var condition = null;
-  var flags = elseif ? EFFECT_TRANSPARENT : 0;
-  block(() => {
-    if (condition === (condition = !!get_condition()))
+  var condition = UNINITIALIZED;
+  var flags = root_index > 0 ? EFFECT_TRANSPARENT : 0;
+  var has_branch = false;
+  const set_branch = (fn2, flag = true) => {
+    has_branch = true;
+    update_branch(flag, fn2);
+  };
+  const update_branch = (new_condition, fn2) => {
+    if (condition === (condition = new_condition))
       return;
     let mismatch = false;
-    if (hydrating) {
-      const is_else = anchor.data === HYDRATION_END_ELSE;
-      if (condition === is_else) {
-        remove(hydrate_nodes);
+    if (hydrating && hydrate_index !== -1) {
+      if (root_index === 0) {
+        const data = read_hydration_instruction(anchor);
+        if (data === HYDRATION_START) {
+          hydrate_index = 0;
+        } else if (data === HYDRATION_START_ELSE) {
+          hydrate_index = Infinity;
+        } else {
+          hydrate_index = parseInt(data.substring(1));
+          if (hydrate_index !== hydrate_index) {
+            hydrate_index = condition ? Infinity : -1;
+          }
+        }
+      }
+      const is_else = hydrate_index > root_index;
+      if (!!condition === is_else) {
+        anchor = remove_nodes();
+        set_hydrate_node(anchor);
         set_hydrating(false);
         mismatch = true;
+        hydrate_index = -1;
       }
     }
     if (condition) {
       if (consequent_effect) {
         resume_effect(consequent_effect);
-      } else {
-        consequent_effect = branch(() => consequent_fn(anchor));
+      } else if (fn2) {
+        consequent_effect = branch(() => fn2(anchor));
       }
       if (alternate_effect) {
         pause_effect(alternate_effect, () => {
@@ -2025,8 +2489,8 @@ function if_block(anchor, get_condition, consequent_fn, alternate_fn = null, els
     } else {
       if (alternate_effect) {
         resume_effect(alternate_effect);
-      } else if (alternate_fn) {
-        alternate_effect = branch(() => alternate_fn(anchor));
+      } else if (fn2) {
+        alternate_effect = branch(() => fn2(anchor, [root_index + 1, hydrate_index]));
       }
       if (consequent_effect) {
         pause_effect(consequent_effect, () => {
@@ -2037,7 +2501,17 @@ function if_block(anchor, get_condition, consequent_fn, alternate_fn = null, els
     if (mismatch) {
       set_hydrating(true);
     }
+  };
+  block(() => {
+    has_branch = false;
+    fn(set_branch);
+    if (!has_branch) {
+      update_branch(null, null);
+    }
   }, flags);
+  if (hydrating) {
+    anchor = hydrate_node;
+  }
 }
 
 // node_modules/svelte/src/internal/client/dom/blocks/each.js
@@ -2045,7 +2519,7 @@ var current_each_item = null;
 function index(_, i) {
   return i;
 }
-function pause_effects(items, controlled_anchor, items_map) {
+function pause_effects(state2, items, controlled_anchor, items_map) {
   var transitions = [];
   var length = items.length;
   for (var i = 0; i < length; i++) {
@@ -2064,122 +2538,128 @@ function pause_effects(items, controlled_anchor, items_map) {
       controlled_anchor
     );
     items_map.clear();
-    link(items[0].prev, items[length - 1].next);
+    link(state2, items[0].prev, items[length - 1].next);
   }
   run_out_transitions(transitions, () => {
     for (var i2 = 0; i2 < length; i2++) {
       var item = items[i2];
       if (!is_controlled) {
         items_map.delete(item.k);
-        link(item.prev, item.next);
+        link(state2, item.prev, item.next);
       }
       destroy_effect(item.e, !is_controlled);
     }
   });
 }
-function each(anchor, flags, get_collection, get_key, render_fn, fallback_fn = null) {
-  var state = { flags, items: /* @__PURE__ */ new Map(), next: null };
+function each(node, flags, get_collection, get_key, render_fn, fallback_fn = null) {
+  var anchor = node;
+  var state2 = { flags, items: /* @__PURE__ */ new Map(), first: null };
   var is_controlled = (flags & EACH_IS_CONTROLLED) !== 0;
   if (is_controlled) {
     var parent_node = (
       /** @type {Element} */
-      anchor
+      node
     );
-    anchor = hydrating ? (
+    anchor = hydrating ? set_hydrate_node(
       /** @type {Comment | Text} */
-      hydrate_anchor(
-        /** @type {Comment | Text} */
-        parent_node.firstChild
-      )
-    ) : parent_node.appendChild(empty());
+      get_first_child(parent_node)
+    ) : parent_node.appendChild(create_text());
   }
-  var fallback = null;
-  block(() => {
+  if (hydrating) {
+    hydrate_next();
+  }
+  var fallback2 = null;
+  var was_empty = false;
+  var each_array = derived_safe_equal(() => {
     var collection = get_collection();
-    var array = is_array(collection) ? collection : collection == null ? [] : Array.from(collection);
+    return is_array(collection) ? collection : collection == null ? [] : array_from(collection);
+  });
+  block(() => {
+    var array = get(each_array);
     var length = array.length;
-    var flags2 = state.flags;
-    if ((flags2 & EACH_IS_STRICT_EQUALS) !== 0 && !is_frozen(array) && !(STATE_SYMBOL in array)) {
-      flags2 ^= EACH_IS_STRICT_EQUALS;
-      if ((flags2 & EACH_KEYED) !== 0 && (flags2 & EACH_ITEM_REACTIVE) === 0) {
-        flags2 ^= EACH_ITEM_REACTIVE;
-      }
+    if (was_empty && length === 0) {
+      return;
     }
+    was_empty = length === 0;
     let mismatch = false;
     if (hydrating) {
-      var is_else = (
-        /** @type {Comment} */
-        anchor.data === HYDRATION_END_ELSE
-      );
-      if (is_else !== (length === 0) || hydrate_start === void 0) {
-        remove(hydrate_nodes);
+      var is_else = read_hydration_instruction(anchor) === HYDRATION_START_ELSE;
+      if (is_else !== (length === 0)) {
+        anchor = remove_nodes();
+        set_hydrate_node(anchor);
         set_hydrating(false);
         mismatch = true;
       }
     }
     if (hydrating) {
-      var child_anchor = hydrate_start;
-      var prev = state;
+      var prev = null;
       var item;
       for (var i = 0; i < length; i++) {
-        if (child_anchor.nodeType !== 8 || /** @type {Comment} */
-        child_anchor.data !== HYDRATION_START) {
+        if (hydrate_node.nodeType === 8 && /** @type {Comment} */
+        hydrate_node.data === HYDRATION_END) {
+          anchor = /** @type {Comment} */
+          hydrate_node;
           mismatch = true;
           set_hydrating(false);
           break;
         }
-        child_anchor = hydrate_anchor(child_anchor);
         var value = array[i];
         var key = get_key(value, i);
-        item = create_item(child_anchor, prev, null, value, key, i, render_fn, flags2);
-        state.items.set(key, item);
-        child_anchor = /** @type {Comment} */
-        child_anchor.nextSibling;
+        item = create_item(
+          hydrate_node,
+          state2,
+          prev,
+          null,
+          value,
+          key,
+          i,
+          render_fn,
+          flags,
+          get_collection
+        );
+        state2.items.set(key, item);
         prev = item;
       }
       if (length > 0) {
-        while (child_anchor !== anchor) {
-          var next = (
-            /** @type {import('#client').TemplateNode} */
-            child_anchor.nextSibling
-          );
-          child_anchor.remove();
-          child_anchor = next;
-        }
+        set_hydrate_node(remove_nodes());
       }
     }
     if (!hydrating) {
-      reconcile(array, state, anchor, render_fn, flags2, get_key);
+      reconcile(array, state2, anchor, render_fn, flags, get_key, get_collection);
     }
     if (fallback_fn !== null) {
       if (length === 0) {
-        if (fallback) {
-          resume_effect(fallback);
+        if (fallback2) {
+          resume_effect(fallback2);
         } else {
-          fallback = branch(() => fallback_fn(anchor));
+          fallback2 = branch(() => fallback_fn(anchor));
         }
-      } else if (fallback !== null) {
-        pause_effect(fallback, () => {
-          fallback = null;
+      } else if (fallback2 !== null) {
+        pause_effect(fallback2, () => {
+          fallback2 = null;
         });
       }
     }
     if (mismatch) {
       set_hydrating(true);
     }
+    get(each_array);
   });
+  if (hydrating) {
+    anchor = hydrate_node;
+  }
 }
-function reconcile(array, state, anchor, render_fn, flags, get_key) {
-  var _a, _b, _c, _d;
+function reconcile(array, state2, anchor, render_fn, flags, get_key, get_collection) {
+  var _a3, _b3, _c2, _d;
   var is_animated = (flags & EACH_IS_ANIMATED) !== 0;
   var should_update = (flags & (EACH_ITEM_REACTIVE | EACH_INDEX_REACTIVE)) !== 0;
   var length = array.length;
-  var items = state.items;
-  var first = state.next;
+  var items = state2.items;
+  var first = state2.first;
   var current = first;
-  var seen = /* @__PURE__ */ new Set();
-  var prev = state;
-  var to_animate = /* @__PURE__ */ new Set();
+  var seen;
+  var prev = null;
+  var to_animate;
   var matched = [];
   var stashed = [];
   var value;
@@ -2192,8 +2672,8 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
       key = get_key(value, i);
       item = items.get(key);
       if (item !== void 0) {
-        (_a = item.a) == null ? void 0 : _a.measure();
-        to_animate.add(item);
+        (_a3 = item.a) == null ? void 0 : _a3.measure();
+        (to_animate != null ? to_animate : to_animate = /* @__PURE__ */ new Set()).add(item);
       }
     }
   }
@@ -2202,8 +2682,22 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
     key = get_key(value, i);
     item = items.get(key);
     if (item === void 0) {
-      var child_anchor = current ? get_first_node(current.e) : anchor;
-      prev = create_item(child_anchor, prev, prev.next, value, key, i, render_fn, flags);
+      var child_anchor = current ? (
+        /** @type {TemplateNode} */
+        current.e.nodes_start
+      ) : anchor;
+      prev = create_item(
+        child_anchor,
+        state2,
+        prev,
+        prev === null ? state2.first : prev.next,
+        value,
+        key,
+        i,
+        render_fn,
+        flags,
+        get_collection
+      );
       items.set(key, prev);
       matched = [];
       stashed = [];
@@ -2216,12 +2710,12 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
     if ((item.e.f & INERT) !== 0) {
       resume_effect(item.e);
       if (is_animated) {
-        (_b = item.a) == null ? void 0 : _b.unfix();
-        to_animate.delete(item);
+        (_b3 = item.a) == null ? void 0 : _b3.unfix();
+        (to_animate != null ? to_animate : to_animate = /* @__PURE__ */ new Set()).delete(item);
       }
     }
     if (item !== current) {
-      if (seen.has(item)) {
+      if (seen !== void 0 && seen.has(item)) {
         if (matched.length < stashed.length) {
           var start = stashed[0];
           var j;
@@ -2234,9 +2728,9 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
           for (j = 0; j < stashed.length; j += 1) {
             seen.delete(stashed[j]);
           }
-          link(a.prev, b.next);
-          link(prev, a);
-          link(b, start);
+          link(state2, a.prev, b.next);
+          link(state2, prev, a);
+          link(state2, b, start);
           current = start;
           prev = b;
           i -= 1;
@@ -2245,9 +2739,9 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
         } else {
           seen.delete(item);
           move(item, current, anchor);
-          link(item.prev, item.next);
-          link(item, prev.next);
-          link(prev, item);
+          link(state2, item.prev, item.next);
+          link(state2, item, prev === null ? state2.first : prev.next);
+          link(state2, prev, item);
           prev = item;
         }
         continue;
@@ -2255,7 +2749,9 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
       matched = [];
       stashed = [];
       while (current !== null && current.k !== key) {
-        seen.add(current);
+        if ((current.e.f & INERT) === 0) {
+          (seen != null ? seen : seen = /* @__PURE__ */ new Set()).add(current);
+        }
         stashed.push(current);
         current = current.next;
       }
@@ -2268,40 +2764,48 @@ function reconcile(array, state, anchor, render_fn, flags, get_key) {
     prev = item;
     current = item.next;
   }
-  const to_destroy = Array.from(seen);
-  while (current !== null) {
-    to_destroy.push(current);
-    current = current.next;
-  }
-  var destroy_length = to_destroy.length;
-  if (destroy_length > 0) {
-    var controlled_anchor = (flags & EACH_IS_CONTROLLED) !== 0 && length === 0 ? anchor : null;
-    if (is_animated) {
-      for (i = 0; i < destroy_length; i += 1) {
-        (_c = to_destroy[i].a) == null ? void 0 : _c.measure();
+  if (current !== null || seen !== void 0) {
+    var to_destroy = seen === void 0 ? [] : array_from(seen);
+    while (current !== null) {
+      if ((current.e.f & INERT) === 0) {
+        to_destroy.push(current);
       }
-      for (i = 0; i < destroy_length; i += 1) {
-        (_d = to_destroy[i].a) == null ? void 0 : _d.fix();
-      }
+      current = current.next;
     }
-    pause_effects(to_destroy, controlled_anchor, items);
+    var destroy_length = to_destroy.length;
+    if (destroy_length > 0) {
+      var controlled_anchor = (flags & EACH_IS_CONTROLLED) !== 0 && length === 0 ? anchor : null;
+      if (is_animated) {
+        for (i = 0; i < destroy_length; i += 1) {
+          (_c2 = to_destroy[i].a) == null ? void 0 : _c2.measure();
+        }
+        for (i = 0; i < destroy_length; i += 1) {
+          (_d = to_destroy[i].a) == null ? void 0 : _d.fix();
+        }
+      }
+      pause_effects(state2, to_destroy, controlled_anchor, items);
+    }
   }
   if (is_animated) {
     queue_micro_task(() => {
-      var _a2;
+      var _a4;
+      if (to_animate === void 0)
+        return;
       for (item of to_animate) {
-        (_a2 = item.a) == null ? void 0 : _a2.apply();
+        (_a4 = item.a) == null ? void 0 : _a4.apply();
       }
     });
   }
+  active_effect.first = state2.first && state2.first.e;
+  active_effect.last = prev && prev.e;
 }
 function update_item(item, value, index2, type) {
   if ((type & EACH_ITEM_REACTIVE) !== 0) {
-    set(item.v, value);
+    internal_set(item.v, value);
   }
   if ((type & EACH_INDEX_REACTIVE) !== 0) {
-    set(
-      /** @type {import('#client').Value<number>} */
+    internal_set(
+      /** @type {Value<number>} */
       item.i,
       index2
     );
@@ -2309,164 +2813,150 @@ function update_item(item, value, index2, type) {
     item.i = index2;
   }
 }
-function create_item(anchor, prev, next, value, key, index2, render_fn, flags) {
+function create_item(anchor, state2, prev, next2, value, key, index2, render_fn, flags, get_collection) {
   var previous_each_item = current_each_item;
-  try {
-    var reactive = (flags & EACH_ITEM_REACTIVE) !== 0;
-    var mutable = (flags & EACH_IS_STRICT_EQUALS) === 0;
-    var v = reactive ? mutable ? mutable_source(value) : source(value) : value;
-    var i = (flags & EACH_INDEX_REACTIVE) === 0 ? index2 : source(index2);
-    var item = {
-      i,
-      v,
-      k: key,
-      a: null,
-      // @ts-expect-error
-      e: null,
-      prev,
-      next
+  var reactive = (flags & EACH_ITEM_REACTIVE) !== 0;
+  var mutable = (flags & EACH_ITEM_IMMUTABLE) === 0;
+  var v = reactive ? mutable ? mutable_source(value) : source(value) : value;
+  var i = (flags & EACH_INDEX_REACTIVE) === 0 ? index2 : source(index2);
+  if (dev_fallback_default && reactive) {
+    v.debug = () => {
+      var collection_index = typeof i === "number" ? index2 : i.v;
+      get_collection()[collection_index];
     };
-    prev.next = item;
-    if (next !== null)
-      next.prev = item;
-    current_each_item = item;
-    item.e = branch(() => render_fn(anchor, v, i));
+  }
+  var item = {
+    i,
+    v,
+    k: key,
+    a: null,
+    // @ts-expect-error
+    e: null,
+    prev,
+    next: next2
+  };
+  current_each_item = item;
+  try {
+    item.e = branch(() => render_fn(anchor, v, i, get_collection), hydrating);
+    item.e.prev = prev && prev.e;
+    item.e.next = next2 && next2.e;
+    if (prev === null) {
+      state2.first = item;
+    } else {
+      prev.next = item;
+      prev.e.next = item.e;
+    }
+    if (next2 !== null) {
+      next2.prev = item;
+      next2.e.prev = item.e;
+    }
     return item;
   } finally {
     current_each_item = previous_each_item;
   }
 }
-function get_adjusted_first_node(dom, effect2) {
-  if (dom.nodeType === 3 && /** @type {Text} */
-  dom.data === "" || dom.nodeType === 8) {
-    var adjusted = effect2.first;
-    var next;
-    while (adjusted !== null) {
-      next = adjusted.first;
-      if (adjusted.dom !== null) {
-        break;
-      } else if (next === null) {
-        return (
-          /** @type {import('#client').TemplateNode} */
-          dom.previousSibling
-        );
-      }
-      adjusted = next;
-    }
-    return get_first_node(
-      /** @type {import("#client").Effect} */
-      adjusted
-    );
-  }
-  return dom;
-}
-function get_first_node(effect2) {
-  var dom = effect2.dom;
-  if (is_array(dom)) {
-    return get_adjusted_first_node(dom[0], effect2);
-  }
-  return get_adjusted_first_node(
-    /** @type {import('#client').TemplateNode} **/
-    dom,
-    effect2
+function move(item, next2, anchor) {
+  var end = item.next ? (
+    /** @type {TemplateNode} */
+    item.next.e.nodes_start
+  ) : anchor;
+  var dest = next2 ? (
+    /** @type {TemplateNode} */
+    next2.e.nodes_start
+  ) : anchor;
+  var node = (
+    /** @type {TemplateNode} */
+    item.e.nodes_start
   );
-}
-function move(item, next, anchor) {
-  var end = item.next ? get_first_node(item.next.e) : anchor;
-  var dest = next ? get_first_node(next.e) : anchor;
-  var node = get_first_node(item.e);
   while (node !== end) {
     var next_node = (
-      /** @type {import('#client').TemplateNode} */
-      node.nextSibling
+      /** @type {TemplateNode} */
+      get_next_sibling(node)
     );
     dest.before(node);
     node = next_node;
   }
 }
-function link(prev, next) {
-  prev.next = next;
-  if (next !== null)
-    next.prev = prev;
+function link(state2, prev, next2) {
+  if (prev === null) {
+    state2.first = next2;
+  } else {
+    prev.next = next2;
+    prev.e.next = next2 && next2.e;
+  }
+  if (next2 !== null) {
+    next2.prev = prev;
+    next2.e.prev = prev && prev.e;
+  }
 }
 
-// node_modules/svelte/src/internal/client/dom/template.js
-function push_template_node(dom, effect2 = (
-  /** @type {import('#client').Effect} */
-  current_effect
-)) {
-  var current_dom = effect2.dom;
-  if (current_dom === null) {
-    effect2.dom = dom;
-  } else {
-    if (!is_array(current_dom)) {
-      current_dom = effect2.dom = [current_dom];
-    }
-    if (is_array(dom)) {
-      current_dom.push(...dom);
-    } else {
-      current_dom.push(dom);
+// node_modules/svelte/src/internal/shared/attributes.js
+var whitespace = [..." 	\n\r\f\xA0\v\uFEFF"];
+function to_class(value, hash2, directives) {
+  var classname = value == null ? "" : "" + value;
+  if (hash2) {
+    classname = classname ? classname + " " + hash2 : hash2;
+  }
+  if (directives) {
+    for (var key in directives) {
+      if (directives[key]) {
+        classname = classname ? classname + " " + key : key;
+      } else if (classname.length) {
+        var len = key.length;
+        var a = 0;
+        while ((a = classname.indexOf(key, a)) >= 0) {
+          var b = a + len;
+          if ((a === 0 || whitespace.includes(classname[a - 1])) && (b === classname.length || whitespace.includes(classname[b]))) {
+            classname = (a === 0 ? "" : classname.substring(0, a)) + classname.substring(b + 1);
+          } else {
+            a = b;
+          }
+        }
+      }
     }
   }
-  return dom;
+  return classname === "" ? null : classname;
 }
-function template(content, flags) {
-  var is_fragment = (flags & TEMPLATE_FRAGMENT) !== 0;
-  var use_import_node = (flags & TEMPLATE_USE_IMPORT_NODE) !== 0;
-  var node;
-  return () => {
-    if (hydrating) {
-      push_template_node(is_fragment ? hydrate_nodes : hydrate_start);
-      return hydrate_start;
+
+// node_modules/svelte/src/internal/client/dom/elements/class.js
+function set_class(dom, is_html, value, hash2, prev_classes, next_classes) {
+  var prev = dom.__className;
+  if (hydrating || prev !== value || prev === void 0) {
+    var next_class_name = to_class(value, hash2, next_classes);
+    if (!hydrating || next_class_name !== dom.getAttribute("class")) {
+      if (next_class_name == null) {
+        dom.removeAttribute("class");
+      } else if (is_html) {
+        dom.className = next_class_name;
+      } else {
+        dom.setAttribute("class", next_class_name);
+      }
     }
-    if (!node) {
-      node = create_fragment_from_html(content);
-      if (!is_fragment)
-        node = /** @type {Node} */
-        node.firstChild;
+    dom.__className = value;
+  } else if (next_classes && prev_classes !== next_classes) {
+    for (var key in next_classes) {
+      var is_present = !!next_classes[key];
+      if (prev_classes == null || is_present !== !!prev_classes[key]) {
+        dom.classList.toggle(key, is_present);
+      }
     }
-    var clone = use_import_node ? document.importNode(node, true) : node.cloneNode(true);
-    push_template_node(
-      is_fragment ? (
-        /** @type {import('#client').TemplateNode[]} */
-        [...clone.childNodes]
-      ) : (
-        /** @type {import('#client').TemplateNode} */
-        clone
-      )
-    );
-    return clone;
-  };
-}
-function comment() {
-  if (hydrating) {
-    push_template_node(hydrate_nodes);
-    return hydrate_start;
   }
-  var frag = document.createDocumentFragment();
-  var anchor = empty();
-  frag.append(anchor);
-  push_template_node([anchor]);
-  return frag;
-}
-function append(anchor, dom) {
-  if (hydrating)
-    return;
-  anchor.before(
-    /** @type {Node} */
-    dom
-  );
+  return next_classes;
 }
 
 // node_modules/svelte/src/internal/client/dom/elements/attributes.js
-function set_attribute(element2, attribute, value) {
-  var _a;
-  value = value == null ? null : value + "";
-  var attributes = (_a = element2.__attributes) != null ? _a : element2.__attributes = {};
+var CLASS = Symbol("class");
+var STYLE = Symbol("style");
+var IS_CUSTOM_ELEMENT = Symbol("is custom element");
+var IS_HTML = Symbol("is html");
+function set_attribute(element2, attribute, value, skip_warning) {
+  var attributes = get_attributes(element2);
   if (hydrating) {
     attributes[attribute] = element2.getAttribute(attribute);
-    if (attribute === "src" || attribute === "href" || attribute === "srcset") {
-      check_src_in_dev_hydration(element2, attribute, value);
+    if (attribute === "src" || attribute === "srcset" || attribute === "href" && element2.nodeName === "LINK") {
+      if (!skip_warning) {
+        check_src_in_dev_hydration(element2, attribute, value != null ? value : "");
+      }
       return;
     }
   }
@@ -2475,23 +2965,56 @@ function set_attribute(element2, attribute, value) {
   if (attribute === "loading") {
     element2[LOADING_ATTR_SYMBOL] = value;
   }
-  if (value === null) {
+  if (value == null) {
     element2.removeAttribute(attribute);
+  } else if (typeof value !== "string" && get_setters(element2).includes(attribute)) {
+    element2[attribute] = value;
   } else {
     element2.setAttribute(attribute, value);
   }
 }
+function get_attributes(element2) {
+  var _a3;
+  return (
+    /** @type {Record<string | symbol, unknown>} **/
+    // @ts-expect-error
+    (_a3 = element2.__attributes) != null ? _a3 : element2.__attributes = {
+      [IS_CUSTOM_ELEMENT]: element2.nodeName.includes("-"),
+      [IS_HTML]: element2.namespaceURI === NAMESPACE_HTML
+    }
+  );
+}
+var setters_cache = /* @__PURE__ */ new Map();
+function get_setters(element2) {
+  var setters = setters_cache.get(element2.nodeName);
+  if (setters)
+    return setters;
+  setters_cache.set(element2.nodeName, setters = []);
+  var descriptors;
+  var proto = element2;
+  var element_proto = Element.prototype;
+  while (element_proto !== proto) {
+    descriptors = get_descriptors(proto);
+    for (var key in descriptors) {
+      if (descriptors[key].set) {
+        setters.push(key);
+      }
+    }
+    proto = get_prototype_of(proto);
+  }
+  return setters;
+}
 function check_src_in_dev_hydration(element2, attribute, value) {
-  var _a;
-  if (!DEV)
+  var _a3;
+  if (!dev_fallback_default)
     return;
   if (attribute === "srcset" && srcset_url_equal(element2, value))
     return;
-  if (src_url_equal((_a = element2.getAttribute(attribute)) != null ? _a : "", value != null ? value : ""))
+  if (src_url_equal((_a3 = element2.getAttribute(attribute)) != null ? _a3 : "", value))
     return;
   hydration_attribute_changed(
     attribute,
-    element2.outerHTML.replace(element2.innerHTML, "..."),
+    element2.outerHTML.replace(element2.innerHTML, element2.innerHTML && "..."),
     String(value)
   );
 }
@@ -2505,7 +3028,7 @@ function split_srcset(srcset) {
 }
 function srcset_url_equal(element2, srcset) {
   var element_urls = split_srcset(element2.srcset);
-  var urls = split_srcset(srcset != null ? srcset : "");
+  var urls = split_srcset(srcset);
   return urls.length === element_urls.length && urls.every(
     ([url, width], i) => width === element_urls[i][1] && // We need to test both ways because Vite will create an a full URL with
     // `new URL(asset, import.meta.url).href` for the client when `base: './'`, and the
@@ -2514,15 +3037,6 @@ function srcset_url_equal(element2, srcset) {
     // contain relative or absolute URLs.
     (src_url_equal(element_urls[i][0], url) || src_url_equal(url, element_urls[i][0]))
   );
-}
-
-// node_modules/svelte/src/internal/client/dom/elements/class.js
-function toggle_class(dom, class_name, value) {
-  if (value) {
-    dom.classList.add(class_name);
-  } else {
-    dom.classList.remove(class_name);
-  }
 }
 
 // node_modules/svelte/src/internal/client/dom/elements/bindings/size.js
@@ -2564,8 +3078,8 @@ _observer = new WeakMap();
 _options = new WeakMap();
 _getObserver = new WeakSet();
 getObserver_fn = function() {
-  var _a;
-  return (_a = __privateGet(this, _observer)) != null ? _a : __privateSet(this, _observer, new ResizeObserver(
+  var _a3;
+  return (_a3 = __privateGet(this, _observer)) != null ? _a3 : __privateSet(this, _observer, new ResizeObserver(
     /** @param {any} entries */
     (entries) => {
       for (var entry of entries) {
@@ -2580,6 +3094,19 @@ getObserver_fn = function() {
 /** @static */
 __publicField(ResizeObserverSingleton, "entries", /* @__PURE__ */ new WeakMap());
 
+// node_modules/svelte/src/internal/client/reactivity/store.js
+var is_store_binding = false;
+var IS_UNMOUNTED = Symbol();
+function capture_store_binding(fn) {
+  var previous_is_store_binding = is_store_binding;
+  try {
+    is_store_binding = false;
+    return [fn(), is_store_binding];
+  } finally {
+    is_store_binding = previous_is_store_binding;
+  }
+}
+
 // node_modules/svelte/src/internal/client/reactivity/props.js
 var spread_props_handler = {
   get(target, key) {
@@ -2592,17 +3119,38 @@ var spread_props_handler = {
         return p[key];
     }
   },
+  set(target, key, value) {
+    let i = target.props.length;
+    while (i--) {
+      let p = target.props[i];
+      if (is_function(p))
+        p = p();
+      const desc = get_descriptor(p, key);
+      if (desc && desc.set) {
+        desc.set(value);
+        return true;
+      }
+    }
+    return false;
+  },
   getOwnPropertyDescriptor(target, key) {
     let i = target.props.length;
     while (i--) {
       let p = target.props[i];
       if (is_function(p))
         p = p();
-      if (typeof p === "object" && p !== null && key in p)
-        return get_descriptor(p, key);
+      if (typeof p === "object" && p !== null && key in p) {
+        const descriptor = get_descriptor(p, key);
+        if (descriptor && !descriptor.configurable) {
+          descriptor.configurable = true;
+        }
+        return descriptor;
+      }
     }
   },
   has(target, key) {
+    if (key === STATE_SYMBOL || key === LEGACY_PROPS)
+      return false;
     for (let p of target.props) {
       if (is_function(p))
         p = p();
@@ -2616,7 +3164,13 @@ var spread_props_handler = {
     for (let p of target.props) {
       if (is_function(p))
         p = p();
+      if (!p)
+        continue;
       for (const key in p) {
+        if (!keys.includes(key))
+          keys.push(key);
+      }
+      for (const key of Object.getOwnPropertySymbols(p)) {
         if (!keys.includes(key))
           keys.push(key);
       }
@@ -2627,32 +3181,52 @@ var spread_props_handler = {
 function spread_props(...props) {
   return new Proxy({ props }, spread_props_handler);
 }
-function prop(props, key, flags, fallback) {
-  var _a;
+function has_destroyed_component_ctx(current_value) {
+  var _a3, _b3;
+  return (_b3 = (_a3 = current_value.ctx) == null ? void 0 : _a3.d) != null ? _b3 : false;
+}
+function prop(props, key, flags, fallback2) {
+  var _a3, _b3;
   var immutable = (flags & PROPS_IS_IMMUTABLE) !== 0;
-  var runes = (flags & PROPS_IS_RUNES) !== 0;
+  var runes = !legacy_mode_flag || (flags & PROPS_IS_RUNES) !== 0;
+  var bindable = (flags & PROPS_IS_BINDABLE) !== 0;
   var lazy = (flags & PROPS_IS_LAZY_INITIAL) !== 0;
-  var prop_value = (
-    /** @type {V} */
-    props[key]
-  );
-  var setter = (_a = get_descriptor(props, key)) == null ? void 0 : _a.set;
+  var is_store_sub = false;
+  var prop_value;
+  if (bindable) {
+    [prop_value, is_store_sub] = capture_store_binding(() => (
+      /** @type {V} */
+      props[key]
+    ));
+  } else {
+    prop_value = /** @type {V} */
+    props[key];
+  }
+  var is_entry_props = STATE_SYMBOL in props || LEGACY_PROPS in props;
+  var setter = bindable && ((_b3 = (_a3 = get_descriptor(props, key)) == null ? void 0 : _a3.set) != null ? _b3 : is_entry_props && key in props && ((v) => props[key] = v)) || void 0;
   var fallback_value = (
     /** @type {V} */
-    fallback
+    fallback2
   );
   var fallback_dirty = true;
+  var fallback_used = false;
   var get_fallback = () => {
-    if (lazy && fallback_dirty) {
+    fallback_used = true;
+    if (fallback_dirty) {
       fallback_dirty = false;
-      fallback_value = untrack(
-        /** @type {() => V} */
-        fallback
-      );
+      if (lazy) {
+        fallback_value = untrack(
+          /** @type {() => V} */
+          fallback2
+        );
+      } else {
+        fallback_value = /** @type {V} */
+        fallback2;
+      }
     }
     return fallback_value;
   };
-  if (prop_value === void 0 && fallback !== void 0) {
+  if (prop_value === void 0 && fallback2 !== void 0) {
     if (setter && runes) {
       props_invalid_value(key);
     }
@@ -2670,6 +3244,7 @@ function prop(props, key, flags, fallback) {
       if (value === void 0)
         return get_fallback();
       fallback_dirty = true;
+      fallback_used = false;
       return value;
     };
   } else {
@@ -2695,7 +3270,7 @@ function prop(props, key, flags, fallback) {
     var legacy_parent = props.$$legacy;
     return function(value, mutation) {
       if (arguments.length > 0) {
-        if (!runes || !mutation || legacy_parent) {
+        if (!runes || !mutation || legacy_parent || is_store_sub) {
           setter(mutation ? getter() : value);
         }
         return value;
@@ -2718,25 +3293,36 @@ function prop(props, key, flags, fallback) {
     was_from_child = false;
     return inner_current_value.v = parent_value;
   });
+  if (bindable) {
+    get(current_value);
+  }
   if (!immutable)
     current_value.equals = safe_equals;
   return function(value, mutation) {
-    var current = get(current_value);
-    if (is_signals_recorded) {
+    if (captured_signals !== null) {
       from_child = was_from_child;
       getter();
       get(inner_current_value);
     }
     if (arguments.length > 0) {
-      const new_value = mutation ? get(current_value) : value;
+      const new_value = mutation ? get(current_value) : runes && bindable ? proxy(value) : value;
       if (!current_value.equals(new_value)) {
         from_child = true;
         set(inner_current_value, new_value);
-        get(current_value);
+        if (fallback_used && fallback_value !== void 0) {
+          fallback_value = new_value;
+        }
+        if (has_destroyed_component_ctx(current_value)) {
+          return value;
+        }
+        untrack(() => get(current_value));
       }
       return value;
     }
-    return current;
+    if (has_destroyed_component_ctx(current_value)) {
+      return current_value.v;
+    }
+    return get(current_value);
   };
 }
 
@@ -2747,11 +3333,8 @@ function createClassComponent(options) {
 var _events, _instance;
 var Svelte4Component = class {
   /**
-   * @param {import('svelte').ComponentConstructorOptions & {
+   * @param {ComponentConstructorOptions & {
    *  component: any;
-   * 	immutable?: boolean;
-   * 	hydrate?: boolean;
-   * 	recover?: false;
    * }} options
    */
   constructor(options) {
@@ -2759,14 +3342,45 @@ var Svelte4Component = class {
     __privateAdd(this, _events, void 0);
     /** @type {Record<string, any>} */
     __privateAdd(this, _instance, void 0);
-    const props = proxy({ ...options.props || {}, $$events: {} }, false);
+    var _a3, _b3;
+    var sources = /* @__PURE__ */ new Map();
+    var add_source = (key, value) => {
+      var s = mutable_source(value);
+      sources.set(key, s);
+      return s;
+    };
+    const props = new Proxy(
+      { ...options.props || {}, $$events: {} },
+      {
+        get(target, prop2) {
+          var _a4;
+          return get((_a4 = sources.get(prop2)) != null ? _a4 : add_source(prop2, Reflect.get(target, prop2)));
+        },
+        has(target, prop2) {
+          var _a4;
+          if (prop2 === LEGACY_PROPS)
+            return true;
+          get((_a4 = sources.get(prop2)) != null ? _a4 : add_source(prop2, Reflect.get(target, prop2)));
+          return Reflect.has(target, prop2);
+        },
+        set(target, prop2, value) {
+          var _a4;
+          set((_a4 = sources.get(prop2)) != null ? _a4 : add_source(prop2, value), value);
+          return Reflect.set(target, prop2, value);
+        }
+      }
+    );
     __privateSet(this, _instance, (options.hydrate ? hydrate : mount)(options.component, {
       target: options.target,
+      anchor: options.anchor,
       props,
       context: options.context,
-      intro: options.intro,
+      intro: (_a3 = options.intro) != null ? _a3 : false,
       recover: options.recover
     }));
+    if (!((_b3 = options == null ? void 0 : options.props) == null ? void 0 : _b3.$$host) || options.sync === false) {
+      flushSync();
+    }
     __privateSet(this, _events, props.$$events);
     for (const key of Object.keys(__privateGet(this, _instance))) {
       if (key === "$set" || key === "$destroy" || key === "$on")
@@ -2783,8 +3397,8 @@ var Svelte4Component = class {
       });
     }
     __privateGet(this, _instance).$set = /** @param {Record<string, any>} next */
-    (next) => {
-      Object.assign(props, next);
+    (next2) => {
+      Object.assign(props, next2);
     };
     __privateGet(this, _instance).$destroy = () => {
       unmount(__privateGet(this, _instance));
@@ -2931,26 +3545,28 @@ if (typeof HTMLElement === "function") {
             $$host: this
           }
         });
-        this.$$me = render_effect(() => {
-          var _a;
-          this.$$r = true;
-          for (const key of object_keys(this.$$c)) {
-            if (!((_a = this.$$p_d[key]) == null ? void 0 : _a.reflect))
-              continue;
-            this.$$d[key] = this.$$c[key];
-            const attribute_value = get_custom_element_value(
-              key,
-              this.$$d[key],
-              this.$$p_d,
-              "toAttribute"
-            );
-            if (attribute_value == null) {
-              this.removeAttribute(this.$$p_d[key].attribute || key);
-            } else {
-              this.setAttribute(this.$$p_d[key].attribute || key, attribute_value);
+        this.$$me = effect_root(() => {
+          render_effect(() => {
+            var _a3;
+            this.$$r = true;
+            for (const key of object_keys(this.$$c)) {
+              if (!((_a3 = this.$$p_d[key]) == null ? void 0 : _a3.reflect))
+                continue;
+              this.$$d[key] = this.$$c[key];
+              const attribute_value = get_custom_element_value(
+                key,
+                this.$$d[key],
+                this.$$p_d,
+                "toAttribute"
+              );
+              if (attribute_value == null) {
+                this.removeAttribute(this.$$p_d[key].attribute || key);
+              } else {
+                this.setAttribute(this.$$p_d[key].attribute || key, attribute_value);
+              }
             }
-          }
-          this.$$r = false;
+            this.$$r = false;
+          });
         });
         for (const type in this.$$l) {
           for (const listener of this.$$l[type]) {
@@ -2968,20 +3584,20 @@ if (typeof HTMLElement === "function") {
      * @param {string} _oldValue
      * @param {string} newValue
      */
-    attributeChangedCallback(attr, _oldValue, newValue) {
-      var _a;
+    attributeChangedCallback(attr2, _oldValue, newValue) {
+      var _a3;
       if (this.$$r)
         return;
-      attr = this.$$g_p(attr);
-      this.$$d[attr] = get_custom_element_value(attr, newValue, this.$$p_d, "toProp");
-      (_a = this.$$c) == null ? void 0 : _a.$set({ [attr]: this.$$d[attr] });
+      attr2 = this.$$g_p(attr2);
+      this.$$d[attr2] = get_custom_element_value(attr2, newValue, this.$$p_d, "toProp");
+      (_a3 = this.$$c) == null ? void 0 : _a3.$set({ [attr2]: this.$$d[attr2] });
     }
     disconnectedCallback() {
       this.$$cn = false;
       Promise.resolve().then(() => {
         if (!this.$$cn && this.$$c) {
           this.$$c.$destroy();
-          destroy_effect(this.$$me);
+          this.$$me();
           this.$$c = void 0;
         }
       });
@@ -2997,8 +3613,8 @@ if (typeof HTMLElement === "function") {
   };
 }
 function get_custom_element_value(prop2, value, props_definition, transform) {
-  var _a;
-  const type = (_a = props_definition[prop2]) == null ? void 0 : _a.type;
+  var _a3;
+  const type = (_a3 = props_definition[prop2]) == null ? void 0 : _a3.type;
   value = type === "Boolean" && typeof value !== "boolean" ? value != null : value;
   if (!transform || !props_definition[prop2]) {
     return value;
@@ -3037,6 +3653,34 @@ function get_custom_elements_slots(element2) {
     ] = true;
   });
   return result;
+}
+
+// node_modules/svelte/src/index-client.js
+if (dev_fallback_default) {
+  let throw_rune_error = function(rune) {
+    if (!(rune in globalThis)) {
+      let value;
+      Object.defineProperty(globalThis, rune, {
+        configurable: true,
+        // eslint-disable-next-line getter-return
+        get: () => {
+          if (value !== void 0) {
+            return value;
+          }
+          rune_outside_svelte(rune);
+        },
+        set: (v) => {
+          value = v;
+        }
+      });
+    }
+  };
+  throw_rune_error("$state");
+  throw_rune_error("$effect");
+  throw_rune_error("$derived");
+  throw_rune_error("$inspect");
+  throw_rune_error("$props");
+  throw_rune_error("$bindable");
 }
 
 // src/data-access/journal-folder-settings.type.ts
@@ -3087,11 +3731,11 @@ var FolderSettingsResolver = class {
     return config;
   }
   getFolderConfigFile(file) {
-    var _a;
+    var _a3;
     if (!file)
       return null;
     const dest = this.plugin.app.vault.getAbstractFileByPath(
-      `${(_a = file.parent) == null ? void 0 : _a.path}/journal-folder.md`
+      `${(_a3 = file.parent) == null ? void 0 : _a3.path}/journal-folder.md`
     );
     return dest instanceof import_obsidian.TFile ? dest : null;
   }
@@ -3106,8 +3750,8 @@ var FolderSettingsResolver = class {
     return config;
   }
   getFrontMatterCache(file) {
-    var _a;
-    const frontMatter = file && ((_a = this.plugin.app.metadataCache.getFileCache(file)) == null ? void 0 : _a.frontmatter);
+    var _a3;
+    const frontMatter = file && ((_a3 = this.plugin.app.metadataCache.getFileCache(file)) == null ? void 0 : _a3.frontmatter);
     return frontMatter || {};
   }
   keyValuePair(line) {
@@ -3215,16 +3859,16 @@ function journalNoteFactoryWithSettings(settings) {
     return buildStrategy;
   }
   return function journalNote(file) {
-    var _a, _b, _c;
+    var _a3, _b3, _c2;
     const strategy = getNoteStrategy(file);
     const today = (0, import_obsidian3.moment)().startOf("day");
-    const noteNames = (((_a = file.parent) == null ? void 0 : _a.children) || []).map(
+    const noteNames = (((_a3 = file.parent) == null ? void 0 : _a3.children) || []).map(
       (f) => f.name.replace(/\.md$/, "")
     );
     return new JournalNote(
       strategies,
-      (_b = file.parent) == null ? void 0 : _b.name,
-      ((_c = file.parent) == null ? void 0 : _c.path) || "",
+      (_b3 = file.parent) == null ? void 0 : _b3.name,
+      ((_c2 = file.parent) == null ? void 0 : _c2.path) || "",
       noteNames,
       strategy,
       // @ts-ignore
@@ -3408,47 +4052,63 @@ var JournalNote = class {
 var PUBLIC_VERSION = "5";
 
 // node_modules/svelte/src/internal/disclose-version.js
-if (typeof window !== "undefined")
-  (window.__svelte || (window.__svelte = { v: /* @__PURE__ */ new Set() })).v.add(PUBLIC_VERSION);
+var _a2, _b2, _c;
+if (typeof window !== "undefined") {
+  ((_c = (_b2 = (_a2 = window.__svelte) != null ? _a2 : window.__svelte = {}).v) != null ? _c : _b2.v = /* @__PURE__ */ new Set()).add(PUBLIC_VERSION);
+}
+
+// node_modules/svelte/src/internal/flags/legacy.js
+enable_legacy_mode_flag();
 
 // src/ui/ErrorMessage.svelte
 var root = template(`<div class="journal-folder-error-message"> </div>`);
 function ErrorMessage($$anchor, $$props) {
-  let error = prop($$props, "error");
+  let error = prop($$props, "error", 8);
   var div = root();
-  var text2 = child(div);
+  var text2 = child(div, true);
+  reset(div);
   template_effect(() => set_text(text2, error()));
   append($$anchor, div);
 }
 
 // src/ui/NoteLink.svelte
 var root_1 = template(`<span class="journal-folder-note-link no-link"> </span>`);
-var root_2 = template(`<a class="internal-link journal-folder-note-link"> </a>`);
+var root_2 = template(`<a> </a>`);
 function NoteLink($$anchor, $$props) {
   "use strict";
   let inactive = prop($$props, "inactive", 3, false), linkStyle = prop($$props, "linkStyle", 3, "hyperlink");
   var fragment = comment();
   var node = first_child(fragment);
-  if_block(
-    node,
-    inactive,
-    ($$anchor2) => {
+  {
+    var consequent = ($$anchor2) => {
       var span = root_1();
-      var text2 = child(span);
+      var text2 = child(span, true);
+      reset(span);
       template_effect(() => set_text(text2, $$props.title));
       append($$anchor2, span);
-    },
-    ($$anchor2) => {
+    };
+    var alternate = ($$anchor2) => {
       var a = root_2();
-      var text_1 = child(a);
-      template_effect(() => {
-        set_attribute(a, "href", $$props.url);
-        toggle_class(a, "chip", linkStyle() === "chip");
-        set_text(text_1, $$props.title);
-      });
+      let classes;
+      var text_1 = child(a, true);
+      reset(a);
+      template_effect(
+        ($0) => {
+          classes = set_class(a, 1, "internal-link journal-folder-note-link", null, classes, $0);
+          set_attribute(a, "href", $$props.url);
+          set_text(text_1, $$props.title);
+        },
+        [() => ({ chip: linkStyle() === "chip" })]
+      );
       append($$anchor2, a);
-    }
-  );
+    };
+    if_block(node, ($$render) => {
+      if (inactive())
+        $$render(consequent);
+      else
+        $$render(alternate, false);
+    });
+  }
   append($$anchor, fragment);
 }
 
@@ -3464,55 +4124,87 @@ function JournalHeader($$anchor, $$props) {
   push($$props, true);
   var div = root2();
   var node = child(div);
-  if_block(node, () => $$props.info.journalFolderTitle, ($$anchor2) => {
-    var div_1 = root_12();
-    var text2 = child(div_1);
-    template_effect(() => set_text(text2, $$props.info.journalFolderTitle));
-    append($$anchor2, div_1);
-  });
-  var h1 = sibling(sibling(node, true));
-  var text_1 = child(h1);
-  var div_2 = sibling(sibling(h1, true));
+  {
+    var consequent = ($$anchor2) => {
+      var div_1 = root_12();
+      var text2 = child(div_1, true);
+      reset(div_1);
+      template_effect(() => set_text(text2, $$props.info.journalFolderTitle));
+      append($$anchor2, div_1);
+    };
+    if_block(node, ($$render) => {
+      if ($$props.info.journalFolderTitle)
+        $$render(consequent);
+    });
+  }
+  var h1 = sibling(node, 2);
+  var text_1 = child(h1, true);
+  reset(h1);
+  var div_2 = sibling(h1, 2);
   var div_3 = child(div_2);
   var node_1 = child(div_3);
-  if_block(node_1, () => $$props.info.backwardLink, ($$anchor2) => {
-    var fragment = root_22();
-    var node_2 = first_child(fragment);
-    NoteLink(node_2, spread_props(() => $$props.info.backwardLink, { linkStyle: "chip" }));
-    var div_4 = sibling(sibling(node_2, true));
-    append($$anchor2, fragment);
-  });
-  var node_3 = sibling(sibling(node_1, true));
-  each(node_3, 65, () => $$props.info.centerLinks, index, ($$anchor2, link2, $$index) => {
-    var fragment_1 = comment();
-    var node_4 = first_child(fragment_1);
-    NoteLink(node_4, spread_props(() => unwrap(link2), { linkStyle: "chip" }));
-    append($$anchor2, fragment_1);
-  });
-  var node_5 = sibling(sibling(node_3, true));
-  if_block(node_5, () => $$props.info.forwardLink, ($$anchor2) => {
-    var fragment_2 = root_4();
-    var div_5 = first_child(fragment_2);
-    var node_6 = sibling(sibling(div_5, true));
-    NoteLink(node_6, spread_props(() => $$props.info.forwardLink, { linkStyle: "chip" }));
-    append($$anchor2, fragment_2);
-  });
-  var node_7 = sibling(sibling(div_3, true));
-  if_block(node_7, () => $$props.info.secondaryLinks.length > 0, ($$anchor2) => {
-    var div_6 = root_5();
-    each(div_6, 73, () => $$props.info.secondaryLinks, index, ($$anchor3, link2, i) => {
-      var fragment_3 = root_6();
-      var node_8 = first_child(fragment_3);
-      if_block(node_8, () => unwrap(i) > 0, ($$anchor4) => {
-        var div_7 = root_7();
-        append($$anchor4, div_7);
-      });
-      var node_9 = sibling(sibling(node_8, true));
-      NoteLink(node_9, spread_props(() => unwrap(link2)));
-      append($$anchor3, fragment_3);
+  {
+    var consequent_1 = ($$anchor2) => {
+      var fragment = root_22();
+      var node_2 = first_child(fragment);
+      NoteLink(node_2, spread_props(() => $$props.info.backwardLink, { linkStyle: "chip" }));
+      next(2);
+      append($$anchor2, fragment);
+    };
+    if_block(node_1, ($$render) => {
+      if ($$props.info.backwardLink)
+        $$render(consequent_1);
     });
-    append($$anchor2, div_6);
+  }
+  var node_3 = sibling(node_1, 2);
+  each(node_3, 17, () => $$props.info.centerLinks, index, ($$anchor2, link2) => {
+    NoteLink($$anchor2, spread_props(() => get(link2), { linkStyle: "chip" }));
   });
+  var node_4 = sibling(node_3, 2);
+  {
+    var consequent_2 = ($$anchor2) => {
+      var fragment_2 = root_4();
+      var node_5 = sibling(first_child(fragment_2), 2);
+      NoteLink(node_5, spread_props(() => $$props.info.forwardLink, { linkStyle: "chip" }));
+      append($$anchor2, fragment_2);
+    };
+    if_block(node_4, ($$render) => {
+      if ($$props.info.forwardLink)
+        $$render(consequent_2);
+    });
+  }
+  reset(div_3);
+  var node_6 = sibling(div_3, 2);
+  {
+    var consequent_4 = ($$anchor2) => {
+      var div_4 = root_5();
+      each(div_4, 21, () => $$props.info.secondaryLinks, index, ($$anchor3, link2, i) => {
+        var fragment_3 = root_6();
+        var node_7 = first_child(fragment_3);
+        {
+          var consequent_3 = ($$anchor4) => {
+            var div_5 = root_7();
+            append($$anchor4, div_5);
+          };
+          if_block(node_7, ($$render) => {
+            if (i > 0)
+              $$render(consequent_3);
+          });
+        }
+        var node_8 = sibling(node_7, 2);
+        NoteLink(node_8, spread_props(() => get(link2)));
+        append($$anchor3, fragment_3);
+      });
+      reset(div_4);
+      append($$anchor2, div_4);
+    };
+    if_block(node_6, ($$render) => {
+      if ($$props.info.secondaryLinks.length > 0)
+        $$render(consequent_4);
+    });
+  }
+  reset(div_2);
+  reset(div);
   template_effect(() => set_text(text_1, $$props.info.title));
   append($$anchor, div);
   pop();
@@ -3553,12 +4245,12 @@ function buildJournalHeaderInfo(settings, note) {
     }
   }
   function createBackwardLink() {
-    var _a;
+    var _a3;
     const directSibling = note.backInTime();
     if (directSibling.isExistingNote() || directSibling.isPresentOrFuture()) {
       return directSibling.shortLinkFrom(note);
     }
-    return (_a = note.closestSibling("before")) == null ? void 0 : _a.shortLinkFrom(note);
+    return (_a3 = note.closestSibling("before")) == null ? void 0 : _a3.shortLinkFrom(note);
   }
   function buildSecondaryLinks() {
     return note.getLowerOrderNotes().map((n) => n.link("short", n.isMissingNote() && n.isPast()));

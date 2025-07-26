@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "Ticket": "text",
-    "Ticketname": "text"
+    "Ticketname": "text",
+    "TicketbearbeitungsDatum": "date"
   }
 }
