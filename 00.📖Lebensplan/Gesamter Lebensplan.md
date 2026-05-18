@@ -1,60 +1,18 @@
 # Lebenskompass
-## Große Vision
-### Vision der Lebensbereiche
-### Zukunftsvision
-Skizziere deine Wunschwelt in 10/20/35/50 Jahren
 ## Ziele
 ### Zielsetzungsstrategie
 #### Ziele in kleiner Meilensteine unterteilen
-### Ziele der Lebensbereiche
-#### Karriere Ziele
-### Zeitliche Ziele
-#### 5 Jahres Ziele
-#### 10 Jahres Ziele
-#### 20 Jahres Ziele
-### Bucketliste
-### Wunschziele
-### Mielensteine
-### Ideales Leben
-#### Idealbild deines Tages- und Lebensstils
-#### Mein ideales Leben
-## Lebensmanifest
-### Kernwert
-### Lenbensprinzipen
-### Lebensmission
-## Identität
-### Persönliche Identität 
-#### Selbstbild: Wer bin ich?
-#### Persönlichkeitsanalyse
-#### Identitätsfindung (langfristige Entwicklung)
-### Lebensphilosophie & Sinn
-#### Meine Lebensphilosophie
-#### Mein Sinn des Lebens
 # Zeitnavigator
 ## Zeitmanagement 
 ### Zeitmanagements Strategien t
 #### Arbeitsabläufen Optimieren
-#### Fokustage
-#### Pflegetage
-#### Einkaufstage
-#### Ordnungstage
-#### Haushaltstage
-#### Organisationstage
-### Fokus & Priorisierung
-#### Deepwork
 ### Produktivität
 #### Lebensframework Review
 Lege einen festen Zeitpunkt (wöchentlich/monatlich) fest, an dem du dein gesamtes Lebensframework reflektierst und anpasst.
 ### Kalendermanagment
 #### Sozial Kalender
-##### Geburtstage
-##### Feiern
-###### Jubiläen
 ##### Geplante Soziale Aktivitäten
 ###### Gemeinsame Planung von Aktivitäten
-###### Geplante Familienaktivitäten 
-###### Geplante Aktivitäten mit Freunden
-###### Geplante Aktivitäten mit Partner
 ### Erinnerungen
 #### Steuererklärungserinnerung
 #### Amtserinnerung
@@ -64,10 +22,6 @@ Lege einen festen Zeitpunkt (wöchentlich/monatlich) fest, an dem du dein gesamt
 ### Tagesjournal
 #### Tagesreflexion
 #### Tagesroutinen
-##### Morgenroutine
-für einen guten Start in den Tag
-##### Abendroutine
-um morgens ausgeruht aufzuwachen
 #### Tages Prioritäten
 ##### Top 3 Prioritäten
 ### Wöchentliche Planung
@@ -121,17 +75,9 @@ um morgens ausgeruht aufzuwachen
 ##### Renigungsroutinen Tracker
 #### Kreativitätsroutinen
 ### Gewohnheiten
-#### Nachhaltige Gewohnheiten
-##### Müllvermeidung
-###### Mülltrennung
-###### Plastikverbrauch minimieren
-##### Ökologischen Fußabdruck verringern
 #### Trigger
 ##### Schlechte Gewohnheitstrigger
 #### Micro Gewohnheiten
-#### Schlechte Gewohnheiten vermeinden
-#### Gute Gewohnheiten aufbauen
-## Kalender
 # Alltagsmanagement
 ## Wohnen
 ### Haushalt
@@ -206,54 +152,17 @@ um morgens ausgeruht aufzuwachen
 ##### Inventarordnung
 ###### Haushaltsgegenständen Aufbewahrungsplätze 
 ### Wohnträume & Zukunftspläne
-## Haustiere & Pflanzen
-### Haustiere 
-#### Futterpläne
-#### Gesundheit der Haustiere
-#### Erziehung
-#### Aktivitäten mit Tieren
-### Pflanzen
-#### Gießpläne 
-#### Gärtnern
-##### Kräutergarten
-###### Minzpflanze
-###### Basilikumpflanze 
-#### Pflanzenpflege
-#### Pflanzen für die Wohnung
-## Mobilität
-### Öffentliche Verkehrsmittel
-### E Bike
-### Auto
-### Fahrrad
 ## Recht, Dokumente & Sicherheit
-### Recht
-#### Arbeitsgesetze
-#### Mietrecht
-#### Checklisten für behördliche Angelegenheiten
 ### Dokumente
 #### Verträge
 ##### Arbeitsvertrag
 ##### Versicherung
 ###### Krankenversicherungen 
-#### Rechtliche Dokumente
-##### Willenserklärung 
-##### Steuerunterlagen
-#### Allgemeine Dokumente
-##### Zeugnisse
-##### Ausbildungsnachweis
-##### Zertifikate
-#### Rechnungen
 #### Digitale Backups
 #### Physische Backups
 #### Dokumentereview
 ### Sicherheit
 #### Notfallplan
-##### Notfallkontakte
-###### Anwalt
-###### Notare
-###### Arzt
-###### Behörde
-###### Versicherung
 ##### Finanzielle Notlage
 ###### Jobverlust
 ##### Trennung
@@ -274,13 +183,6 @@ um morgens ausgeruht aufzuwachen
 ###### Werbeblocker
 ###### Trackingblocker 
 # Vitaloase (Gesundheit)
-## Allgemeine Gesundheit 
-### Wohlbefinden
-### Naturheilkunde
-### Biohacking
-#### Biologisches Altern stoppen
-#### Gesundheit steigern
-#### Leistung steigern
 ## Wellness
 ### Pflege
 #### Haarpflege
@@ -294,17 +196,7 @@ um morgens ausgeruht aufzuwachen
 ## Ernährung
 ### Ernährung allgemein
 #### Kochtipps & Techniken
-#### Ernährungs Tracker
-#### Superfoods
-#### Must have Lebensmittel
-#### Wasser Tracker
-### Ernährungspläne
-#### Biohacking-Diäten
-#### Mealpreaping
-#### Allgemeiner Ernährungsplan
 ### Supplements
-#### Creatin
-#### Omega 3
 #### Supplement Tracker
 ### Gehirn Boostende Ernährung
 ### Ernährungsprobleme
@@ -315,17 +207,12 @@ um morgens ausgeruht aufzuwachen
 #### Neue Rezepte
 ##### Internationale Küche entdecken
 ## Körper
-### Haltung
 ### Hygiene & Pflege
 #### Hautpflegeroutine 
 #### Haarroutinen 
 #### Körperpflegeroutine
-### Atmung
 ### Fitness
 #### Fitness
-##### Trainingsplan
-###### Kraftsportplan
-###### Flexibilitätsplan
 ##### Fitnessroutine
 ###### Maximaler Fitness Erfolg in minimaler Zeit
 ##### Kraftsport (Link mit Hobbys)
@@ -337,12 +224,6 @@ um morgens ausgeruht aufzuwachen
 ### Körperprobleme
 #### Rückenschmerzen
 ## Mentale Gesundheit
-### Meditation
-#### Meditationsatmung
-### Mentaltraining
-#### Gedächtnistraining & Mnemotechniken
-#### Konzentrationstraining
-#### Kognitive Fähigkeiten verbessern
 ### Stressbewältigung
 #### Schnelle Stressbewältigungsstrategien
 #### Atmung gegen Stressbewältigung
@@ -354,13 +235,8 @@ um morgens ausgeruht aufzuwachen
 ##### Schlaftracking
 ##### Schlafhygiene
 ##### Schlafroutine
-### Burnout Prävention
 # Inneres Universum (Persönliche entwicklung)
-## Erfolge dokumentieren
-## Rückblicke
-### Vergangenheitsanalyse
 ## Lebensbalance
-## Umgang mit Lebenskrisen
 ## Neue Fähigkeiten
 ### Dokumentation von Lernfortschritten
 ## Meine Bias-Analyse
@@ -380,9 +256,6 @@ um morgens ausgeruht aufzuwachen
 #### Mimik
 ## Selbstverbesserung
 ### Innere Konflikte (verstehen und lösen)
-### Umgang mit Kritik
-### Charakterentwicklung
-#### Charisma verbessern
 ### Logik & kritisches Denken verbessern
 ## Denkweisen
 ### Zufallsprinzip im Alltag
@@ -400,34 +273,17 @@ Warum wir oft falsche Schlussfolgerungen ziehen
 Logische Entscheidungen auf Basis von Statistik
 ### Reverse Engineering von Erfolg 
 Erfolgreiche Menschen analysieren und nachmachen
-## Stärken & Schwächen
-### Stärken
-### Schwächen
-## Suchtverhalten
-### Rauchsucht
-### Kiffsucht
-
 # Sozial Sphäre
 ## Familie
-### Geschenkideen für Familie
 ### Familienmanagement
 #### Familien Spieleabend organisieren
-### Traditionen 
-#### Neue Traditionen
 ## Freunde
-### Besserer Freund werden
-### Freundesliste Priorität
-### Geschenkideen für Freunde
 ### Freundschaftsmanagement
 #### Freunde Spieleabend organisieren
 ## Partner
-### Besserer Partner werden
-### Geschenkeideen für Partner
 ### Romantische Date Ideen
 #### Date Aktivitäten
 ### Kommunikation in einer Beziehung
-### Konfliktlösung in einer Beziehung
-### Überraschungen für mein Partner
 ## Persönliche Gesten
 ## Freundschaften pflegen
 # Vermögens Domäne
@@ -439,45 +295,16 @@ Erfolgreiche Menschen analysieren und nachmachen
 #### Schulden die ich bekomme
 #### Abos
 ##### Prime
-#### Budgetplanung
-##### Monatliches Budget
-##### Jährliches Budget
-##### Reise Budget
-###### Kurzreise Budget
-###### Weltreise Budget
-###### Langzeitreise Budget
-##### Projekt Budget
-### Haushaltsplan
-#### Einnahmen
-#### Ausgaben
-#### Ersparnisse
-### Nebeneinkommen
-#### Passive Nebeneinkommen
-#### Nebenjob
-#### Geldverdiene Projekte
-#### Online Business ideen
-#### Produkt- und Dienstleistungsideen
 ### Vermögensaufbau
 #### Finanzstrategien
 #### Finanzziele
 #### Investition
 ##### Investitionsstrategien
-##### Aktien
-##### Immobilien
-#### Inflation
 #### Sparstrategie
 ##### Einsparpotenziale
 ##### Langfristige Sparstrategien 
 ##### Sparziele
-#### Altersvorsorge & Notfallfond
-##### Rente
-##### Rücklagen
 #### Ausgabenmanagement
-### Steuern & Versicherungen
-#### Steuerplanung 
-##### Steuererklärung
-##### Steueroptimierung
-#### Versicherungskosten 
 ## Karriere
 ### Berufliche Entwicklung
 #### Ausbildung
@@ -493,22 +320,15 @@ Erfolgreiche Menschen analysieren und nachmachen
 #### Weiterbildung
 ##### Weiterbildungsliste
 ##### Kurse und Programme
-### Arbeitsplatz
-Büro Arbeitsplatz für Effizienz Gestalten (Produktivität, Entspannter)
 ### Karriereplanung
-#### LinkedIn
 #### Perfekte Bewerbung
-#### Gehaltsvorstellung
 #### Homeoffice
 ##### Produktives Arbeiten im Homeoffice
-#### Aufstiegsmöglichkeiten
-### Selbstständigkeit
 ### Strategische Weiterentwicklung
 #### Workflows
 #### effizientes Arbeiten
 #### Zeitmanagement
 #### Persönliche Performance Reviews
-####
 # Wissenskompendium (Bildung)
 ## Bildungsstrategie
 ### Lernziele in Unterkategorien einteilen
@@ -527,7 +347,6 @@ Mache deine Lernpläne dynamisch, sodass du sie je nach Fortschritt regelmäßig
 ### Schnelle Lernmethoden
 ### Schlösser knacken
 ## Technologisches & Technisches Wissen
-### Netzwerke Wissen
 ### Server Wissen
 ### Betriebssysteme Wissen
 ### IT Infrastruktur Wissen
@@ -541,45 +360,11 @@ Mache deine Lernpläne dynamisch, sodass du sie je nach Fortschritt regelmäßig
 ### Dark Web
 ### Hacken
 ### Smarte Geräte Wissen
-## Finanzswissen
-### Aktien wissen
-### ETF wissen
-### Immobilien wissen
-### Kryptowährung wissen
-## Geographie
-## Mathe
-## Sprache lernen
-### Deutsch
-### Englisch
-### Russisch
-### Spanisch
-## Wissenschaft
-### Chemie
-### Bio
-### Physik
-#### Astronomie
 # Freizeitatlas
 ## Reise & Abenteuer
 ### Reiseziele
-#### Sprachreisen
 #### Langfristige Reiseziele
 ##### Kontinent Rundreisen
-#### Außergewöhnliche Erlebnisse
-##### Hidden Gems
-#### Wunschorte
-##### Wüsten
-##### Arktis
-##### Dschungel
-##### Pyramiden von Giza
-##### Polarlichter
-##### Schloss Neuschwanstein
-##### Safari
-##### Machu Picchu
-#### Länder Reiseziele
-##### Australien
-##### USA
-##### Japan
-##### Brasilien
 ### Reisen
 #### Langfristige Reisen
 #### Geplante Reisen
@@ -589,48 +374,11 @@ Mache deine Lernpläne dynamisch, sodass du sie je nach Fortschritt regelmäßig
 #### Reise dokumentieren
 ##### Reisetagebuch (mit Fotoalbum)
 #### Günstige Luxuserlebnisse
-#### Kurz Reisen
-##### Waldwanderung
-##### Seeausflug
-##### Stadtausflüge
-##### Roadtrips
-##### Spontane Ausflüge
-### Abenteuer
-#### Extremsport
-## Projekte
-### IT Projekte
-### DIY Projekte
-### Wissenschaftliche Experimente
-### 3D Druck Projekte
-### Kunst Projekte
-### Heimwerken
-#### DIY Projekte
-##### Upcycling
-#### Möbelbau
 ## Hobbies
-### Hobby Zukunftsplan
-### Kreative Hobbies
-#### Musik machen
-#### Tabletop Spiele
-##### D&D
-#### Kunst
-##### Alternative Kunstformen
-### Sportliche Hobbies
-#### Kampfkunst
-##### Straßenkampf-Techniken
-##### Boxen
-##### Kung Fu
 ### Mentale Hobbies
-#### Gaming
-#### Astronomie
-#### Filme&Serien gucken
-#### Musik hören
 #### Programmieren
 ## Outdoor Aktivitäten
 ## Soziale Aktivitäten
-### Familienaktivitäten
-### Aktivitäten mit Freunden
-### Aktivitäten mit Familie
 ### Generelle Aktivitäten
 #### Dinnerpartys
 ##### Menüplanung
