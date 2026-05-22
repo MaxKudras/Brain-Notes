@@ -5,18 +5,7 @@ type: folder_brief_live
 ```
 %% Begin Waypoint %%
 - [[_MoC Projekte]]
-- **[[3D Drucker]]**
-- **Feier**
-	- **Silvester**
-		- **Cocktails**
-			- [[+Annanasmojito]]
-			- [[+fAurora Glow Cocktail]]
-			- [[+gCosmopoliton]]
-			- [[+sLiquid Rainbow]]
-			- [[+Tropical Sunrise]]
-			- [[einkaufsliste]]
-			- [[Grund ideen]]
-- **[[Obsidian]]**
+- **Obsidian**
 	- **[[T.S]]**
 		- **Legende**
 			- [[Postpone]]
@@ -83,18 +72,8 @@ type: folder_brief_live
 				- **Zeitversetzte TPL DSB**
 					- [[1 Woche - TPL DSB]]
 					- [[1 Woche + TPL DSB]]
-		- [[Was Chatgpt sagt]]
 - **PC-Skripte**
 	- [[Pc Einrichtung 100% geschwindihkeit]]
-- **Programme programmieren**
-	- **Gewinnspiel anmelder**
-	- **Kostenlosesachen anmelden**
-- **Website erstellen**
-	- **Alles Website**
-		- **Bild converter**
-		- **Mathe rechner**
-		- **Youtube converter**
-		- **Zinseszin rechner**
 - **Zauberstab (Fernbedinung)**
 	- [[Funktionen]]
 	- [[Programmierung]]
@@ -102,30 +81,17 @@ type: folder_brief_live
 	- [[Zaubersprüche]]
 - **Zimmer**
 	- [[_MoC Zimmer]]
-	- **Bett**
-		- **Matrazen**
 	- [[Insektengitter]]
 	- **Lampen & Licht**
 		- [[_MoC Lampen & Licht]]
-		- **Beleuchtungskonzepte**
-			- **Lampenposition**
-			- **Lichtstreuung und -richtung**
-		- **Lampenwahl**
-		- **Lichtfarbe und Intensität**
 	- **Lärmdemmung**
 		- [[_MoC Lärmdemmung]]
-		- **Materialien**
 		- **Schalldämmtechniken**
 			- [[Schalldämpfende Möbel]]
 			- [[Schallschutzpaneele]]
 			- [[Teppiche und Vorhänge]]
-	- **Pflanzen**
-		- **Pflanzenarten**
-		- **Pflegeautomatisierungen**
 	- [[Rollo]]
 	- **Schreibtisch**
 		- [[höchenverstellbares Gestell]]
-	- **Soundsysteme**
-		- **Lautsprecher**
 
 %% End Waypoint %%

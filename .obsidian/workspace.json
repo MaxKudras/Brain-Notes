@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "286d31d29bce6cf4",
+        "id": "bf54e02d6207f1be",
         "type": "tabs",
         "children": [
           {
-            "id": "ab12b20d0ff02d22",
+            "id": "79eaa639ef57cca7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03.Alltagsmanagemnt/02.Haustiere&Pflanzen/02.Pflanzen/Pflanzen für die Wohnung.md",
-                "mode": "source",
+                "file": "testets.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,59 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Pflanzen für die Wohnung"
-            }
-          },
-          {
-            "id": "48d3ddb149379baf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.📖Lebensplan/Gesamter Lebensplan.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Gesamter Lebensplan"
-            }
-          },
-          {
-            "id": "e44ac6400f91ad30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00.📖Lebensplan/Alleszusdammen/lebens keinej.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "lebens keinej"
+              "title": "testets"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,12 +128,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00.📖Lebensplan/Alleszusdammen/lebens keinej.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von lebens keinej öffnen"
+              "title": "Ausgehende Links"
             }
           }
         ],
@@ -279,34 +229,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e44ac6400f91ad30",
+  "active": "413fb37392e1b459",
   "lastOpenFiles": [
-    "00.📖Lebensplan/Alleszusdammen/gggggg.md",
-    "00.📖Lebensplan/Alleszusdammen/lebens keinej.md",
-    "00.📖Lebensplan/Alleszusdammen/Plan fürs Leben.md",
-    "00.📖Lebensplan/Alleszusdammen/Test notiz.md",
-    "03.Alltagsmanagemnt/02.Haustiere&Pflanzen/02.Pflanzen/Pflanzen für die Wohnung.md",
-    "03.Alltagsmanagemnt/02.Haustiere&Pflanzen/02.Pflanzen/Notizen zum einsortieren.md",
-    "00.📖Lebensplan/Gesamter Lebensplan.md",
-    "00.📖Lebensplan/Lebensplan Grundstruktur.md",
-    "00.📖Lebensplan/00.📖Lebensplan.md",
-    "To-Do/To Do.md",
-    "🎛-Obsidian-/in Bearbeitung/Unicode Listecc.md",
-    "🎛-Obsidian-/🎛Emoji Liste 13.0.md",
-    "🎛-Obsidian-/Spezielle Einstellungen/Verzeichnisverbindung.md",
-    "🎛-Obsidian-/🎛Unicode Liste.md",
-    "🎛-Obsidian-/🎛Legenden/_MoC Legenden.md",
-    "🎛-Obsidian-/Unicode Liste/Lateinisch (U+0000-U+024F).md",
-    "🎛-Obsidian-/🎛Legenden/Emoji-Legende.md",
-    "🎛-Obsidian-/🎛Legenden/Gruppen-Farb-Legende.md",
-    "🎛-Obsidian-/🎛Legenden/Ordner & Notiz Namens-Legende.md",
-    "🎛-Obsidian-/🎛Legenden/Tag-Legende.md",
-    "🎛-Obsidian-/🎛Legenden/Untitled.md",
-    "🎛-Obsidian-/in Bearbeitung/Emoji Lis.md",
-    "🎛-Obsidian-/in Bearbeitung/Unbenannt.md",
-    "🎛-Obsidian-/in Bearbeitung/Unbenannt 1.md",
-    "🎛-Obsidian-/in Bearbeitung/Unicode Liste -----.md",
     "testets.md",
+    "Sontag Pflege Routine.md",
+    "Ineventar die ich brauche.md",
+    "Progammiersprachen.md",
+    "Grichische Mythology Stammbaum.canvas",
+    "dataviewjs Slider with %.md",
+    "Unbenannt.canvas",
+    "To-Do/aussortieren/Need to Buy.md",
+    "To-Do/aussortieren/Langfristige ToDo.md",
+    "To-Do/aussortieren/Ideen 13.08.24.md",
+    "Aussortieren/12-Jan-2025.md",
+    "Aussortieren/Templates/Plugin Funktion Template.md",
+    "Aussortieren/Templates/Tages Template.md",
+    "Aussortieren/Templates/MoC Template.md",
+    "Aussortieren/hda/wichtig.md",
+    "Aussortieren/hda/family.md",
+    "Aussortieren/💡Projekte/_MoC Projekte.md",
+    "Aussortieren/💡Projekte/💡Projekte.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Freizeit ()/Audio (🎧)/_MoC Audio.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/💵Geldmanagment (💼-〽️-📊).md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/Aktien/Aktien.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/〽️Investieren.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/-Lebensplan (💵-🕰-🚑).md",
+    "Aussortieren/-Ticketsystem/-Ticketsystem.md",
+    "Aussortieren/-Ticketsystem/DSB/Kategorien/Subkategorien/Kauf DSB.canvas",
+    "Aussortieren/-Ticketsystem/DSB/Zentral-DSB.canvas",
+    "Aussortieren/-Ticketsystem/DSB/Haupt-DSB.canvas",
+    "Aussortieren/-Ticketsystem/Tickets/T-010 - Obsidian Dokumentation.md",
+    "Aussortieren/-Ticketsystem/unsortierte ticktes/Untitled.md",
+    "Aussortieren/-Ticketsystem/Tickets/T-016 - dsgtfhg.md",
+    "Aussortieren/-Ticketsystem/Untitled/2024-09-23 dd.md",
+    "10.⚙️Systemschmiede/Systemplan/PC/Autogen/Lebensplan/AutoGen Ausbildingsplan.canvas",
+    "10.⚙️Systemschmiede/AutoGen Lebensplan aufarbeitung.canvas",
+    "10.⚙️Systemschmiede/Systemplan/Systemplan.canvas",
+    "10.⚙️Systemschmiede/Systemplan/PC/Skriptplan.canvas",
+    "Aussortieren/💡Projekte/Obsidian/Untitled.canvas",
     "04.🧘‍♂️Vitaloase/01.AllgemeineGesundheit",
     "03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/03.Sicherheit",
     "03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/02.Dokumente",
@@ -317,16 +277,6 @@
     "03.Alltagsmanagemnt/02.Haustiere&Pflanzen/01.Haustiere",
     "03.Alltagsmanagemnt/02.Haustiere&Pflanzen",
     "03.Alltagsmanagemnt/01.Wohnen/04.Wohnträume&Zukunftspläne",
-    "10.⚙️Systemschmiede/Systemplan/PC/Autogen/Lebensplan/AutoGen Lebensplan aufarbeitung.canvas",
-    "10.⚙️Systemschmiede/Systemplan/PC/Autogen/Lebensplan/AutoGen Ausbildingsplan.canvas",
-    "10.⚙️Systemschmiede/Systemplan/Systemplan.canvas",
-    "10.⚙️Systemschmiede/Systemplan/PC/Skriptplan.canvas",
-    "AusbildungsVault/Plan/Abarbeiten/Abarbeiten.canvas",
-    "AusbildungsVault/Plan/Fachinformatiker Lernplan.canvas",
-    "Grichische Mythology Stammbaum.canvas",
-    "Aussortieren/-Ticketsystem/DSB/Haupt-DSB.canvas",
-    "Aussortieren/-Ticketsystem/DSB/Zentral-DSB.canvas",
-    "Aussortieren/-Ticketsystem/plan/Ticketsystem plan.canvas",
     "Aussortieren/_attachments/Farbspektrum.png"
   ]
 }

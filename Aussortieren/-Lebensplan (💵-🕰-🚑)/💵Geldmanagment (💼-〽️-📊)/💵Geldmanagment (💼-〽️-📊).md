@@ -5,9 +5,12 @@ type: folder_brief_live
 ```
 %% Begin Waypoint %%
 - [[_MoC Geldmanagment]]
-- **[[〽️Investieren]]**
-- **💼Arbeit**
-	- [[_MoC Arbeit]]
+- **〽️Investieren**
+	- **[[Aktien]]**
+	- **Immobilien**
+		- [[_MoC Immobilien]]
+		- **REIT**
+			- [[_MoC REIT]]
 - **📊Geldverlauf**
 	- [[_MoC Geldverlauf]]
 	- **Abos**
@@ -25,7 +28,6 @@ type: folder_brief_live
 				- [[Leitungswasserfiltern]]
 				- [[Stromanbieter wechseln]]
 				- [[Stromsparen]]
-				- **Versicherungen wechsel**
 				- [[Wärmeisolierung]]
 			- [[Einsparstrategien]]
 		- **Monatliche Ausgaben**
@@ -35,13 +37,9 @@ type: folder_brief_live
 					- [[Strom]]
 					- [[Wasser]]
 				- [[Telefon und Internet]]
-				- **Versicherungen**
 			- **Variable Kosten**
 				- [[Freizeit]]
 				- [[Lebensmittel]]
-		- **Unregelmäßige Ausgaben**
-			- **Geschenke**
-			- **Reisen**
 	- **Geldgrundplan**
 		- [[Budgetierung]]
 		- [[Finanzielle Ziele]]
@@ -70,15 +68,7 @@ type: folder_brief_live
 			- **Langfristige Ziele**
 				- [[Altersvorsorge]]
 		- [[Zins- und Renditeplanung]]
-- **Budgetierung**
-	- **Jahresbudget**
-	- **Monatsbudget**
-- **Finanzielle Ziele**
-	- **Kurzfristige Ziele**
-	- **Langfristige Ziele**
-	- **Mittelfristige Ziele**
 - **Notfallfonds**
-	- **Verwendung**
 	- [[Zielhöhe]]
 
 %% End Waypoint %%
