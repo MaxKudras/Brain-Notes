@@ -1,7 +1,6 @@
 Ruhestandkategorie
 Sammlung von Ideen für Gruppenaktivitäten
 Inventar, Finanzen Datenbank
-✅ **Kanban-Boards für Projekte & Ziele**
 ## **2️⃣ Inventar & Besitztümer**
 📁 `📲 Digitale Inventarlisten`
 - 📝 `Software-Lizenzen` (mit Ablaufdatum und Kosten)
@@ -875,11 +874,3 @@ ethisches Hacking
 - **Freizeitgestaltung:**
 - Erstelle Listen für Gaming, Brettspiele, Sportarten, und andere Freizeitaktivitäten.
 - Dokumentiere deine Fortschritte und Erfolge in den jeweiligen Hobbys.
-
-Sachen die ich Schima wissen muss:
-Comands
-leckerly nicht essen
-beifuß
-komm her
-sitz
-platz
