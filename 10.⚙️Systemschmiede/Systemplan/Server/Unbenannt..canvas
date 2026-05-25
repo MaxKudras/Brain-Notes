@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"85abbf3d4a0d577e","type":"group","x":-6080,"y":-1740,"width":3338,"height":1480,"color":"#ffffff","label":"FarbLegende"},
+		{"id":"275599716af4bf0f","type":"group","x":-788,"y":400,"width":1580,"height":2310,"color":"#00ffff","label":"Lebensplan"},
+		{"id":"ba4a6392fbe5b529","type":"group","x":-5020,"y":-1650,"width":2139,"height":1310,"color":"#ffffff","label":"Notizlegende"},
+		{"id":"108f3c1dac88f8be","type":"group","x":-3630,"y":400,"width":1360,"height":1970,"color":"#ff0000","label":"n8n Agent Workflows"},
+		{"id":"49e8f0d98c5210b0","type":"group","x":-6000,"y":-1650,"width":920,"height":1000,"color":"#ffffff","label":"Pfeilelegende"},
+		{"id":"75a135bc56cb09e6","type":"group","styleAttributes":{"border":null},"x":-359,"y":-1100,"width":1443,"height":560,"color":"4","label":"Datenbanken"},
+		{"id":"86497329bbdbc3ac","type":"group","x":-4960,"y":-960,"width":1200,"height":560,"color":"#ffffff","label":"Unbenannte Gruppe"},
+		{"id":"71fa9d7d1a9fc94c","type":"group","x":-3858,"y":-1600,"width":928,"height":579,"color":"#ffffff","label":"Unbenannte Gruppe"},
+		{"id":"b959704ddf7c34be","type":"group","x":-2560,"y":-1060,"width":1012,"height":510,"color":"#5a46aa","label":"Infrastruktur"},
+		{"id":"ef72b7b080555cd7","type":"group","x":-788,"y":-80,"width":1510,"height":320,"color":"#ff00ff","label":"Anwendungen & Dienste"},
+		{"id":"dfa82a1f33351762","type":"text","text":"# Obsidian","dynamicHeight":true,"styleAttributes":{},"x":-768,"y":-60,"width":225,"height":60,"color":"#ff00ff"},
+		{"id":"35ed8b4187c8a3f2","type":"text","text":"# Docker","dynamicHeight":true,"styleAttributes":{},"x":-748,"y":160,"width":202,"height":60,"color":"#ff00ff"},
+		{"id":"e7126732a3f505cc","type":"text","text":"# Contabo VPS","dynamicHeight":true,"styleAttributes":{},"x":-2540,"y":-1040,"width":282,"height":60,"color":"#0000ff"},
+		{"id":"1130bcd0dbbe14ed","type":"text","text":"# Laptop","dynamicHeight":true,"styleAttributes":{},"x":-2380,"y":-880,"width":202,"height":60},
+		{"id":"fcc99529396b6f92","type":"text","text":"# Jelifin/Plex Server","dynamicHeight":true,"styleAttributes":{},"x":-1919,"y":-630,"width":351,"height":60,"color":"#0000ff"},
+		{"id":"71b850aa4074c76e","type":"text","text":"# Projekte","dynamicHeight":true,"styleAttributes":{},"x":-768,"y":420,"width":221,"height":60,"color":"#00ffff"},
+		{"id":"ff6b7cd4fd496424","type":"text","text":"# Lebensplan Grundstruktur","dynamicHeight":true,"styleAttributes":{},"x":-488,"y":620,"width":387,"height":60,"color":"#00ffff"},
+		{"id":"c34e38737f07bf6b","type":"text","text":"# Hoobies","dynamicHeight":true,"styleAttributes":{},"x":-588,"y":800,"width":217,"height":60,"color":"#00ffff"}
+	],
+	"edges":[
+		{"id":"39d9323f7f275a1e","styleAttributes":{},"toFloating":false,"fromNode":"108f3c1dac88f8be","fromSide":"top","toNode":"e7126732a3f505cc","toSide":"bottom"},
+		{"id":"c39174792546492e","styleAttributes":{},"toFloating":false,"fromNode":"6f16fa2edc319138","fromSide":"top","toNode":"fcc99529396b6f92","toSide":"bottom"}
+	],
+	"metadata":{"version":"1.0-1.0","frontmatter":{}}
+}
