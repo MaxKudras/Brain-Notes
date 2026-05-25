@@ -44,21 +44,7 @@ type: folder_brief_live
 		- [[Budgetierung]]
 		- [[Finanzielle Ziele]]
 		- [[Notfallfonds]]
-	- **Kontoverlauf**
-		- [[_MoC Kontoverlauf]]
-		- **Haspa**
-			- [[_MoC Haspa]]
-			- [[Kontoübersicht]]
-			- [[Transaktionen]]
-		- **Paypal**
-			- [[_MoC Paypal]]
-			- [[Kontoübersicht]]
-			- [[Transaktionen]]
-	- **Schulden**
-		- [[_MoC Schulden]]
-		- [[Schulden Übersicht]]
-	- **[[Sparplan]]**
-		- [[_MoC Sparplan]]
+	- **Sparplan**
 		- **Sparstrategien**
 			- [[Automatische Überweisungen]]
 			- [[Regelmäßige Einzahlungen]]
@@ -69,6 +55,8 @@ type: folder_brief_live
 				- [[Altersvorsorge]]
 		- [[Zins- und Renditeplanung]]
 - **Notfallfonds**
+	- **Verwendung**
+		- [[Kühlschrank kaputt]]
 	- [[Zielhöhe]]
 
 %% End Waypoint %%
