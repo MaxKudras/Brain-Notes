@@ -20,7 +20,7 @@
 		{"id":"d5e0b77c704daac3","type":"file","file":"🎛-Obsidian-/🎛Funktionen/Plugin Funktionen/Templater.md","x":1434,"y":1398,"width":200,"height":200},
 		{"id":"721c4cb0b89fe87e","type":"file","file":"🎛-Obsidian-/🎛Funktionen/Plugin Funktionen/Reminder.md","x":1760,"y":1398,"width":200,"height":200},
 		{"id":"faf6c6045916e562","x":2200,"y":1098,"width":240,"height":400,"type":"file","file":"🎛-Obsidian-/🎛Funktionen/Plugin Funktionen/Tasks.md"},
-		{"id":"23c5af37d5f26745","x":1691,"y":94,"width":1589,"height":626,"type":"text","text":"Sachen die Chatgpt gefragt werden müssen:\nErweiterungen Glantdigrame + kaban board, welche plugins oder wie gehört zu Ticketsywetm erstellne\nIm meine Legende auflisten vom ticketsystem und nach mehr vorschlägen fragen\nTicketkategorien nach fragen wie geld und was ich schon habe aber mehr\nwelche zentralen überischeten benötige ich"}
+		{"id":"23c5af37d5f26745","x":1691,"y":94,"width":1589,"height":626,"type":"text","text":"Sachen die Chatgpt gefragt werden müssen:\nErweiterungen Glantdigrame + kaban board, welche plugins oder wie gehört zu Ticketsywetm erstellne\nIm meine Legende auflisten vom ticketsystem und nach mehr vorschlägen fragen\nTicketkategorien nach fragen wie geld und was ich schon habe aber mehr\nwelche zentralen überi scheten benötige ich"}
 	],
 	"edges":[
 		{"id":"5171ddfd2bf6ee92","fromNode":"ff0a322c8a04f236","fromSide":"bottom","toNode":"cfcba567630f4ed3","toSide":"left"},
