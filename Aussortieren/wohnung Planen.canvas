@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"fefe20004117ac87","type":"group","x":-760,"y":-100,"width":900,"height":760,"color":"#c8c81e","label":"Unbenannte Gruppe"},
+		{"id":"b83cd06780e9394e","type":"group","x":660,"y":-420,"width":435,"height":340,"color":"#1e1ec8","label":"Schlafzimmer"},
+		{"id":"78c089724e287ce3","type":"group","x":-360,"y":480,"width":380,"height":160,"color":"#1ec81e","label":"Pflanzen"},
+		{
+			"id":"9ba1b237bd2a7f8e",
+			"type":"text",
+			"text":"# Smart Mirror\n**Screen mit wichtigsten infos hinter User (Fingerabdruck zum erkennen wer):**\n- Wetter\n- Projekte\n\t- Was der letze stand ist\n\t- Wie weit das Projekt in % im graph angezeigt\n\t- Priorität\n\t- Deadlines\n- Kalender\n\t- Geburtstage\n\t- Feiertage\n\t- Zeitplan\n- Todos\n",
+			"dynamicHeight":true,
+			"styleAttributes":{},
+			"x":-360,
+			"y":-80,
+			"width":480,
+			"height":440,
+			"color":"#c81e1e"
+		},
+		{
+			"id":"36570271adbf8745",
+			"type":"text",
+			"text":"# Legende:\n- **Gruppe**\n\t- Blau -> Standort\n\t- Gelb -> ???\n\t- Rot -> Technologien\n- **Karte**\n\t- Rot -> Technologie\n\t- Weiß -> Information",
+			"dynamicHeight":true,
+			"styleAttributes":{},
+			"x":-360,
+			"y":-520,
+			"width":250,
+			"height":300,
+			"color":"#ffffff"
+		}
+	],
+	"edges":[],
+	"metadata":{"version":"1.0-1.0","frontmatter":{}}
+}

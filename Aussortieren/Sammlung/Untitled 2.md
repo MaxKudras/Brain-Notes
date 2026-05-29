@@ -25,7 +25,8 @@ If you lose access to your smartphone, you can use these recovery-codes to set u
 
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y curl wget git unzip htop neofetch ufw net-tools gnupg software-properties-common
+sudo apt install -y curl wget git unzip htop neofetch ufw net-tools gnupg software-prosudo apt install -y tree ncdu tmux screen jq lsb-release ca-certificates
+perties-common
 
 sudo apt install -y tree ncdu tmux screen jq lsb-release ca-certificates
 
