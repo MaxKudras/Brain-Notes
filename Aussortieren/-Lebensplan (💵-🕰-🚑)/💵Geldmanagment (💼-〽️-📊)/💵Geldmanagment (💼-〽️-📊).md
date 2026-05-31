@@ -60,3 +60,19 @@ type: folder_brief_live
 	- [[Zielhöhe]]
 
 %% End Waypoint %%
+
+---
+*Zusätzliche Struktur (aus Yggdrasil migriert):*
+- **📊Geldverlauf**
+	- **Ausgabenplan**
+		- **Unregelmäßige Ausgaben**
+			- [[Geschenke]]
+			- [[Reisen]]
+	- **Kontoverlauf**
+		- [[Haspa]]
+		- [[Paypal]]
+- **Budgetierung**
+	- [[Jahresbudget]]
+	- [[Monatsbudget]]
+- **Finanzielle Ziele**
+	- [[Mittelfristige Ziele]]
