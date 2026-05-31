@@ -1,0 +1,2 @@
+# ⚕Medizin
+> Migriert aus Yggdrasil.
