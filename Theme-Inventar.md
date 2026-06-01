@@ -34,7 +34,7 @@
 | Wasp | Sonstige | Santi Younger | Dark/Light | [GitHub](https://github.com/santiyounger/Wasp-Obsidian-Theme) |
 | Willemstad | Sonstige | tingmelvin | Dark/Light | [GitHub](https://github.com/tingmelvin/willemstad-x) |
 
-> **Hinweis:** ITS Theme, Prism, Things, Typomagical und Wasp sind Legacy-CSS-Themes (keine Unterordner). Modus aus dem Community-Registry.
+> **Hinweis:** ITS Theme, Prism, Things, Typomagical, Wasp und Deep Work sind Legacy-CSS-Themes (keine Unterordner). Deep Work und Venom haben keinen bekannten GitHub-Link. Modus aus dem Community-Registry.
 
 ---
 
@@ -55,8 +55,8 @@ GitHub Theme
 ### App-inspiriert (1)
 Things
 
-### Schreiben & Fokus (2)
-Mammoth, Typomagical
+### Schreiben & Fokus (3)
+Deep Work, Mammoth, Typomagical
 
 ### Sonstige (13)
 Blue Topaz, Border, Colored Candy, Golden Topaz, ITS Theme, Lumines, Neo, Pink Topaz, PLN, Prism, Shiba Inu, Wasp, Willemstad
