@@ -1,4 +1,4 @@
-## 28 installierte Themes – Stand: 2026-06-01
+## 31 installierte Themes – Stand: 2026-06-01
 
 | Name | Kategorie | Autor | Modus | GitHub |
 |------|-----------|-------|-------|--------|
@@ -9,6 +9,7 @@
 | Celestial Night | Dunkel | bluemoondragon07 | Dark | [GitHub](https://github.com/bluemoondragon07/Obsidian-Celestial-Night-Theme) |
 | Colored Candy | Sonstige | erallie | Dark/Light | [GitHub](https://github.com/erallie/colored-candy) |
 | Dawn | Hell | ds-package | Dark/Light | [GitHub](https://github.com/ds-package/Dawn) |
+| Deep Work | Schreiben & Fokus | Unbekannt | Dark/Light | - |
 | Dracula Gemini | Farbschema | clbn | Dark | [GitHub](https://github.com/clbn/dracula-gemini) |
 | Flexoki | Farbschema | kepano | Dark/Light | [GitHub](https://github.com/kepano/flexoki-obsidian) |
 | GitHub Theme | Code-inspiriert | krios2146 | Dark/Light | [GitHub](https://github.com/krios2146/obsidian-theme-github) |
@@ -29,6 +30,7 @@
 | Sodalite | Dunkel | tomzorz | Dark | [GitHub](https://github.com/tomzorz/Sodalite) |
 | Things | App-inspiriert | colineckert | Dark/Light | [GitHub](https://github.com/colineckert/obsidian-things) |
 | Typomagical | Schreiben & Fokus | hungsu | Dark/Light | [GitHub](https://github.com/hungsu/typomagical-obsidian) |
+| Venom | Dunkel | Fatiger | Dark | - |
 | Wasp | Sonstige | Santi Younger | Dark/Light | [GitHub](https://github.com/santiyounger/Wasp-Obsidian-Theme) |
 | Willemstad | Sonstige | tingmelvin | Dark/Light | [GitHub](https://github.com/tingmelvin/willemstad-x) |
 
@@ -38,8 +40,8 @@
 
 ## Kategorien-Zusammenfassung
 
-### Dunkel (4)
-Aura Dark, Celestial Night, ProtocolBlue, Sodalite
+### Dunkel (5)
+Aura Dark, Celestial Night, ProtocolBlue, Sodalite, Venom
 
 ### Hell (5)
 Dawn, Minimal, Origami, Primary, Qlean
