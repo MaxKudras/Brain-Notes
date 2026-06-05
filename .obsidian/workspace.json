@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aussortieren/-Lebensplan (💵-🕰-🚑)/🕰Zeitmanagment (⌛-🌀-💼-📅-📆-🗓)/Haushaltsaufgabenlisten.md",
+                "file": "🎛-Obsidian-/🎛-Obsidian-.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Haushaltsaufgabenlisten"
+              "title": "🎛-Obsidian-"
             }
           }
         ]
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Aussortieren/-Lebensplan (💵-🕰-🚑)/🕰Zeitmanagment (⌛-🌀-💼-📅-📆-🗓)/Haushaltsaufgabenlisten.md",
+                "file": "🎛-Obsidian-/🎛-Obsidian-.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Haushaltsaufgabenlisten öffnen"
+              "title": "Ausgehende Links von 🎛-Obsidian- öffnen"
             }
           }
         ],
@@ -171,16 +171,6 @@
             }
           },
           {
-            "id": "e9d33a352f98a594",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
-            }
-          },
-          {
             "id": "c860797e5d3ea4fa",
             "type": "leaf",
             "state": {
@@ -189,19 +179,9 @@
               "icon": "lucide-ghost",
               "title": "recent-files"
             }
-          },
-          {
-            "id": "c8dd34acbefc4c5f",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-sidebar-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "full-calendar-sidebar-view"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -232,6 +212,11 @@
   },
   "active": "79eaa639ef57cca7",
   "lastOpenFiles": [
+    "📓Bulletjournal/📓Bulletjournal.md",
+    "🗂️Ticketsystem/🗂️Ticketsystem.md",
+    "🗒️Ticketsystem/🗒️Ticketsystem.md",
+    "00.📖Lebensplan/00.📖Lebensplan.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/🕰Zeitmanagment (⌛-🌀-💼-📅-📆-🗓)/Haushaltsaufgabenlisten.md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/🕰Zeitmanagment (⌛-🌀-💼-📅-📆-🗓)/⌛Zukunftsplan/⌛Zukunftsplan.md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/💵Geldmanagment (💼-〽️-📊).md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/_MoC Geldmanagment.md",
@@ -249,16 +234,11 @@
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/Aktien/Daytrading/Daytrading.md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/Aktien/Aktienanalyse/Aktienanalyse.md",
     "Aussortieren/_attachments/_attachments.md",
-    "00.📖Lebensplan/00.📖Lebensplan.md",
     "00.📖Lebensplan/Gesamter Lebensplan.md",
     "00.📖Lebensplan/Lebensplan Grundstruktur.md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/Killtheblackdragon@gmail.com.md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/Kudras.max@gmail.com.md",
     "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/Kudrasov.max@gmail.com.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/max-123-der-beste@web.de.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/-Lebensplan (💵-🕰-🚑).md",
-    "🎛-Obsidian-/in Bearbeitung/Unicode Listecc.md",
-    "🎛-Obsidian-/in Bearbeitung/Unicode Liste -----.md",
     "Grichische Mythology Stammbaum.canvas",
     "10.⚙️Systemschmiede/AutoGen Lebensplan aufarbeitung.canvas",
     "Unbenannt.canvas",
