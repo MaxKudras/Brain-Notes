@@ -12,415 +12,314 @@ type: Notiz
 # Akasha-Einsortierung — Brain-Notes → Akasha
 
 Vollständige Zuordnung aller Brain-Notes Notizen zu den 11 Akasha-Lebensbereichen.
-Basis: AkashaIndex + alle 10 OrdnerIndex-Dateien + alle Brain-Notes Ordner.
+**Sortiert nach Akasha-Index (00→10)** — schrittweise abarbeitbar.
 
 ---
 
-## 📁 ROOT-LEVEL Dateien (Brain-Notes Wurzel)
+## 00.Fundamentum
 
-| Datei | → Akasha Ziel |
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `🎛-Obsidian-/🎛Legenden/Emoji-Legende.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/🎛Legenden/Gruppen-Farb-Legende.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/🎛Legenden/Ordner & Notiz Namens-Legende.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/🎛Legenden/Tag-Legende.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/🎛Legenden/_MoC Legenden.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/🎛Emoji Liste 13.0.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/🎛Unicode Liste.md` | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/Unicode Liste/` (Unterordner) | `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/in Bearbeitung/Emoji Lis.md` | `00.Fundamentum/AkashaLegenden/` (wenn fertig) |
+| `🎛-Obsidian-/in Bearbeitung/Unicode Liste -----.md` | `00.Fundamentum/AkashaLegenden/` (wenn fertig) |
+| `🎛-Obsidian-/in Bearbeitung/Unicode Listecc.md` | `00.Fundamentum/AkashaLegenden/` (wenn fertig) |
+| `00.📖Lebensplan/00.📖Lebensplan.md` | `00.Fundamentum/` (Index/MoC) |
+| `00.📖Lebensplan/Hier.md` | `00.Fundamentum/` |
+| `10.⚙️Systemschmiede/AutoGen Lebensplan aufarbeitung.canvas` | `00.Fundamentum/` |
+| `Aussortieren/00.📖Fundamentum/00.📖Lebensplan.md` | `00.Fundamentum/` |
+| `Aussortieren/00.📖Fundamentum/Hier.md` | `00.Fundamentum/` |
+| `Aussortieren/00.📖Fundamentum/AkashaIndex/` (Unterordner) | `00.Fundamentum/` |
+| `Aussortieren/00.📖Fundamentum/Plan Definitionen/` (11 leere Dateien) | ❌ Löschen — alle leer, Inhalt bereits in AkashaOrdnerGuide |
+| `🎛-Obsidian-/🎛Legenden/Untitled.md` | ⚠️ Inhalt prüfen → ggf. `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/in Bearbeitung/Unbenannt.md`, `Unbenannt 1.md` | ⚠️ Inhalt prüfen → einordnen |
+
+---
+
+## 01.Lebenskompass
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `00.📖Lebensplan/1. Lebenskompass Definitionen.md` | `01.Lebenskompass/` |
+| `00.📖Lebensplan/Lebensplan Grundstruktur.md` | `01.Lebenskompass/` |
+| `00.📖Lebensplan/5. Inneres Universum.md` | `01.Lebenskompass/` (Lebenskompass-Struktur-Teil) |
+| `00.📖Lebensplan/Alleszusdammen/Plan fürs Leben.md` (17kb) | `01.Lebenskompass/` — Inhalte verteilen, deckt alle 11 Bereiche ab |
+| `00.📖Lebensplan/Alleszusdammen/lebens keinej.md` | ⚠️ Inhalt prüfen → evtl. `01.Lebenskompass/` |
+| `Aussortieren/00.📖Fundamentum/Lebensplan Grundstruktur.md` | `01.Lebenskompass/` |
+| `Aussortieren/00.📖Fundamentum/Alleszusdammen/Plan fürs Leben.md` | `01.Lebenskompass/` |
+| `Aussortieren/00.📖Fundamentum/Alleszusdammen/` weitere Dateien | ⚠️ Inhalt prüfen → `01.Lebenskompass/` |
+| `Aussortieren/-Lebensplan/🕰Zeitmanagment/⌛Zukunftsplan/` (Langfristige Ziele) | `01.Lebenskompass/02.Ziele/JahresZiele/` |
+| T-015: Lebensplan zusammenschreiben | `01.Lebenskompass/` |
+| `Gesamter Lebensplan.md` → Abschnitt Lebenskompass / Ziele | `01.Lebenskompass/02.Ziele/` |
+| `00.📖Lebensplan/Alleszusdammen/Test notiz.md` | ❌ Löschen |
+| `00.📖Lebensplan/Alleszusdammen/gggggg.md` | ❌ Löschen |
+| `00.📖Lebensplan/Alleszusdammen/dddd/` | ❌ Löschen |
+
+---
+
+## 02.Zeitnavigator
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `Brain-Notes.ical` | `02.Zeitnavigator/01.Kalender/` |
+| `00.📖Lebensplan/Abarbeitungsplan.md` | `02.Zeitnavigator/04.OrganisationsZyklus/Planung/` |
+| `Aussortieren/00.📖Fundamentum/Abarbeitungsplan.md` | `02.Zeitnavigator/04.OrganisationsZyklus/Planung/` |
+| `Aussortieren/02.⏳Zeitnavigator/02.⏳Zeitnavigator.md` | `02.Zeitnavigator/` (Index) |
+| `Aussortieren/02.⏳Zeitnavigator/01.Kalender/01.Kalender.md` | `02.Zeitnavigator/01.Kalender/` |
+| `Aussortieren/02.⏳Zeitnavigator/02.Zeitmanagment/02.Zeitmanagment.md` | `02.Zeitnavigator/02.Zeitmanagement/` |
+| `Aussortieren/02.⏳Zeitnavigator/03.Routinen&Gewohnheiten/` | `02.Zeitnavigator/03.TäglicheRituale/` |
+| `Aussortieren/02.⏳Zeitnavigator/04.Planung&Review/` | `02.Zeitnavigator/04.OrganisationsZyklus/` |
+| `Aussortieren/-Lebensplan/🕰Zeitmanagment/🌀Routinen/` | `02.Zeitnavigator/03.TäglicheRituale/Routinen/` |
+| `Aussortieren/-Lebensplan/🕰Zeitmanagment/📅Kalender/` (Tages/Wochen/Monats/Jahresplan) | `02.Zeitnavigator/04.OrganisationsZyklus/Planung/` |
+| `Aussortieren/12-Jan-2025.md` | `02.Zeitnavigator/` (Daily Log) — ⚠️ prüfen ob veraltet |
+| `Gesamter Lebensplan.md` → Zeitnavigator / Planung & Review | `02.Zeitnavigator/04.OrganisationsZyklus/` |
+| `Gesamter Lebensplan.md` → Zeitnavigator / Routinen & Gewohnheiten | `02.Zeitnavigator/03.TäglicheRituale/` |
+
+---
+
+## 03.VermögensDomäne
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `00.📖Lebensplan/Notizen zum einsortieren.md` (Karriereplan-Teil) | `03.VermögensDomäne/Karriere/BeruflicheEntwicklung/` |
+| `To-Do/aussortieren/Ideen 13.08.24.md` | `03.VermögensDomäne/Finanzen/` (Geldplanner-Ideen) |
+| `Aussortieren/-Lebensplan/💵Geldmanagment/Budgetierung/` | `03.VermögensDomäne/Finanzen/Budgetplanung/` |
+| `Aussortieren/-Lebensplan/💵Geldmanagment/Finanzielle Ziele/` | `03.VermögensDomäne/Vermögensaufbau/Sparplan/Sparziele/` |
+| `Aussortieren/-Lebensplan/💵Geldmanagment/Notfallfonds/` | `03.VermögensDomäne/Finanzen/Finanzplanung/Notfallreserve/` |
+| `Aussortieren/-Lebensplan/💵Geldmanagment/〽️Investieren/` (Aktien, ETFs, Immobilien) | `03.VermögensDomäne/Vermögensaufbau/Wertpapiere/` + `Sachwerte/` |
+| `Aussortieren/-Lebensplan/💵Geldmanagment/📊Geldverlauf/` (Abos, Ausgabenplan, Sparplan) | `03.VermögensDomäne/Finanzen/Geldverlauf/` + `Finanzplanung/Abos/` |
+| `Aussortieren/-Lebensplan/🕰Zeitmanagment/💼Arbeitsplan/` | `03.VermögensDomäne/Karriere/Arbeitsgestaltung/` |
+| `Aussortieren/-Lebensplan/🕰Zeitmanagment/⌛Zukunftsplan/` (Karriere-Teil) | `03.VermögensDomäne/Karriere/Karriereplanung/` |
+| `Aussortieren/09.🗺️Freizeitatlas/07.💰VermögensDomäne/` ⚠️ (falsch platziert!) | `03.VermögensDomäne/` — kompletten Inhalt verschieben |
+| T-012: Geldverlauf fürs erste | `03.VermögensDomäne/Finanzen/Geldverlauf/` |
+| `Gesamter Lebensplan.md` → Vermögens Domäne / Finanzen | `03.VermögensDomäne/Finanzen/` |
+| `Gesamter Lebensplan.md` → Vermögens Domäne / Karriere | `03.VermögensDomäne/Karriere/` |
+
+---
+
+## 04.VitalOase
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `Sontag Pflege Routine.md` | `04.VitalOase/03.KörperlicheGesundheit/Körperpflege/Körperpflegeroutine/` |
+| `To-Do/Datenbanken Rezepte und Allergene.md` | `04.VitalOase/02.Ernährung/RezepteDB/` |
+| `To-Do/aussortieren/Datenbanken Rezepte und Allergene.md` | `04.VitalOase/02.Ernährung/RezepteDB/` |
+| `Aussortieren/Essen.md` | `04.VitalOase/02.Ernährung/` |
+| `Aussortieren/04.🧘‍♂️Vitaloase/04.🧘‍♂️Vitaloase.md` | `04.VitalOase/` (Index) |
+| `Aussortieren/04.🧘‍♂️Vitaloase/01.AllgemeineGesundheit/01.AllgemeineGesundheit.md` | `04.VitalOase/01.AllgemeineGesundheit/` |
+| `Aussortieren/-Lebensplan/🚑Gesundheit/Psychische Gesundheit/` (Meditation) | `04.VitalOase/04.MentaleGesundheit/Meditation/` |
+| `Aussortieren/-Lebensplan/🚑Gesundheit/🍽Ernährung/` | `04.VitalOase/02.Ernährung/` |
+| `Aussortieren/-Lebensplan/🚑Gesundheit/💤Schlaf/` | `04.VitalOase/04.MentaleGesundheit/Schlaf/` |
+| `Aussortieren/-Lebensplan/🚑Gesundheit/🚵Sport/` | `04.VitalOase/03.KörperlicheGesundheit/Trainingsplan/` |
+| `Gesamter Lebensplan.md` → Vitaloase / Wellness & Körper | `04.VitalOase/03.KörperlicheGesundheit/` |
+| `Gesamter Lebensplan.md` → Vitaloase / Ernährung | `04.VitalOase/02.Ernährung/` |
+| `Gesamter Lebensplan.md` → Vitaloase / Mentale Gesundheit | `04.VitalOase/04.MentaleGesundheit/` |
+
+---
+
+## 05.InneresUniversum
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `00.📖Lebensplan/5. Inneres Universum.md` | `05.InneresUniversum/` |
+| `Aussortieren/05.InneresUniversum/05.InneresUniversum.md` | `05.InneresUniversum/` (Index) |
+| `Aussortieren/-Lebensplan/🚑Gesundheit/🚬Drogenplan/` (Alkohol, Gras, Zigaretten) | `05.InneresUniversum/Suchtverhalten/` ⚠️ NICHT VitalOase! |
+| `Gesamter Lebensplan.md` → Inneres Universum | `05.InneresUniversum/` |
+
+---
+
+## 06.SozialSphäre
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `Aussortieren/06.🧑‍🤝SozialSphäre/06.🧑‍🤝SozialSphäre.md` | `06.SozialSphäre/` (Index) |
+| `Aussortieren/hda/family.md` | `06.SozialSphäre/01.Familie/FamilienManagement/` |
+| `Aussortieren/💡Projekte/Feier/` | `06.SozialSphäre/` oder `09.Freizeitatlas/05.SozialeAktivitäten/DinnerPartys/` |
+| `Gesamter Lebensplan.md` → Sozial Sphäre | `06.SozialSphäre/` |
+
+---
+
+## 07.Alltagsmanagement
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `Ineventar die ich brauche.md` | `07.Alltagsmanagement/01.Wohnen/02.Inventur/BesitzVerwaltung/BesitzOptimierung/` |
+| `00.📖Lebensplan/wohnung Planen.canvas` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
+| `Aussortieren/wohnung Planen.canvas` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
+| `To-Do/aussortieren/Need to Buy.md` | `07.Alltagsmanagement/01.Wohnen/02.Inventur/BesitzVerwaltung/` |
+| `Aussortieren/03.Alltagsmanagemnt/01.Wohnen/01.Haushalt/` | `07.Alltagsmanagement/01.Wohnen/01.Haushalt/` |
+| `Aussortieren/03.Alltagsmanagemnt/01.Wohnen/02.Inventur/` | `07.Alltagsmanagement/01.Wohnen/02.Inventur/` |
+| `Aussortieren/03.Alltagsmanagemnt/01.Wohnen/03.Innenarchitektur/` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
+| `Aussortieren/03.Alltagsmanagemnt/01.Wohnen/04.Wohnträume&Zukunftspläne/` | `07.Alltagsmanagement/01.Wohnen/04.Wohnträume/` |
+| `Aussortieren/03.Alltagsmanagemnt/02.Haustiere&Pflanzen/` | `07.Alltagsmanagement/02.LebendigesZuhause/` |
+| `Aussortieren/03.Alltagsmanagemnt/03.Mobilität/` | `07.Alltagsmanagement/03.Mobilität/` |
+| `Aussortieren/03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/01.Recht/` | `07.Alltagsmanagement/04.RechtlicheOrdnung/Rechte/` |
+| `Aussortieren/03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/02.Dokumente/` | `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/` |
+| `Aussortieren/03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/03.Sicherheit/` | `07.Alltagsmanagement/04.RechtlicheOrdnung/Sicherheit/` |
+| `Aussortieren/💡Projekte/Zimmer/` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
+| T-001: Zimmer & Wohnungs Möbelplan | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
+| T-002: Bett planen | `07.Alltagsmanagement/01.Wohnen/02.Inventur/Möbel/` |
+| T-003: Bett kaufen | `07.Alltagsmanagement/01.Wohnen/02.Inventur/Möbel/` |
+| T-005: Zimmer aufräumen | `07.Alltagsmanagement/01.Wohnen/01.Haushalt/Ordnung/` |
+| `Gesamter Lebensplan.md` → Alltagsmanagement / Wohnen | `07.Alltagsmanagement/01.Wohnen/` |
+| `Gesamter Lebensplan.md` → Recht, Dokumente | `07.Alltagsmanagement/04.RechtlicheOrdnung/` |
+
+---
+
+## 08.Wissenskompendium
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `Progammiersprachen.md` | `08.Wissenskompendium/Formalwissenschaften/Informatik/Programmierung/` |
+| `Grichische Mythology Stammbaum.canvas` | `08.Wissenskompendium/Mythologien/GriechischeMythologie/` |
+| `Aussortieren/bücher.md` | `08.Wissenskompendium/Interessen/` (Buchliste) |
+| `Aussortieren/-Ressourcen/-Ressourcen.md` | `08.Wissenskompendium/` (Lernressourcen-Übersicht) |
+| `Aussortieren/08.📚 Wissenkompendium/08.📚 Wissenkompendium.md` | `08.Wissenskompendium/` (Index) |
+| `Aussortieren/hda/wichtig.md` (Geographie-Checkliste) | `08.Wissenskompendium/Naturwissenschaften/Geographie/` |
+| `Aussortieren/-Lebensplan/Freizeit/Literatur/` | `08.Wissenskompendium/Interessen/` oder `09.Freizeitatlas/02.Hobbies/MentaleHobbies/` |
+| `Aussortieren/📒Wisften/Naturwissenschaften/⚕Medizin/` | `08.Wissenskompendium/Naturwissenschaften/Medizin/` |
+| `Aussortieren/📒Wisften/Naturwissenschaften/🌐Geographie/` (Länder, Kontinente) | `08.Wissenskompendium/Naturwissenschaften/Geographie/` |
+| `Aussortieren/📒Wisften/Kulturwissenschaften/Geisteswissenschaften/` | `08.Wissenskompendium/Kulturwissenschaften/` (Geschichte, Philosophie, Religion) |
+| `Aussortieren/📒Wisften/Kulturwissenschaften/Sozialwissenschaften/` | `08.Wissenskompendium/Kulturwissenschaften/Sozialwissenschaften/` ⚠️ neue Unterkategorie in Akasha |
+| `Aussortieren/📒Wisften/Ingenieurswissenschaften/` (1000+ Dateien) | `08.Wissenskompendium/Ingenieurswissenschaften/` ⚠️ neue Kategorie in Akasha anlegen! |
+| `Gesamter Lebensplan.md` → Wissenskompendium | `08.Wissenskompendium/` |
+
+---
+
+## 09.Freizeitatlas
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
+|---|---|
+| `🎛-Obsidian-/Plugin für Obsidian Programmieren Idee.md` | `09.Freizeitatlas/03.Projekte/ITProjekte/` |
+| `Aussortieren/09.🗺️Freizeitatlas/09.🗺️Freizeitatlas.md` | `09.Freizeitatlas/` (Index) |
+| `Aussortieren/-Lebensplan/Freizeit/Audio (🎧)/` + Musik | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/MusikHören/` |
+| `Aussortieren/-Lebensplan/Freizeit/Hobbies/` (Musik machen, Programmieren, Schreiben) | `09.Freizeitatlas/02.Hobbies/` |
+| `Aussortieren/-Lebensplan/Freizeit/Spiele (🎮-♟️)/` | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/Gaming/` |
+| `Aussortieren/-Lebensplan/Freizeit/Video (🎞-🎬)/` | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/` (Filme & Serien) |
+| `Aussortieren/-Lebensplan/Freizeit/Welt erleben (🗺)/` | `09.Freizeitatlas/01.Reisewelt/` |
+| `Aussortieren/💡Projekte/3D Drucker/` | `09.Freizeitatlas/03.Projekte/3DDruckProjekte/` |
+| `Aussortieren/💡Projekte/Programme programmieren/` | `09.Freizeitatlas/03.Projekte/ITProjekte/` |
+| `Aussortieren/💡Projekte/Zauberstab (Fernbedinung)/` | `09.Freizeitatlas/03.Projekte/ITProjekte/` |
+| `Aussortieren/💡Projekte/💡Projekte.md` | `09.Freizeitatlas/03.Projekte/` (Index) |
+| `Aussortieren/💡Projekte/_MoC Projekte.md` | `09.Freizeitatlas/03.Projekte/` |
+| `Aussortieren/Sammlung/` (Unbenannt/Untitled Dateien) | ⚠️ Inhalt prüfen → `09.Freizeitatlas/04.Sammlungen/` |
+| T-013: 3D Drucker leiser machen | `09.Freizeitatlas/03.Projekte/3DDruckProjekte/Druckoptimierung/` |
+| T-014: Metall gießen | `09.Freizeitatlas/03.Projekte/WissenschaftlicheProjekte/` |
+| `Gesamter Lebensplan.md` → Freizeitatlas / Reise & Abenteuer | `09.Freizeitatlas/01.Reisewelt/` |
+| `Gesamter Lebensplan.md` → Freizeitatlas / Soziale Aktivitäten | `09.Freizeitatlas/05.SozialeAktivitäten/` |
+
+---
+
+## 10.Systemschmiede
+
+| Quelle (Brain-Notes) | → Akasha Ziel |
 |---|---|
 | `Plugin-Inventar.md` | `10.Systemschmiede/Obsidian/Plugins/` |
 | `Theme-Inventar.md` | `10.Systemschmiede/Obsidian/Themes/` |
-| `Progammiersprachen.md` | `08.Wissenskompendium/Formalwissenschaften/Informatik/Programmierung/` |
-| `Sontag Pflege Routine.md` | `04.VitalOase/03.KörperlicheGesundheit/Körperpflege/Körperpflegeroutine/` |
-| `Ineventar die ich brauche.md` | `07.Alltagsmanagement/01.Wohnen/02.Inventur/BesitzVerwaltung/BesitzOptimierung/` |
-| `Grichische Mythology Stammbaum.canvas` | `08.Wissenskompendium/Mythologien/GriechischeMythologie/` |
-| `testets.md` | ❌ Löschen (Testdatei) |
-| `Brain-Notes.ical` | `02.Zeitnavigator/01.Kalender/` |
+| `📓Bulletjournal/📓Bulletjournal.md` | `10.Systemschmiede/BulletJournal/` (Index) |
+| `📓Bulletjournal/📓Inhaltsverzeichniss.md` | `10.Systemschmiede/BulletJournal/Collections/` |
+| `📓Bulletjournal/Plan.md` | `10.Systemschmiede/BulletJournal/` |
+| `🗂️Ticketsystem/ToDo.md` | `10.Systemschmiede/Ticketsystem/TicketÜbersicht/` |
+| `🎛-Obsidian-/🎛Templates/Frontmatter-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `🎛-Obsidian-/🎛Templates/GenerellesYAMLTemplate.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `🎛-Obsidian-/🎛Templates/MoC-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `🎛-Obsidian-/🎛Templates/Backmatter-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `🎛-Obsidian-/🎛Templates/Mythologie-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `🎛-Obsidian-/🎛Templates/Ticket-Template.md` | `10.Systemschmiede/Obsidian/Templates/` + `10.Systemschmiede/Ticketsystem/TicketVorlagen/` |
+| `🎛-Obsidian-/🎛Templates/Ticket-Template Guide.md` | `10.Systemschmiede/Ticketsystem/TicketVorlagen/` |
+| `🎛-Obsidian-/🎛Templates/_MoC Templates.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `🎛-Obsidian-/🎛Funktionen/` | `10.Systemschmiede/Obsidian/` |
+| `🎛-Obsidian-/Spezielle Einstellungen/Spezielle Einstellungen.md` | `10.Systemschmiede/Obsidian/` |
+| `🎛-Obsidian-/Spezielle Einstellungen/Verzeichnisverbindung.md` | `10.Systemschmiede/Obsidian/` |
+| `To-Do/To Do.md`, `To-Do.md`, `To-Dos.md` | `10.Systemschmiede/Tasksystem/` |
+| `To-Do/To-do's zum Abarbeiten.md` | `10.Systemschmiede/Tasksystem/` |
+| `To-Do/Was ich machen kann.md` | `10.Systemschmiede/Tasksystem/` |
+| `To-Do/aussortieren/Langfristige ToDo.md` | `10.Systemschmiede/Tasksystem/` |
+| `To-Do/aussortieren/To-do's zum Abarbeiten.md` | `10.Systemschmiede/Tasksystem/` |
+| `To-Do/aussortieren/Tickets die ich machen muss...` | `10.Systemschmiede/Ticketsystem/` |
+| `00.📖Lebensplan/YggdrasilArchitektur.md` | `10.Systemschmiede/Yggdrasil/` |
+| `00.📖Lebensplan/Notizen zum einsortieren.md` (Email/App Cleanup-Teil) | `10.Systemschmiede/DigitaleIdentität/OnlineAccounts/` |
+| `10.⚙️Systemschmiede/Ubuntu System Update.md` | `10.Systemschmiede/Yggdrasil/Geräte/Laptop/InstallierteProgramme/` |
+| `10.⚙️Systemschmiede/Windows 11 Leistungsoptimierung.md` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
+| `10.⚙️Systemschmiede/Windows11 System apps skripte.md` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
+| `10.⚙️Systemschmiede/Ideale Laptop Setup.md` | `10.Systemschmiede/Yggdrasil/Geräte/Laptop/Setup/` |
+| `10.⚙️Systemschmiede/backup.md` | `10.Systemschmiede/Yggdrasil/` (Backup-Strategie) |
+| `10.⚙️Systemschmiede/Systemplan/PC/Windows 11 PC/` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
+| `10.⚙️Systemschmiede/Systemplan/Server/ContaboVPS/n8n/Workflows/` | `10.Systemschmiede/Yggdrasil/Asgard/N8N/N8NWorkflows/` |
+| `Aussortieren/00.📖Fundamentum/YggdrasilArchitektur.md` | `10.Systemschmiede/Yggdrasil/` |
+| `Aussortieren/00.📖Fundamentum/YggdrasilArchitekturAblehnung.md` | `10.Systemschmiede/Yggdrasil/` (verworfene Konzepte) |
+| `Aussortieren/00.📖Fundamentum/YggdrasilArchitekturVielleicht.md` | `10.Systemschmiede/Yggdrasil/` (alternative Konzepte) |
+| `Aussortieren/-Lebensplan/Accounts/Killtheblackdragon@gmail.com.md` | `10.Systemschmiede/DigitaleIdentität/Emails/` |
+| `Aussortieren/-Lebensplan/Accounts/Kudras.max@gmail.com.md` | `10.Systemschmiede/DigitaleIdentität/Emails/` |
+| `Aussortieren/-Lebensplan/Accounts/Kudrasov.max@gmail.com.md` | `10.Systemschmiede/DigitaleIdentität/Emails/` |
+| `Aussortieren/-Lebensplan/Accounts/max-123-der-beste@web.de.md` | `10.Systemschmiede/DigitaleIdentität/Emails/` |
+| `Aussortieren/-Ticketsystem/-Ticketsystem.md` | `10.Systemschmiede/Ticketsystem/TicketÜbersicht/` |
+| `Aussortieren/-Ticketsystem/DSB/` (Canvas Dashboard) | `10.Systemschmiede/Ticketsystem/` |
+| `Aussortieren/-Ticketsystem/DSB Parts/` | `10.Systemschmiede/Ticketsystem/` |
+| `Aussortieren/-Ticketsystem/Tickets/` (T-001–T-018) | `10.Systemschmiede/Ticketsystem/` |
+| `Aussortieren/-Ticketsystem/plan/` | `10.Systemschmiede/Ticketsystem/TicketWorkflow/` |
+| `Aussortieren/-Ticketsystem/unsortierte tickets/` | `10.Systemschmiede/Ticketsystem/` |
+| `Aussortieren/-Lebensplan/🕰Zeitmanagment/ToDos/` | `10.Systemschmiede/Tasksystem/` |
+| `Aussortieren/10.⚙️Systemschmiede/` (alle Dateien) | `10.Systemschmiede/` |
+| `Aussortieren/💡Projekte/Obsidian/` | `10.Systemschmiede/Obsidian/` |
+| `Aussortieren/💡Projekte/PC-Skripte/` | `10.Systemschmiede/Yggdrasil/Geräte/PC/` (Skripte) |
+| `Aussortieren/💡Projekte/Website erstellen/` | `10.Systemschmiede/Yggdrasil/Website/` |
+| `Aussortieren/dataviewjs Slider with %.md` | `10.Systemschmiede/Obsidian/CSSSnippets/` |
+| `Aussortieren/plan für templates.md` | `10.Systemschmiede/Obsidian/Templates/` |
+| `Aussortieren/wie ist git eingestellt.md` | `10.Systemschmiede/Yggdrasil/ClaudeCode/GitHub/` |
+| T-004: Youtube Playlists sortieren | `10.Systemschmiede/DigitaleIdentität/OnlineAccounts/` |
+| T-006: Ticketsystem erstellen | `10.Systemschmiede/Ticketsystem/TicketWorkflow/` |
+| T-007: Youtube Videos auto-download | `10.Systemschmiede/Yggdrasil/Asgard/N8N/N8NWorkflows/` |
+| T-008: Instagram auto-download | `10.Systemschmiede/Yggdrasil/Asgard/N8N/N8NWorkflows/` |
+| T-009: Pinterest auto-download | `10.Systemschmiede/Yggdrasil/Asgard/N8N/N8NWorkflows/` |
+| T-010: Obsidian Dokumentation | `10.Systemschmiede/Obsidian/` |
+| T-011: Tickets die erstellt werden müssen | `10.Systemschmiede/Ticketsystem/TicketÜbersicht/` |
+| T-017: Password Management | `10.Systemschmiede/DigitaleIdentität/OnlineAccounts/` |
+| T-018: Pandoras_Box Einrichten | `10.Systemschmiede/Yggdrasil/ClaudeCode/GitHub/` |
+| `Gesamter Lebensplan.md` → Systemschmiede | `10.Systemschmiede/` |
 
 ---
 
-## 📁 `📓Bulletjournal/`
+## ❌ Löschen
 
-→ **Alles** nach `10.Systemschmiede/BulletJournal/`
-
-| Datei | → Akasha Ziel |
+| Datei | Grund |
 |---|---|
-| `📓Bulletjournal.md` | `10.Systemschmiede/BulletJournal/` (Index) |
-| `📓Inhaltsverzeichniss.md` | `10.Systemschmiede/BulletJournal/Collections/` |
-| `Plan.md` | `10.Systemschmiede/BulletJournal/` |
+| `testets.md` (Root + Aussortieren) | Testdatei |
+| `Aussortieren/hda/hda.md` | Leere Folder-Overview |
+| `Aussortieren/Aussortieren.md` | Obsolete Hilfsdatei |
+| `To-Do/aussortieren/To-Do 18.12.22.md` | ⚠️ Prüfen ob veraltet, dann löschen |
+| `00.📖Lebensplan/Alleszusdammen/Test notiz.md` | Testdatei |
+| `00.📖Lebensplan/Alleszusdammen/gggggg.md` | Testdatei |
+| `00.📖Lebensplan/Alleszusdammen/dddd/` | Testordner |
+| `Aussortieren/-Ticketsystem/Tickets/T-016` (dsgtfhg) | Testticket |
+| `Aussortieren/00.📖Fundamentum/Plan Definitionen/` (11 Dateien) | Alle leer (0 bytes) |
 
 ---
 
-## 📁 `🗂️Ticketsystem/`
+## ⚠️ Inhalt prüfen — Unklare Dateien
 
-→ **Alles** nach `10.Systemschmiede/Ticketsystem/`
-
-| Datei | → Akasha Ziel |
+| Datei | Was tun |
 |---|---|
-| `ToDo.md` | `10.Systemschmiede/Ticketsystem/TicketÜbersicht/` |
+| `🎛-Obsidian-/🎛Legenden/Untitled.md` | Prüfen → ggf. `00.Fundamentum/AkashaLegenden/` |
+| `🎛-Obsidian-/in Bearbeitung/Unbenannt.md`, `Unbenannt 1.md` | Prüfen → einordnen |
+| `Aussortieren/hda/untitled.md` | Prüfen → einordnen |
+| `Aussortieren/Sammlung/Unbenannt.md`, `Untitled.md`, `Untitled 1-3.md` | Prüfen → `09.Freizeitatlas/04.Sammlungen/` oder löschen |
+| `Aussortieren/Sammlung/Untitled.canvas` | Prüfen → einordnen |
+| `Aussortieren/Unbenannt.md` | Prüfen → einordnen |
+| `00.📖Lebensplan/Alleszusdammen/lebens keinej.md` | Prüfen → `01.Lebenskompass/` oder löschen |
 
 ---
 
-## 📁 `🎛-Obsidian-/`
+## ⚠️ Strukturlücken — Neue Kategorien in Akasha nötig
 
-| Datei/Ordner | → Akasha Ziel |
+| Inhalt | Empfehlung |
 |---|---|
-| `🎛Emoji Liste 13.0.md` | `00.Fundamentum/AkashaLegenden/` (EmojiLegende) |
-| `🎛Unicode Liste.md` | `00.Fundamentum/AkashaLegenden/` (UnicodeLegende) |
-| **`🎛Legenden/`** | **`00.Fundamentum/AkashaLegenden/`** |
-| ↳ `Emoji-Legende.md` | `00.Fundamentum/AkashaLegenden/` |
-| ↳ `Gruppen-Farb-Legende.md` | `00.Fundamentum/AkashaLegenden/` (FarbLegende) |
-| ↳ `Ordner & Notiz Namens-Legende.md` | `00.Fundamentum/AkashaLegenden/` (NamensLegende) |
-| ↳ `Tag-Legende.md` | `00.Fundamentum/AkashaLegenden/` (TagLegende) |
-| ↳ `_MoC Legenden.md` | `00.Fundamentum/AkashaLegenden/` |
-| ↳ `Untitled.md` | Inhalt prüfen → dann einordnen |
-| **`🎛Templates/`** | **`10.Systemschmiede/Obsidian/Templates/`** |
-| ↳ `Frontmatter-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| ↳ `GenerellesYAMLTemplate.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| ↳ `MoC-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| ↳ `Backmatter-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| ↳ `Mythologie-Template.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| ↳ `Ticket-Template.md` | `10.Systemschmiede/Obsidian/Templates/` UND `10.Systemschmiede/Ticketsystem/TicketVorlagen/` |
-| ↳ `Ticket-Template Guide.md` | `10.Systemschmiede/Ticketsystem/TicketVorlagen/` |
-| ↳ `_MoC Templates.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| **`🎛Funktionen/`** | **`10.Systemschmiede/Obsidian/`** |
-| **`Spezielle Einstellungen/`** | **`10.Systemschmiede/Obsidian/`** |
-| ↳ `Spezielle Einstellungen.md` | `10.Systemschmiede/Obsidian/` |
-| ↳ `Verzeichnisverbindung.md` | `10.Systemschmiede/Obsidian/` |
-| **`Unicode Liste/`** | **`00.Fundamentum/AkashaLegenden/`** (UnicodeLegende) |
-| **`in Bearbeitung/`** | Entwürfe — prüfen, dann einordnen |
-| ↳ `Emoji Lis.md` | `00.Fundamentum/AkashaLegenden/` (wenn fertig) |
-| ↳ `Unicode Liste -----.md` + `Unicode Listecc.md` | `00.Fundamentum/AkashaLegenden/` (wenn fertig) |
-| ↳ `Unbenannt.md`, `Unbenannt 1.md` | Inhalt prüfen → einordnen |
-| **`Anhänge unsortiert/`** | Anhänge den Notizen zuordnen, dann in den jeweiligen Akasha-Bereich |
-| `Plugin für Obsidian Programmieren Idee.md` | `09.Freizeitatlas/03.Projekte/ITProjekte/` (Projektidee) |
-
----
-
-## 📁 `To-Do/`
-
-| Datei/Ordner | → Akasha Ziel |
-|---|---|
-| `To Do.md`, `To-Do.md`, `To-Dos.md` | `10.Systemschmiede/Tasksystem/` |
-| `To-do's zum Abarbeiten.md` | `10.Systemschmiede/Tasksystem/` |
-| `Was ich machen kann.md` | `10.Systemschmiede/Tasksystem/` |
-| `Datenbanken Rezepte und Allergene.md` | `04.VitalOase/02.Ernährung/RezepteDB/` |
-| **`aussortieren/`** | (Unterordner — Details unten) |
-| ↳ `Langfristige ToDo.md` | `10.Systemschmiede/Tasksystem/` |
-| ↳ `Need to Buy.md` | `07.Alltagsmanagement/01.Wohnen/02.Inventur/BesitzVerwaltung/` |
-| ↳ `Tickets die ich machen muss bevor das ticketsystem fertig ist.md` | `10.Systemschmiede/Ticketsystem/` |
-| ↳ `Ideen 13.08.24.md` | `03.VermögensDomäne/Finanzen/` (Geldplanner-Ideen) |
-| ↳ `Datenbanken Rezepte und Allergene.md` | `04.VitalOase/02.Ernährung/RezepteDB/` |
-| ↳ `To-Do 18.12.22.md` | ❌ Prüfen ob veraltet → ggf. löschen |
-| ↳ `To-do's zum Abarbeiten.md` | `10.Systemschmiede/Tasksystem/` |
-
----
-
-## 📁 `00.📖Lebensplan/`
-
-| Datei/Ordner | → Akasha Ziel |
-|---|---|
-| `00.📖Lebensplan.md` | `00.Fundamentum/` (Index/MoC) |
-| `AkashaIndex` (Datei) | `00.Fundamentum/AkashaIndex.md` — bereits vorhanden |
-| `1. Lebenskompass Definitionen.md` | `01.Lebenskompass/` (Definitionen der Lebensbereiche) |
-| `5. Inneres Universum.md` | `05.InneresUniversum/` |
-| `Abarbeitungsplan.md` | `02.Zeitnavigator/04.OrganisationsZyklus/Planung/` |
-| `Gesamter Lebensplan.md` | Inhalte verteilen — deckt fast alle 11 Bereiche ab (Details unten) |
-| `Hier.md` | `00.Fundamentum/` (Meta-Planungsdokument) |
-| `Lebensplan Grundstruktur.md` | `01.Lebenskompass/` (Grundstruktur des Lebensplans) |
-| `Notizen zum einsortieren.md` (Karriereplan) | `03.VermögensDomäne/Karriere/BeruflicheEntwicklung/` |
-| `Notizen zum einsortieren.md` (Email/App Cleanup) | `10.Systemschmiede/DigitaleIdentität/OnlineAccounts/` |
-| `wohnung Planen.canvas` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
-| `YggdrasilArchitektur.md` | `10.Systemschmiede/Yggdrasil/` (Infrastruktur-Architektur) |
-| **`Alleszusdammen/`** | Inhalte prüfen → `01.Lebenskompass/` |
-
-### `Gesamter Lebensplan.md` — Inhalte verteilen:
-
-| Abschnitt im Dokument | → Akasha Ziel |
-|---|---|
-| Lebenskompass / Ziele | `01.Lebenskompass/02.Ziele/` |
-| Zeitnavigator / Planung & Review | `02.Zeitnavigator/04.OrganisationsZyklus/` |
-| Zeitnavigator / Routinen & Gewohnheiten | `02.Zeitnavigator/03.TäglicheRituale/` |
-| Alltagsmanagement / Wohnen | `07.Alltagsmanagement/01.Wohnen/` |
-| Alltagsmanagement / Recht, Dokumente | `07.Alltagsmanagement/04.RechtlicheOrdnung/` |
-| Vitaloase / Wellness & Körper | `04.VitalOase/03.KörperlicheGesundheit/` |
-| Vitaloase / Ernährung | `04.VitalOase/02.Ernährung/` |
-| Vitaloase / Mentale Gesundheit | `04.VitalOase/04.MentaleGesundheit/` |
-| Inneres Universum | `05.InneresUniversum/` |
-| Sozial Sphäre | `06.SozialSphäre/` |
-| Vermögens Domäne / Finanzen | `03.VermögensDomäne/Finanzen/` |
-| Vermögens Domäne / Karriere | `03.VermögensDomäne/Karriere/` |
-| Wissenskompendium | `08.Wissenskompendium/` |
-| Freizeitatlas / Reise & Abenteuer | `09.Freizeitatlas/01.Reisewelt/` |
-| Freizeitatlas / Soziale Aktivitäten | `09.Freizeitatlas/05.SozialeAktivitäten/` |
-| Systemschmiede | `10.Systemschmiede/` |
-
----
-
-## 📁 `10.⚙️Systemschmiede/`
-
-| Datei/Ordner | → Akasha Ziel |
-|---|---|
-| `Ubuntu System Update.md` | `10.Systemschmiede/Yggdrasil/Geräte/Laptop/InstallierteProgramme/` |
-| `Windows 11 Leistungsoptimierung.md` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
-| `Windows11 System apps skripte.md` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
-| `Ideale Laptop Setup.md` | `10.Systemschmiede/Yggdrasil/Geräte/Laptop/Setup/` |
-| `backup.md` | `10.Systemschmiede/Yggdrasil/` (Backup-Strategie) |
-| `AutoGen Lebensplan aufarbeitung.canvas` | `00.Fundamentum/` (Meta-Planungscanvas) |
-| **`Systemplan/`** | `10.Systemschmiede/Yggdrasil/` |
-| ↳ `PC/Windows 11 PC/Windows 11 PC.md` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
-| ↳ `Server/ContaboVPS/n8n/Workflows/Unbenannt.md` | `10.Systemschmiede/Yggdrasil/Asgard/N8N/N8NWorkflows/` |
-
----
-
-## 📁 `Aussortieren/` — Unterordner (vollständig)
-
-### `Aussortieren/00.📖Fundamentum/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `00.📖Lebensplan.md` | `00.Fundamentum/` |
-| `Abarbeitungsplan.md` | `02.Zeitnavigator/04.OrganisationsZyklus/Planung/` |
-| `Hier.md` | `00.Fundamentum/` |
-| `Lebensplan Grundstruktur.md` | `01.Lebenskompass/` |
-| `YggdrasilArchitektur.md` | `10.Systemschmiede/Yggdrasil/` |
-| `YggdrasilArchitekturAblehnung.md` | `10.Systemschmiede/Yggdrasil/` (verworfene Konzepte) |
-| `YggdrasilArchitekturVielleicht.md` | `10.Systemschmiede/Yggdrasil/` (alternative Konzepte) |
-| `AkashaIndex/` (Unterordner) | `00.Fundamentum/` |
-| `Alleszusdammen/Plan fürs Leben.md` | `01.Lebenskompass/` |
-| `Alleszusdammen/` weitere Dateien | Inhalte prüfen → `01.Lebenskompass/` |
-| `Plan Definitionen/` (11 Bereichsdefinitionen) | `00.Fundamentum/` oder `01.Lebenskompass/` |
-
-### `Aussortieren/-Lebensplan (💵-🕰-🚑)/` ⚠️ SEHR GROSS (350+ Dateien)
-
-Dieses Archiv ist der Vorgänger des Akasha-Systems. Inhalte nach Kategorie verteilen:
-
-| Unterordner | → Akasha Ziel |
-|---|---|
-| `Accounts/` (4 E-Mail-Accounts: gmail, web.de) | `10.Systemschmiede/DigitaleIdentität/Emails/` |
-| `Freizeit/Audio (🎧)/` + Musik | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/MusikHören/` |
-| `Freizeit/Hobbies/` (Musik machen, Programmieren, Schreiben) | `09.Freizeitatlas/02.Hobbies/` |
-| `Freizeit/Literatur/` | `08.Wissenskompendium/Interessen/` oder `09.Freizeitatlas/02.Hobbies/MentaleHobbies/` |
-| `Freizeit/Spiele (🎮-♟️)/` | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/Gaming/` |
-| `Freizeit/Video (🎞-🎬)/` | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/` (Filme & Serien) |
-| `Freizeit/Welt erleben (🗺)/` | `09.Freizeitatlas/01.Reisewelt/` |
-| `💵Geldmanagment/Budgetierung/` | `03.VermögensDomäne/Finanzen/Budgetplanung/` |
-| `💵Geldmanagment/Finanzielle Ziele/` | `03.VermögensDomäne/Vermögensaufbau/Sparplan/Sparziele/` |
-| `💵Geldmanagment/Notfallfonds/` | `03.VermögensDomäne/Finanzen/Finanzplanung/Notfallreserve/` |
-| `💵Geldmanagment/〽️Investieren/` (Aktien, ETFs, Immobilien) | `03.VermögensDomäne/Vermögensaufbau/Wertpapiere/` + `Sachwerte/` |
-| `💵Geldmanagment/📊Geldverlauf/` (Abos, Ausgabenplan, Sparplan) | `03.VermögensDomäne/Finanzen/Geldverlauf/` + `Finanzplanung/Abos/` |
-| `🕰Zeitmanagment/ToDos/` | `10.Systemschmiede/Tasksystem/` |
-| `🕰Zeitmanagment/🌀Routinen/` | `02.Zeitnavigator/03.TäglicheRituale/Routinen/` |
-| `🕰Zeitmanagment/💼Arbeitsplan/` | `03.VermögensDomäne/Karriere/Arbeitsgestaltung/` |
-| `🕰Zeitmanagment/📅Kalender/` (Tages/Wochen/Monats/Jahresplan) | `02.Zeitnavigator/04.OrganisationsZyklus/Planung/` |
-| `🕰Zeitmanagment/⌛Zukunftsplan/` (Karriere, Langfristige Ziele) | `01.Lebenskompass/02.Ziele/JahresZiele/` + `03.VermögensDomäne/Karriere/Karriereplanung/` |
-| `🚑Gesundheit/Psychische Gesundheit/` (Meditation) | `04.VitalOase/04.MentaleGesundheit/Meditation/` |
-| `🚑Gesundheit/🍽Ernährung/` | `04.VitalOase/02.Ernährung/` |
-| `🚑Gesundheit/💤Schlaf/` | `04.VitalOase/04.MentaleGesundheit/Schlaf/` |
-| `🚑Gesundheit/🚬Drogenplan/` (Alkohol, Gras, Zigaretten) | `05.InneresUniversum/Suchtverhalten/` (⚠️ nicht VitalOase!) |
-| `🚑Gesundheit/🚵Sport/` (Fitnessziele, Trainingspläne) | `04.VitalOase/03.KörperlicheGesundheit/Trainingsplan/` |
-
-### `Aussortieren/-Ressourcen/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `-Ressourcen.md` | `08.Wissenskompendium/` (Lernressourcen-Übersicht) |
-
-### `Aussortieren/-Ticketsystem/` ⚠️ KOMPLEX (aktives Ticketsystem mit T-001 bis T-018)
-
-| Unterordner/Datei | → Akasha Ziel |
-|---|---|
-| `-Ticketsystem.md` (Dataview-Queries) | `10.Systemschmiede/Ticketsystem/TicketÜbersicht/` |
-| `DSB/` (Dashboard-System mit Canvas) | `10.Systemschmiede/Ticketsystem/` (Dashboard-Vorlagen) |
-| `DSB Parts/` (Ticketstatistiken, Quick-Actions) | `10.Systemschmiede/Ticketsystem/` |
-| `Tickets/` (T-001 bis T-018 — echte Tickets) | `10.Systemschmiede/Ticketsystem/` |
-| `plan/` (Konzept & Plugin-Plan) | `10.Systemschmiede/Ticketsystem/TicketWorkflow/` |
-| `unsortierte tickets/` (Geldverwaltung, Lebenverbesserung, etc.) | `10.Systemschmiede/Ticketsystem/` |
-
-### `Aussortieren/02.⏳Zeitnavigator/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `02.⏳Zeitnavigator.md` | `02.Zeitnavigator/` (Index) |
-| `01.Kalender/01.Kalender.md` | `02.Zeitnavigator/01.Kalender/` |
-| `02.Zeitmanagment/02.Zeitmanagment.md` | `02.Zeitnavigator/02.Zeitmanagement/` |
-| `03.Routinen&Gewohnheiten/` | `02.Zeitnavigator/03.TäglicheRituale/` |
-| `04.Planung&Review/` | `02.Zeitnavigator/04.OrganisationsZyklus/` |
-
-### `Aussortieren/03.Alltagsmanagemnt/`
-
-| Unterordner | → Akasha Ziel |
-|---|---|
-| `01.Wohnen/01.Haushalt/` | `07.Alltagsmanagement/01.Wohnen/01.Haushalt/` |
-| `01.Wohnen/02.Inventur/` | `07.Alltagsmanagement/01.Wohnen/02.Inventur/` |
-| `01.Wohnen/03.Innenarchitektur/` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
-| `01.Wohnen/04.Wohnträume&Zukunftspläne/` | `07.Alltagsmanagement/01.Wohnen/04.Wohnträume/` |
-| `02.Haustiere&Pflanzen/` | `07.Alltagsmanagement/02.LebendigesZuhause/` |
-| `03.Mobilität/` | `07.Alltagsmanagement/03.Mobilität/` |
-| `04.Recht,Dokumente&Sicherheit/01.Recht/` | `07.Alltagsmanagement/04.RechtlicheOrdnung/Rechte/` |
-| `04.Recht,Dokumente&Sicherheit/02.Dokumente/` | `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/` |
-| `04.Recht,Dokumente&Sicherheit/03.Sicherheit/` | `07.Alltagsmanagement/04.RechtlicheOrdnung/Sicherheit/` |
-
-### `Aussortieren/04.🧘‍♂️Vitaloase/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `04.🧘‍♂️Vitaloase.md` | `04.VitalOase/` (Index) |
-| `01.AllgemeineGesundheit/01.AllgemeineGesundheit.md` | `04.VitalOase/01.AllgemeineGesundheit/` |
-
-### `Aussortieren/05.InneresUniversum/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `05.InneresUniversum.md` | `05.InneresUniversum/` (Index) |
-
-### `Aussortieren/06.🧑‍🤝SozialSphäre/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `06.🧑‍🤝SozialSphäre.md` | `06.SozialSphäre/` (Index) |
-
-### `Aussortieren/08.📚 Wissenkompendium/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `08.📚 Wissenkompendium.md` | `08.Wissenskompendium/` (Index) |
-
-### `Aussortieren/09.🗺️Freizeitatlas/`
-
-| Datei/Ordner | → Akasha Ziel |
-|---|---|
-| `09.🗺️Freizeitatlas.md` | `09.Freizeitatlas/` (Index) |
-| `07.💰VermögensDomäne/` ⚠️ (falsch platziert!) | `03.VermögensDomäne/` (kompletter Inhalt verschieben) |
-
-### `Aussortieren/10.⚙️Systemschmiede/`
-
-| Datei/Ordner | → Akasha Ziel |
-|---|---|
-| Alle Dateien | `10.Systemschmiede/` |
-| `Systemplan/PC/Windows 11 PC/` | `10.Systemschmiede/Yggdrasil/Geräte/PC/Setup/` |
-| `Systemplan/Server/ContaboVPS/n8n/Workflows/` | `10.Systemschmiede/Yggdrasil/Asgard/N8N/N8NWorkflows/` |
-
-### `Aussortieren/📒Wisften(👨‍🔬️-💵-🔢)/` ⚠️ RIESIG (1000+ Dateien)
-
-| Unterordner | → Akasha Ziel | Hinweis |
-|---|---|---|
-| `Ingenieurswissenschaften/Bauingenieurwesen/` | `08.Wissenskompendium/` — ⚠️ **neue Kategorie nötig** | Akasha hat keine Ingenieurswissenschaften-Kategorie |
-| `Ingenieurswissenschaften/Elektrotechnik/` | `08.Wissenskompendium/` — neue Kategorie | Könnte unter Formalwissenschaften oder eigene Kategorie |
-| `Ingenieurswissenschaften/Feinwerktechnik/` | `08.Wissenskompendium/` — neue Kategorie | |
-| `Ingenieurswissenschaften/Maschinenbau/` | `08.Wissenskompendium/` — neue Kategorie | |
-| `Ingenieurswissenschaften/Verfahrenstechnik/` | `08.Wissenskompendium/` — neue Kategorie | |
-| `Kulturwissenschaften/Geisteswissenschaften/` | `08.Wissenskompendium/Kulturwissenschaften/Geschichte/` + `Philosophie/` + `Religion/` |
-| `Kulturwissenschaften/Sozialwissenschaften/` | `08.Wissenskompendium/Kulturwissenschaften/` — ⚠️ neue Unterkategorie nötig | Akasha hat nur Geschichte, Philosophie, Religion, Archäologie |
-| `Naturwissenschaften/⚕Medizin/` | `08.Wissenskompendium/Naturwissenschaften/Medizin/` | |
-| `Naturwissenschaften/🌐Geographie/` (alle Länder, Kontinente) | `08.Wissenskompendium/Naturwissenschaften/Geographie/` | Sehr umfangreich |
-
-### `Aussortieren/hda/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `hda.md` | ❌ Löschen (leere Folder-Overview) |
-| `family.md` | `06.SozialSphäre/01.Familie/FamilienManagement/` |
-| `wichtig.md` (Geographie-Checkliste) | `08.Wissenskompendium/Naturwissenschaften/Geographie/` |
-| `untitled.md` | Inhalt prüfen → einordnen |
-
-### `Aussortieren/💡Projekte/`
-
-| Unterordner | → Akasha Ziel |
-|---|---|
-| `3D Drucker/` | `09.Freizeitatlas/03.Projekte/3DDruckProjekte/` |
-| `Feier/` | `09.Freizeitatlas/05.SozialeAktivitäten/DinnerPartys/` oder `06.SozialSphäre/` |
-| `Obsidian/` | `10.Systemschmiede/Obsidian/` |
-| `PC-Skripte/` | `10.Systemschmiede/Yggdrasil/Geräte/PC/` (Skripte) |
-| `Programme programmieren/` | `09.Freizeitatlas/03.Projekte/ITProjekte/` |
-| `Website erstellen/` | `10.Systemschmiede/Yggdrasil/Website/` |
-| `Zauberstab (Fernbedinung)/` | `09.Freizeitatlas/03.Projekte/ITProjekte/` |
-| `Zimmer/` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
-| `💡Projekte.md` | `09.Freizeitatlas/03.Projekte/` (Index) |
-| `_MoC Projekte.md` | `09.Freizeitatlas/03.Projekte/` |
-
-### `Aussortieren/Sammlung/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `Unbenannt.md`, `Untitled.md`, `Untitled 1-3.md` | Inhalte prüfen → `09.Freizeitatlas/04.Sammlungen/` |
-| `Untitled.canvas` | Inhalt prüfen |
-
-### Einzelne Dateien in `Aussortieren/`
-
-| Datei | → Akasha Ziel |
-|---|---|
-| `bücher.md` | `08.Wissenskompendium/Interessen/` (Buchliste) |
-| `dataviewjs Slider with %.md` | `10.Systemschmiede/Obsidian/CSSSnippets/` oder `Obsidian/Plugins/` |
-| `plan für templates.md` | `10.Systemschmiede/Obsidian/Templates/` |
-| `wie ist git eingestellt.md` | `10.Systemschmiede/Yggdrasil/ClaudeCode/GitHub/` |
-| `wohnung Planen.canvas` | `07.Alltagsmanagement/01.Wohnen/03.Innenarchitektur/` |
-| `12-Jan-2025.md` | `02.Zeitnavigator/` (Daily Log) — oder ❌ löschen wenn veraltet |
-| `Essen.md` | `04.VitalOase/02.Ernährung/` |
-| `Unbenannt.md` | Inhalt prüfen → einordnen |
-| `Aussortieren.md` | ❌ Löschen |
-| `testets.md` | ❌ Löschen |
-
----
-
-## ❓ Offene Fragen aus AkashaIndex — Beantwortet
-
-### Veranstaltungen/Events mit Freunden/Familie/Partner
-- **Terminplanung** → `02.Zeitnavigator/01.Kalender/GeplanteAktivitäten/Veranstaltungen/`
-- **Erlebnisse & Aktivitäten** → `09.Freizeitatlas/05.SozialeAktivitäten/`
-
-### Abos
-Die Abos stehen bereits explizit im AkashaIndex unter `03.VermögensDomäne/Finanzen/Finanzplanung/Abos/`:
-- `AmazonPrime` → `03.VermögensDomäne/Finanzen/Finanzplanung/Abos/AmazonPrime/`
-- `VPS` (Hostinger) → `03.VermögensDomäne/Finanzen/Finanzplanung/Abos/VPS/` + technisch in `10.Systemschmiede/Yggdrasil/Asgard/`
-- `Domain` → `03.VermögensDomäne/Finanzen/Finanzplanung/Abos/Domain/` + technisch in `10.Systemschmiede/Yggdrasil/Website/`
-- `Claude` → `03.VermögensDomäne/Finanzen/Finanzplanung/Abos/Claude/` + technisch in `10.Systemschmiede/KIWerkzeuge/ClaudeAI/`
-
-### Behördliche Checklisten
-→ `07.Alltagsmanagement/04.RechtlicheOrdnung/Rechte/Behördenchecklisten/` (steht bereits im Index)
-
-### Krankenversicherung
-→ `03.VermögensDomäne/BeitragsOptimierung/Versicherung/Krankenversicherung/` (steht bereits im Index)
-→ Vertragsdokument: `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/Verträge/Versicherung/`
-
-### Willenserklärung
-→ `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/RechtlicheDokumente/Willenserklärung/` (steht bereits im Index)
-
-### Steuerunterlagen
-- Dokumente → `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/RechtlicheDokumente/Steuerunterlagen/` (im Index)
-- Strategie → `03.VermögensDomäne/BeitragsOptimierung/Steuern/Steueroptimierung/`
-
-### Zertifikate (CCNA, Ausbildungsnachweis etc.)
-- Physische/digitale Dokumente → `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/AllgemeineDokumente/Zertifikate/` (im Index: CCNA)
-- Als Karriereziel → `03.VermögensDomäne/Karriere/Kompetenzaufbau/AngestrebteZertifikate/` (im Index)
-
-### MeineRollenImLeben
-→ `01.Lebenskompass/04.Identität/01.PersönlicheIdentität/MeineRollenImLeben/` (steht bereits im OrdnerIndex!)
-
-### Abenteuer-Reise
-→ `09.Freizeitatlas/01.Reisewelt/GeplanteReisen/AbenteuerReise/` (steht bereits im OrdnerIndex!)
-
-### Versicherungen — wo und wie mit Kosten?
-- **Strategie & Kosten** → `03.VermögensDomäne/BeitragsOptimierung/Versicherung/` (Kranken, Haftpflicht, AU, Zahnzusatz)
-- **Vertragsdokumente** → `07.Alltagsmanagement/04.RechtlicheOrdnung/Dokumente/Verträge/Versicherung/`
-- Beide Orte verlinken: Kosten+Strategie in VermögensDomäne, tatsächliche Dokumente/Policen in Alltagsmanagement
-
----
-
-## ⚠️ Strukturlücken in Akasha (Inhalt vorhanden, aber kein Platz)
-
-| Brain-Notes Inhalt | Problem | Lösungsvorschlag |
-|---|---|---|
-| `Wisften/Ingenieurswissenschaften/` (Bauingenieur, Elektrotechnik, Maschinenbau, Verfahrenstechnik, Feinwerktechnik) | `08.Wissenskompendium` hat keine Ingenieurswissenschaften-Kategorie | Neue Kategorie `Ingenieurswissenschaften` in `08.Wissenskompendium/` anlegen (neben Formalwissenschaften) |
-| `Wisften/Kulturwissenschaften/Sozialwissenschaften/` | Akasha hat nur Geschichte, Philosophie, Religion, Archäologie | `Sozialwissenschaften` zu `08.Wissenskompendium/Kulturwissenschaften/` hinzufügen |
-| Spotify Musik-Verwaltung / YouTube-Speicher / Pinterest | Kein direkter Platz | `10.Systemschmiede/DigitaleIdentität/OnlineAccounts/` für Account-Management; Musik → `09.Freizeitatlas/02.Hobbies/MentaleHobbies/MusikHören/` |
-
----
-
-## 📊 Zusammenfassung: Wie viel kommt wo rein
-
-| Akasha-Bereich | Wichtigste Quellen aus Brain-Notes |
-|---|---|
-| `00.Fundamentum` | AkashaLegenden aus `🎛-Obsidian-/`, Planungsdokumente aus `Aussortieren/00.📖Fundamentum/` |
-| `01.Lebenskompass` | `Alleszusdammen/`, `Plan Definitionen/`, `Lebensplan Grundstruktur.md`, `1. Lebenskompass Definitionen.md` |
-| `02.Zeitnavigator` | `Aussortieren/-Lebensplan/🕰Zeitmanagment/`, `Aussortieren/02.⏳Zeitnavigator/`, `Brain-Notes.ical` |
-| `03.VermögensDomäne` | `Aussortieren/-Lebensplan/💵Geldmanagment/`, Karriereplan aus `Notizen zum einsortieren.md`, `Aussortieren/09.../07.💰VermögensDomäne/` |
-| `04.VitalOase` | `Aussortieren/-Lebensplan/🚑Gesundheit/` (ohne Drogenplan!), `04.🧘‍♂️Vitaloase/`, `Sontag Pflege Routine.md`, `Essen.md` |
-| `05.InneresUniversum` | `5. Inneres Universum.md`, `Aussortieren/05.InneresUniversum/`, `🚬Drogenplan/` → Suchtverhalten |
-| `06.SozialSphäre` | `Aussortieren/06.🧑‍🤝SozialSphäre/`, `hda/family.md`, `💡Projekte/Feier/` |
-| `07.Alltagsmanagement` | `Aussortieren/03.Alltagsmanagemnt/`, `wohnung Planen.canvas`, `Ineventar die ich brauche.md` |
-| `08.Wissenskompendium` | `Wisften/` (1000+ Dateien!), `Grichische Mythology Stammbaum.canvas`, `bücher.md`, `Progammiersprachen.md` |
-| `09.Freizeitatlas` | `Aussortieren/-Lebensplan/Freizeit/`, `💡Projekte/`, `Aussortieren/09.🗺️Freizeitatlas/` |
-| `10.Systemschmiede` | `🎛-Obsidian-/🎛Templates/`, `📓Bulletjournal/`, `🗂️Ticketsystem/`, `Aussortieren/-Ticketsystem/` (T-001–T-018), `10.⚙️Systemschmiede/`, `Plugin-Inventar.md`, `Theme-Inventar.md` |
+| `Wisften/Ingenieurswissenschaften/` (1000+ Dateien, Bau/Elektro/Maschinenbau/Verfahren) | Neue Kategorie `08.Wissenskompendium/Ingenieurswissenschaften/` in Akasha anlegen |
+| `Wisften/Kulturwissenschaften/Sozialwissenschaften/` | `Sozialwissenschaften` zu `08.Wissenskompendium/Kulturwissenschaften/` hinzufügen |
