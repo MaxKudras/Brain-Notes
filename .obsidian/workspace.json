@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🎛-Obsidian-/🎛-Obsidian-.md",
-                "mode": "source",
+                "file": "00.📖Lebensplan/Akasha-Einsortierung.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "🎛-Obsidian-"
+              "title": "Akasha-Einsortierung"
             }
           }
         ]
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "systempl",
+                "query": "platzh",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -82,7 +82,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Suchen"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎛-Obsidian-/🎛-Obsidian-.md",
+                "file": "00.📖Lebensplan/Akasha-Einsortierung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von 🎛-Obsidian- öffnen"
+              "title": "Ausgehende Links von Akasha-Einsortierung öffnen"
             }
           }
         ],
@@ -212,43 +212,43 @@
   },
   "active": "79eaa639ef57cca7",
   "lastOpenFiles": [
-    "📓Bulletjournal/📓Bulletjournal.md",
-    "🗂️Ticketsystem/🗂️Ticketsystem.md",
-    "🗒️Ticketsystem/🗒️Ticketsystem.md",
-    "00.📖Lebensplan/00.📖Lebensplan.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/🕰Zeitmanagment (⌛-🌀-💼-📅-📆-🗓)/Haushaltsaufgabenlisten.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/🕰Zeitmanagment (⌛-🌀-💼-📅-📆-🗓)/⌛Zukunftsplan/⌛Zukunftsplan.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/💵Geldmanagment (💼-〽️-📊).md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/_MoC Geldmanagment.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/Notfallfonds/Verwendung/Kühlschrank kaputt.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Sparplan/_MoC Sparplan.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/Notfallfonds/Verwendung",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Sparplan/Sparplan.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Sparplan/Zins- und Renditeplanung.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Sparplan/Sparstrategien.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Schulden/_MoC Schulden.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Schulden/Schulden Übersicht.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Ausgabenplan/Ausgabenplan.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/📊Geldverlauf/Ausgabenplan/_MoC Ausgabenplan.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/Aktien/Aktien.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/Aktien/Daytrading/Daytrading.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/〽️Investieren/Aktien/Aktienanalyse/Aktienanalyse.md",
-    "Aussortieren/_attachments/_attachments.md",
-    "00.📖Lebensplan/Gesamter Lebensplan.md",
-    "00.📖Lebensplan/Lebensplan Grundstruktur.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/Killtheblackdragon@gmail.com.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/Kudras.max@gmail.com.md",
-    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Accounts/Kudrasov.max@gmail.com.md",
+    "00.📖Lebensplan/wohnung Planen.canvas",
+    "00.📖Lebensplan/5. Inneres Universum.md",
+    "00.📖Lebensplan/Akasha-Einsortierung-Anhang.md",
+    "00.📖Lebensplan/Akasha-Einsortierung.md",
+    "🗂️Ticketsystem/ToDo.md",
+    "📓Bulletjournal/Plan.md",
+    "🎛-Obsidian-/in Bearbeitung/Unbenannt.md",
+    "🎛-Obsidian-/in Bearbeitung/Unbenannt 1.md",
+    "🎛-Obsidian-/in Bearbeitung/Unicode Liste -----.md",
+    "🎛-Obsidian-/Spezielle Einstellungen/Verzeichnisverbindung.md",
+    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/Prism.md",
+    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/nspell.md",
+    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/i18next.md",
+    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/DOMPurify.md",
+    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/CodeMirror.md",
+    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/_MoC Notiz Funktionen.md",
+    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Code and Tabellen.md",
+    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Grundlegende Text Formatierung.md",
+    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Markdown Syntax.md",
+    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Mermaid Diagram.md",
+    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Obsidian Markdown syntax.md",
+    "Aussortieren/hda/wichtig.md",
+    "Aussortieren/Sammlung/Untitled.md",
+    "Aussortieren/Sammlung/Unbenannt.md",
+    "Aussortieren/Sammlung/Untitled.canvas",
+    "Aussortieren/Sammlung/Kotne welche mit mail verbunden sind.md",
+    "Aussortieren/Sammlung/Authenticator-App und mehr.md",
+    "10.⚙️Systemschmiede/Systemplan/PC/Skriptplan.canvas",
+    "10.⚙️Systemschmiede/Systemplan/PC/Autogen/Lebensplan/AutoGen Lebensplan aufarbeitung.canvas",
+    "Aussortieren/wohnung Planen.canvas",
+    "Aussortieren/Grichische Mythology Stammbaum.canvas",
     "Grichische Mythology Stammbaum.canvas",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/💵Geldmanagment (💼-〽️-📊)/Notfallfonds/Verwendung",
     "10.⚙️Systemschmiede/AutoGen Lebensplan aufarbeitung.canvas",
     "Unbenannt.canvas",
     "Aussortieren/-Ticketsystem/DSB/Kategorien/Subkategorien/Kauf DSB.canvas",
     "Aussortieren/-Ticketsystem/DSB/Zentral-DSB.canvas",
-    "Aussortieren/-Ticketsystem/DSB/Haupt-DSB.canvas",
-    "10.⚙️Systemschmiede/Systemplan/PC/Autogen/Lebensplan/AutoGen Ausbildingsplan.canvas",
-    "10.⚙️Systemschmiede/Systemplan/Systemplan.canvas",
-    "10.⚙️Systemschmiede/Systemplan/PC/Skriptplan.canvas",
-    "Aussortieren/💡Projekte/Obsidian/Untitled.canvas",
     "04.🧘‍♂️Vitaloase/01.AllgemeineGesundheit",
     "03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/03.Sicherheit",
     "03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/02.Dokumente",
