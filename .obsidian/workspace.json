@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "79eaa639ef57cca7",
+            "id": "bc9cd56a1851983c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00.📖Lebensplan/Akasha-Einsortierung.md",
+                "file": "00.📖Lebensplan/Alleszusdammen/dddd/-Vermögens Domäne.md",
                 "mode": "preview",
                 "source": true,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Akasha-Einsortierung"
+              "title": "-Vermögens Domäne"
             }
           }
         ]
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00.📖Lebensplan/Akasha-Einsortierung.md",
+                "file": "00.📖Lebensplan/Alleszusdammen/dddd/-Vermögens Domäne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Akasha-Einsortierung öffnen"
+              "title": "Ausgehende Links von -Vermögens Domäne öffnen"
             }
           }
         ],
@@ -200,45 +200,89 @@
       "random-note:Zufällige Notiz öffnen": false,
       "workspaces:Workspace-Layouts verwalten": false,
       "bases:Neue Base erstellen": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-kanban:Erstelle ein neues Board": false,
-      "pexels-banner:🚩 Pixel Banner Menu": false,
       "obsidian-shellcommands:Shell commands: Custom variables": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "most-used:Show most used words graph": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "79eaa639ef57cca7",
+  "floating": {
+    "id": "afe3710cf6687d88",
+    "type": "floating",
+    "children": [
+      {
+        "id": "4e7a561b3632ed63",
+        "type": "window",
+        "children": [
+          {
+            "id": "a574611475f7c404",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "79eaa639ef57cca7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "00.📖Lebensplan/Akasha-Einsortierung.md",
+                    "mode": "source",
+                    "source": true,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "Akasha-Einsortierung"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 4416,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "413fb37392e1b459",
   "lastOpenFiles": [
+    "Brain-Notes.ical",
+    "Progammiersprachen.md",
+    "00.📖Lebensplan/Akasha-Einsortierung.md",
+    "00.📖Lebensplan/Alleszusdammen/dddd/-Vermögens Domäne.md",
+    "To-Do/Was ich machen kann.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Freizeit ()/Audio (🎧)/🎧Musik/🎧Musik.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Freizeit ()/Audio (🎧)/_MoC Audio.md",
+    "Aussortieren/-Lebensplan (💵-🕰-🚑)/Freizeit ()/Audio (🎧)/Audio (🎧).md",
+    "🎛-Obsidian-/Plugin für Obsidian Programmieren Idee.md",
+    "Aussortieren/hda/wichtig.md",
+    "testets.md",
+    "00.📖Lebensplan/Alleszusdammen/dddd/-Zeitnavigator.md",
+    "00.📖Lebensplan/Alleszusdammen/dddd/KP.md",
+    "00.📖Lebensplan/Alleszusdammen/gggggg.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/02. Zeitnavigator Definitionen.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/3. Alltagsmanagement.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/4. Vitaloase.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/6. Sozial Sphäre.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/7. Vermögens Domäne.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/8. Wissenskompendium.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/9. Freizeitatlas.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/10. Systemschmiede.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/Lebensplanbereich Definitionen.md",
+    "Aussortieren/00.📖Fundamentum/Plan Definitionen/Plan Definitionen.md",
     "00.📖Lebensplan/wohnung Planen.canvas",
     "00.📖Lebensplan/5. Inneres Universum.md",
     "00.📖Lebensplan/Akasha-Einsortierung-Anhang.md",
-    "00.📖Lebensplan/Akasha-Einsortierung.md",
-    "🗂️Ticketsystem/ToDo.md",
-    "📓Bulletjournal/Plan.md",
-    "🎛-Obsidian-/in Bearbeitung/Unbenannt.md",
-    "🎛-Obsidian-/in Bearbeitung/Unbenannt 1.md",
-    "🎛-Obsidian-/in Bearbeitung/Unicode Liste -----.md",
-    "🎛-Obsidian-/Spezielle Einstellungen/Verzeichnisverbindung.md",
-    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/Prism.md",
-    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/nspell.md",
-    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/i18next.md",
-    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/DOMPurify.md",
-    "🎛-Obsidian-/🎛Funktionen/OpenSourceLibraries/CodeMirror.md",
-    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/_MoC Notiz Funktionen.md",
-    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Code and Tabellen.md",
-    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Grundlegende Text Formatierung.md",
-    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Markdown Syntax.md",
-    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Mermaid Diagram.md",
-    "🎛-Obsidian-/🎛Funktionen/Notiz Funktionen/Obsidian Markdown syntax.md",
-    "Aussortieren/hda/wichtig.md",
-    "Aussortieren/Sammlung/Untitled.md",
-    "Aussortieren/Sammlung/Unbenannt.md",
     "Aussortieren/Sammlung/Untitled.canvas",
-    "Aussortieren/Sammlung/Kotne welche mit mail verbunden sind.md",
-    "Aussortieren/Sammlung/Authenticator-App und mehr.md",
     "10.⚙️Systemschmiede/Systemplan/PC/Skriptplan.canvas",
     "10.⚙️Systemschmiede/Systemplan/PC/Autogen/Lebensplan/AutoGen Lebensplan aufarbeitung.canvas",
     "Aussortieren/wohnung Planen.canvas",
@@ -248,7 +292,6 @@
     "10.⚙️Systemschmiede/AutoGen Lebensplan aufarbeitung.canvas",
     "Unbenannt.canvas",
     "Aussortieren/-Ticketsystem/DSB/Kategorien/Subkategorien/Kauf DSB.canvas",
-    "Aussortieren/-Ticketsystem/DSB/Zentral-DSB.canvas",
     "04.🧘‍♂️Vitaloase/01.AllgemeineGesundheit",
     "03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/03.Sicherheit",
     "03.Alltagsmanagemnt/04.Recht,Dokumente&Sicherheit/02.Dokumente",

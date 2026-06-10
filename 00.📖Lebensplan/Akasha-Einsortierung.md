@@ -37,7 +37,6 @@ Vollständige Zuordnung aller Brain-Notes Notizen zu den 11 Akasha-Lebensbereich
 | `Aussortieren/00.📖Fundamentum/00.📖Lebensplan.md` | `00.Fundamentum/` |
 | `Aussortieren/00.📖Fundamentum/Hier.md` | `00.Fundamentum/` |
 | `Aussortieren/00.📖Fundamentum/AkashaIndex/` (Unterordner) | `00.Fundamentum/` |
-| `Aussortieren/00.📖Fundamentum/Plan Definitionen/` (11 leere Dateien) | ❌ Löschen — alle leer, Inhalt bereits in AkashaOrdnerGuide |
 | `🎛-Obsidian-/🎛Legenden/Untitled.md` | ⚠️ Inhalt prüfen → ggf. `00.Fundamentum/AkashaLegenden/` |
 | `🎛-Obsidian-/in Bearbeitung/Unbenannt.md`, `Unbenannt 1.md` | ⚠️ Inhalt prüfen → einordnen |
 
@@ -198,7 +197,6 @@ Vollständige Zuordnung aller Brain-Notes Notizen zu den 11 Akasha-Lebensbereich
 | Quelle (Brain-Notes) | → Akasha Ziel |
 |---|---|
 | `🎛-Obsidian-/Plugin für Obsidian Programmieren Idee.md` | `09.Freizeitatlas/03.Projekte/ITProjekte/` |
-| `Aussortieren/09.🗺️Freizeitatlas/09.🗺️Freizeitatlas.md` | `09.Freizeitatlas/` (Index) |
 | `Aussortieren/-Lebensplan/Freizeit/Audio (🎧)/` + Musik | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/MusikHören/` |
 | `Aussortieren/-Lebensplan/Freizeit/Hobbies/` (Musik machen, Programmieren, Schreiben) | `09.Freizeitatlas/02.Hobbies/` |
 | `Aussortieren/-Lebensplan/Freizeit/Spiele (🎮-♟️)/` | `09.Freizeitatlas/02.Hobbies/MentaleHobbies/Gaming/` |
@@ -299,7 +297,6 @@ Vollständige Zuordnung aller Brain-Notes Notizen zu den 11 Akasha-Lebensbereich
 | `00.📖Lebensplan/Alleszusdammen/gggggg.md` | Testdatei |
 | `00.📖Lebensplan/Alleszusdammen/dddd/` | Testordner |
 | `Aussortieren/-Ticketsystem/Tickets/T-016` (dsgtfhg) | Testticket |
-| `Aussortieren/00.📖Fundamentum/Plan Definitionen/` (11 Dateien) | Alle leer (0 bytes) |
 
 ---
 
